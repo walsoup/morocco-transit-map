@@ -227,7 +227,8 @@ def process_network():
             m_role = m.get("role", "")
             m_ref = m.get("ref")
 
-            if m_type == "node" and ("stop" in m_role or "platform" in m_role or m_role == ""):
+            # Only include explicit transit stops/platforms (skip stray ways/crossings with empty role)
+            if m_type == "node" and ("stop" in m_role or "platform" in m_role):
                 node = nodes.get(m_ref)
                 if node:
                     tags = node.get("tags", {})

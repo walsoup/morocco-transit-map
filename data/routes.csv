@@ -81,8 +81,8 @@ route_id,line_ref,mode,route_name,origin,destination,zone,length_km,stops_count,
 14669501,306B,bus,L306B:El Maghreb Arabi-Hay Fath(Skhirat),El Maghreb Arabi,Hay Fath(Skhirat),"Témara, Harhoura & South",24.09,35,#7209B7
 14669502,306B,bus,L306B:Hay Fath(Skhirat)-Maghreb Arabi,Hay El Fath,El Maghreb Arabi,"Témara, Harhoura & South",23.37,34,#7209B7
 14676182,37B,bus,L37B:Youssoufia-Massira,Jardin Mini Parc (Youssoufia),Moulay Ali Cherif,Intercommunal,11.49,22,#073B4C
-14676183,37B,bus,L37B:Massira-Youssoufia,Moulay Ali Cherif,Jardin Mini Parc (Youssoufia),Intercommunal,11.4,24,#073B4C
+14676183,37B,bus,L37B:Massira-Youssoufia,Moulay Ali Cherif,Jardin Mini Parc (Youssoufia),Intercommunal,11.4,23,#073B4C
 4486847,T1,tram,L1: Madinat Al Irfane → Hay Karima,Madinat Al Irfane,Hay Karima,Tramway,11.69,21,#1E40AF
-5293754,T1,tram,L1: Hay Karima → Madinat Al Irfane,Hay Karima,Madinat Al Irfane,Tramway,11.68,21,#1E40AF
+5293754,T1,tram,L1: Hay Karima → Madinat Al Irfane,Hay Karima,Madinat Al Irfane,Tramway,11.68,20,#1E40AF
 4486848,T2,tram,L2: Yacoub el Mansour → Hôpital Moulay Abdellah,Yacoub el Mansour,Hôpital Moulay Abdellah,Tramway,15.41,26,#BE185D
 5391136,T2,tram,L2: Hôpital Moulay Abdellah → Yacoub el Mansour,Hôpital Moulay Abdellah,Yacoub el Mansour,Tramway,15.48,14,#BE185D

@@ -241544,7 +241544,7 @@
         "zone": "Intercommunal",
         "color": "#073B4C",
         "length_km": 11.4,
-        "stops_count": 24,
+        "stops_count": 23,
         "stops": [
           {
             "id": 12153569660,
@@ -241660,11 +241660,6 @@
             "id": 10087870492,
             "name": "Jardin mini parc",
             "seq": 23
-          },
-          {
-            "id": 5787396394,
-            "name": "Arrêt 37B",
-            "seq": 24
           }
         ]
       },
@@ -244619,7 +244614,7 @@
         "zone": "Tramway",
         "color": "#1E40AF",
         "length_km": 11.68,
-        "stops_count": 21,
+        "stops_count": 20,
         "stops": [
           {
             "id": 4592889795,
@@ -244720,11 +244715,6 @@
             "id": 4592816489,
             "name": "Madinat Al Irfane مدينة العرفان",
             "seq": 20
-          },
-          {
-            "id": 13727028582,
-            "name": "Stade Al Madina",
-            "seq": 21
           }
         ]
       },

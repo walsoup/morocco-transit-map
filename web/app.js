@@ -446,6 +446,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const routes = lineRoutesMap.get(ref);
     if (!routes || !routes.length) return;
 
+    // If already inspecting this line, don't reset back to direction 0!
+    if (state.selectedLineRef === ref && state.selectedRouteFeature) {
+      return;
+    }
+
     state.selectedLineRef = ref;
     state.activeDirectionIndex = 0;
     const active = routes[0];

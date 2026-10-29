@@ -1,10 +1,10 @@
 {
   "metadata": {
     "network_name": "Rabat-Salé-Témara Public Transit Network (ALSA Citybus & STRS Tramway)",
-    "extracted_at": "2026-10-29T01:24:56Z",
+    "extracted_at": "2026-10-29T13:09:45Z",
     "total_lines": 45,
     "total_routes_directions": 87,
-    "total_unique_stops": 1191,
+    "total_unique_stops": 1189,
     "total_network_km": 1621.5,
     "tram_lines": [
       "T1",
@@ -56,11 +56,11 @@
       "210AE"
     ],
     "zones": [
-      "Salé & North",
-      "Tramway",
-      "Témara, Harhoura & South",
       "Intercommunal",
-      "Rabat Urban Core"
+      "Témara, Harhoura & South",
+      "Rabat Urban Core",
+      "Tramway",
+      "Salé & North"
     ],
     "top_hubs": [
       {

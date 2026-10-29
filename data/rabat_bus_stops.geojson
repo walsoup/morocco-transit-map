@@ -30339,32 +30339,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": 5787396394,
-        "stop_name": "Arrêt 37B",
-        "stop_name_ar": "",
-        "lines": [
-          "37B"
-        ],
-        "lines_str": "37B",
-        "modes": [
-          "bus"
-        ],
-        "is_tram": false,
-        "routes_count": 1,
-        "has_shelter": false,
-        "has_bench": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.835972,
-          33.966645
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "stop_id": 1311854956,
         "stop_name": "Madinat Al Irfane مدينة العرفان",
         "stop_name_ar": "مدينة العرفان",
@@ -31433,32 +31407,6 @@
         "coordinates": [
           -6.864307,
           33.982654
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "stop_id": 13727028582,
-        "stop_name": "Stade Al Madina",
-        "stop_name_ar": "",
-        "lines": [
-          "T1"
-        ],
-        "lines_str": "T1",
-        "modes": [
-          "tram"
-        ],
-        "is_tram": true,
-        "routes_count": 1,
-        "has_shelter": false,
-        "has_bench": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.843129,
-          34.004466
         ]
       }
     },

@@ -1090,9 +1090,97 @@ html, body {
 
 .export-plate:hover { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
 
-/* ==========================================================================
-   MOBILE — the panel becomes a drawer
-   ========================================================================== */
+/* ---- Region Upcoming Placeholder in Sidebar ---- */
+.region-empty-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 18px;
+  background: var(--paper-2);
+  border-top: 1px solid var(--hair-2);
+  overflow-y: auto;
+}
+
+.region-empty-card {
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 4px 4px 0 rgba(25, 30, 28, 0.15);
+}
+
+.region-empty-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 3px 7px;
+  background: var(--c-amber);
+  color: #FFFFFF;
+}
+
+.region-empty-card h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.region-empty-ar {
+  font-family: var(--font-ar);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--tx-2);
+}
+
+.region-empty-card p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--tx-2);
+  margin-top: 2px;
+}
+
+.region-upcoming-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.region-upcoming-tags span {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  background: var(--paper-3);
+  border: 1px solid var(--hair-2);
+  color: var(--tx);
+}
+
+.btn-back-rabat {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font: inherit;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 10px 14px;
+  background: var(--ink);
+  color: var(--on-ink);
+  border: 1px solid var(--ink);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-back-rabat:hover {
+  background: var(--band);
+  border-color: var(--band);
+}
+
 .sidebar-backdrop {
   display: none;
 }

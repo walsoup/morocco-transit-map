@@ -86,7 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
     statKmCount: document.getElementById('statKmCount'),
     regionTitleFr: document.getElementById('regionTitleFr'),
     regionTitleAr: document.getElementById('regionTitleAr'),
-    regionSub: document.getElementById('regionSub')
+    regionSub: document.getElementById('regionSub'),
+    regionEmptyPanel: document.getElementById('regionEmptyPanel'),
+    emptyRegionName: document.getElementById('emptyRegionName'),
+    emptyRegionNameAr: document.getElementById('emptyRegionNameAr'),
+    emptyRegionDesc: document.getElementById('emptyRegionDesc'),
+    emptyRegionTags: document.getElementById('emptyRegionTags'),
+    btnBackToActiveRegion: document.getElementById('btnBackToActiveRegion')
   };
 
   // =========================================================================
@@ -879,6 +885,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nameAr: 'الدار البيضاء - سطات',
       sub: 'Tramway Casa, Busway & Alsa (À venir)',
       active: false,
+      desc: 'Les lignes du Tramway de Casablanca (T1 à T4), du Busway (Bw1, Bw2) et des autobus Alsa Al Baida sont en cours de numérisation et seront disponibles très prochainement.',
+      tags: ['Tramway T1, T2, T3, T4', 'Busway Bw1, Bw2', 'Alsa Al Baida', 'Mohammédia'],
       bounds: [[32.90, -7.95], [33.75, -7.15]]
     },
     {
@@ -887,6 +895,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nameAr: 'طنجة - تطوان - الحسيمة',
       sub: 'Alsa Tanger & Réseau du Nord (À venir)',
       active: false,
+      desc: 'Le réseau de bus Alsa Tanger, les lignes urbaines de Tétouan et du Détroit seront ajoutés au plan interactif.',
+      tags: ['Alsa Tanger', 'Tétouan', 'Gare Tanger-Ville', 'Aéroport Ibn Battouta'],
       bounds: [[34.80, -6.10], [35.95, -3.70]]
     },
     {
@@ -895,6 +905,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nameAr: 'مراكش - آسفي',
       sub: 'Alsa Marrakech & Bus Électrique (À venir)',
       active: false,
+      desc: 'Le réseau ALSA Marrakech, les lignes de Bus Électrique (BRT) et les dessertes périurbaines sont en cours d’extraction.',
+      tags: ['Alsa Marrakech', 'Bus Électrique BRT', 'Guéliz & Médina', 'Aéroport Menara'],
       bounds: [[31.20, -9.40], [32.50, -7.50]]
     },
     {
@@ -903,6 +915,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nameAr: 'فاس - مكناس',
       sub: 'Citybus Fès & Meknès (À venir)',
       active: false,
+      desc: 'Les réseaux de transport par autobus Citybus Fès et Citybus Meknès sont planifiés pour la prochaine phase.',
+      tags: ['Citybus Fès', 'Citybus Meknès', 'Fès-Médina', 'Gare Fès-Ville'],
       bounds: [[33.40, -5.80], [34.50, -4.50]]
     },
     {
@@ -911,6 +925,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nameAr: 'سوس - ماسة (أكادير)',
       sub: 'Alsa Agadir & BHNS Amal (À venir)',
       active: false,
+      desc: 'Le réseau urbain Alsa Agadir et la nouvelle ligne de Bus à Haut Niveau de Service (BHNS Amalway) rejoindront la plateforme.',
+      tags: ['Alsa Agadir', 'BHNS Amalway', 'Inezgane', 'Taghazout'],
       bounds: [[29.80, -10.10], [31.10, -8.80]]
     },
     {
@@ -919,6 +935,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nameAr: 'الجهة الشرقية (وجدة - الناظور)',
       sub: 'Réseau Urbain de l’Oriental (À venir)',
       active: false,
+      desc: 'Lignes urbaines et interurbaines des agglomérations d’Oujda, Berkane et Nador.',
+      tags: ['Urbain Oujda', 'Nador Bus', 'Gare Oujda'],
       bounds: [[34.20, -3.50], [35.40, -1.70]]
     },
     {
@@ -927,6 +945,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nameAr: 'المكتب الوطني للسكك الحديدية',
       sub: 'Al Boraq LGV, Al Atlas, TNR (Bientôt disponible)',
       active: false,
+      desc: 'Le tracé complet des lignes ferroviaires à grande vitesse (Al Boraq LGV Tanger-Casablanca), des trains grandes lignes Al Atlas et des TNR de banlieue.',
+      tags: ['Al Boraq (TGV)', 'Al Atlas', 'TNR Navette', 'Liaisons Inter-Régionales'],
       bounds: [[27.00, -13.50], [36.00, -1.00]]
     }
   ];
@@ -959,14 +979,42 @@ document.addEventListener('DOMContentLoaded', () => {
           el.regionTitleAr.textContent = `خريطة شبكة النقل الحضري ${matchedRegion.nameAr}`;
           el.regionSub.innerHTML = `${matchedRegion.sub}`;
           el.regionSub.style.color = 'var(--on-band)';
+
+          // Show Rabat transit list, hide upcoming placeholder
+          if (el.regionEmptyPanel) el.regionEmptyPanel.style.display = 'none';
+          if (!state.selectedLineRef && el.linesListContainer) el.linesListContainer.style.display = 'flex';
         } else {
           el.regionTitleFr.innerHTML = `${matchedRegion.nameFr} <span style="font-size:10px;background:#D9541E;color:#fff;padding:1px 5px;font-weight:700;letter-spacing:0.04em;vertical-align:middle;margin-left:4px;">À VENIR</span>`;
           el.regionTitleAr.textContent = `${matchedRegion.nameAr} (قريباً)`;
           el.regionSub.innerHTML = `⚠️ ${matchedRegion.sub}`;
           el.regionSub.style.color = '#F4A261';
+
+          // When over another region: replace the line list with the region upcoming card
+          if (el.linesListContainer) el.linesListContainer.style.display = 'none';
+          if (el.activeLinePanel) el.activeLinePanel.style.display = 'none';
+          if (el.regionEmptyPanel) {
+            el.regionEmptyPanel.style.display = 'flex';
+            if (el.emptyRegionName) el.emptyRegionName.textContent = matchedRegion.nameFr;
+            if (el.emptyRegionNameAr) el.emptyRegionNameAr.textContent = matchedRegion.nameAr;
+            if (el.emptyRegionDesc && matchedRegion.desc) el.emptyRegionDesc.textContent = matchedRegion.desc;
+            if (el.emptyRegionTags && matchedRegion.tags) {
+              el.emptyRegionTags.innerHTML = '';
+              matchedRegion.tags.forEach(t => {
+                const s = document.createElement('span');
+                s.textContent = t;
+                el.emptyRegionTags.appendChild(s);
+              });
+            }
+          }
         }
       }
     }
+  }
+
+  if (el.btnBackToActiveRegion) {
+    el.btnBackToActiveRegion.addEventListener('click', () => {
+      map.flyTo([33.99, -6.84], 12, { duration: 1.2 });
+    });
   }
 
   map.on('moveend', updateRegionFromMap);

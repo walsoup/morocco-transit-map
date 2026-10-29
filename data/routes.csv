@@ -74,8 +74,8 @@ route_id,line_ref,mode,route_name,origin,destination,zone,length_km,stops_count,
 12980789,306,bus,L306:Commune Essebbah-Maghreb El Arabi,Commune Essebah,El Maghreb el arabi,"Témara, Harhoura & South",25.42,35,#06D6A0
 17996731,201B,bus,L201B:Chateau Hay Salam-Zone économique,Chateau Hay Salam,Zone économique,Salé & North,14.53,24,#D90429
 17996730,201B,bus,L201B:Zone économique-Chateau Hay Salam,Zone économique,Chateau Hay Salam,Salé & North,14.39,24,#D90429
-14676497,210AE,bus,L210 AE:Aeroport-Gare Agdal,Aeroport,Gare Agdal,Rabat Urban Core,13.81,4,#3F37C9
-14676496,210AE,bus,L210 AE:Gare Agdal-Aeroport,Gare Agdal,Aeroport,Rabat Urban Core,13.55,4,#3F37C9
+14676497,210AE,bus,L210 AE:Aeroport-Gare Agdal,Aeroport,Gare Agdal,Airport Express,13.81,4,#3F37C9
+14676496,210AE,bus,L210 AE:Gare Agdal-Aeroport,Gare Agdal,Aeroport,Airport Express,13.55,4,#3F37C9
 5279026,32H,bus,L32H:Bab Lhad-Harhoura,Bab El Had,Harhoura,"Témara, Harhoura & South",21.76,35,#118AB2
 5278778,32H,bus,L32H:Harhoura-Bab El Had,Harhoura,Bab El Had,"Témara, Harhoura & South",22.02,35,#118AB2
 14669501,306B,bus,L306B:El Maghreb Arabi-Hay Fath(Skhirat),El Maghreb Arabi,Hay Fath(Skhirat),"Témara, Harhoura & South",24.09,35,#7209B7

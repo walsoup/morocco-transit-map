@@ -987,7 +987,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
           // Show Rabat transit list, hide upcoming placeholder
           if (el.regionEmptyPanel) el.regionEmptyPanel.style.display = 'none';
-          if (!state.selectedLineRef && el.linesListContainer) el.linesListContainer.style.display = 'flex';
+          if (state.selectedLineRef && state.selectedRouteFeature) {
+            // Restore active route panel if a line was selected
+            if (el.linesListContainer) el.linesListContainer.style.display = 'none';
+            if (el.activeLinePanel) el.activeLinePanel.style.display = 'flex';
+          } else {
+            if (el.activeLinePanel) el.activeLinePanel.style.display = 'none';
+            if (el.linesListContainer) el.linesListContainer.style.display = 'flex';
+          }
         } else {
           el.regionTitleFr.innerHTML = `${matchedRegion.nameFr} <span style="font-size:10px;background:#D9541E;color:#fff;padding:1px 5px;font-weight:700;letter-spacing:0.04em;vertical-align:middle;margin-left:4px;">À VENIR</span>`;
           el.regionTitleAr.textContent = `${matchedRegion.nameAr} (قريباً)`;

@@ -160,7 +160,10 @@ def classify_zone(ref, name):
     """Classifies route into geographic zones: Rabat, Sale, Temara, Coastal, Interurban."""
     n = name.lower()
     r = str(ref).upper()
-    if r.startswith("T"):
+    # Check Airport Express FIRST so specific routes (like 210AE Agdal-Airport) don't get swallowed by Agdal/Rabat
+    if "AE" in r or "aeroport" in n or "aéroport" in n or "airport" in n:
+        return "Airport Express"
+    elif r.startswith("T"):
         return "Tramway"
     elif r.startswith("20") or "salé" in n or "sale" in n or "karia" in n or "bouknadel" in n:
         return "Salé & North"
@@ -168,8 +171,6 @@ def classify_zone(ref, name):
         return "Témara, Harhoura & South"
     elif r.startswith("10") or "fath" in n or "ennahda" in n or "agdal" in n or "chellah" in n or "had" in n:
         return "Rabat Urban Core"
-    elif "ae" in r or "aeroport" in n:
-        return "Airport Express"
     else:
         return "Intercommunal"
 
@@ -349,7 +350,11 @@ def process_network():
                 "lon": s["lon"]
             })
 
-    print(f"  Processed {len(processed_routes)} routes and {len(unique_stops)} unique bus stops.")
+    # Calculate lines from actually processed/exported routes
+    exported_lines = sorted(list(set(r["line_ref"] for r in processed_routes)), key=lambda x: (len(x), x))
+    catalog_lines = unique_lines
+
+    print(f"  Processed {len(processed_routes)} routes across {len(exported_lines)} active lines (catalog: {len(catalog_lines)} lines) and {len(unique_stops)} unique bus stops.")
 
     print(f"[4/5] Generating standard GeoJSON & GTFS-style outputs...")
 
@@ -428,12 +433,13 @@ def process_network():
         "metadata": {
             "network_name": "Rabat-Salé-Témara Public Transit Network (ALSA Citybus & STRS Tramway)",
             "extracted_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-            "total_lines": len(unique_lines),
+            "total_lines": len(exported_lines),
+            "catalog_total_lines": len(catalog_lines),
             "total_routes_directions": len(processed_routes),
             "total_unique_stops": len(unique_stops),
             "total_network_km": round(sum(r["length_km"] for r in processed_routes), 1),
             "tram_lines": ["T1", "T2"],
-            "bus_lines": [l for l in unique_lines if not l.startswith("T")],
+            "bus_lines": [l for l in exported_lines if not l.startswith("T")],
             "zones": list(set(r["zone"] for r in processed_routes)),
             "top_hubs": sorted(
                 [{"stop_id": s["stop_id"], "name": s["stop_name"], "lines": s["lines"], "count": len(s["lines"])}
@@ -442,7 +448,8 @@ def process_network():
                 reverse=True
             )[:15]
         },
-        "lines": unique_lines,
+        "lines": exported_lines,
+        "catalog_lines": catalog_lines,
         "color_map": color_map
     }
 

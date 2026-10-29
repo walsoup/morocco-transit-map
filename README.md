@@ -46,9 +46,9 @@ In public transit data science, when transit operators (ALSA and STRS) partner d
 ### Key Network Figures
 | Metric | Value |
 | :--- | :--- |
-| **Active Transit Lines** | **45 lines** (43 Bus lines + **Tramway T1 & T2**) |
+| **Active Transit Lines** | **44 lines** (42 Bus lines + **Tramway T1 & T2**) [Catalog: 45 lines] |
 | **Total Route Directions** | **87 directions** (Aller / Retour) |
-| **Total Unique Targets (Stops & Stations)** | **1,191 targets** |
+| **Total Unique Targets (Stops & Stations)** | **1,189 targets** |
 | **Total Network Length** | **1,620+ km** |
 | **Tramway Lines** | **T1** (Madinat Al Irfane ↔ Hay Karima, 19.5 km) & **T2** (Yacoub El Mansour ↔ Hôpital Moulay Abdellah, 17 km) |
 | **Top Transit Hubs** | **Abdelmoumen** (13 lines), **Jour et Nuit** (12), **Bab Mellah** (11 + Tram T1/T2), **Théâtre Mohammed V** (11), **Milano** (10), **Bab El Had** (9) |

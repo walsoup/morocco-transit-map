@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     statsModalBtn: document.getElementById('statsModalBtn'),
     statsModal: document.getElementById('statsModal'),
     closeAnalyticsBtn: document.getElementById('closeAnalyticsBtn'),
+    sidebarBackdrop: document.getElementById('sidebarBackdrop'),
     hubMatrix: document.getElementById('hubMatrix'),
     mobileSidebarToggle: document.getElementById('mobileSidebarToggle'),
     statLinesCount: document.getElementById('statLinesCount'),
@@ -452,7 +453,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderRibbon(active);
     highlightRoute(active);
 
-    if (window.innerWidth <= 900) el.sidebar.classList.remove('open');
+    if (window.innerWidth <= 900) toggleMobileSidebar(false);
   }
 
   function renderDirectionPlates(routes) {
@@ -838,7 +839,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // Mobile drawer
   // =========================================================================
-  el.mobileSidebarToggle.addEventListener('click', () => el.sidebar.classList.toggle('open'));
+  function toggleMobileSidebar(force) {
+    const isOpen = el.sidebar.classList.toggle('open', force);
+    if (el.sidebarBackdrop) {
+      el.sidebarBackdrop.classList.toggle('show', isOpen);
+    }
+  }
+
+  el.mobileSidebarToggle.addEventListener('click', () => toggleMobileSidebar());
+  if (el.sidebarBackdrop) {
+    el.sidebarBackdrop.addEventListener('click', () => toggleMobileSidebar(false));
+  }
 
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;

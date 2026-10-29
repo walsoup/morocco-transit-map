@@ -1,113 +1,93 @@
-# 🇲🇦 Morocco Transit Map (خريطة النقل الحضري بالمغرب)
+# Morocco Transit Map
 
-An open-source transit data pipeline and interactive OpenStreetMap web application mapping public transit across Morocco.
+An interactive map of bus and tram lines in the Rabat-Salé-Témara area, plus the script and exported data behind it.
 
-🚀 **Live Interactive Demo:** [https://walsoup.github.io/morocco-transit-map/](https://walsoup.github.io/morocco-transit-map/)
+**Live demo:** https://walsoup.github.io/morocco-transit-map/
 
-Currently covers the **Rabat–Salé–Kénitra / Rabat–Salé–Témara** metropolitan area (ALSA Citybus & STRS Tramway T1/T2), expanding to other Moroccan transit regions and national rail/trains (ONCF) soon!
+The data comes from OpenStreetMap public transport relations. It is not an official ALSA or STRS dataset, so routes and stops can differ from what actually runs.
 
----
+## Coverage
 
-## 🌐 Live Demo & Web App
+| | |
+| :-- | :-- |
+| Lines | 44 (42 bus, tram T1 and T2) |
+| Route directions | 87 |
+| Stops and stations | 1,189 |
+| Total route length | about 1,620 km (sum of all directions) |
 
-You can access the live map directly in your browser:
-👉 **[walsoup.github.io/morocco-transit-map](https://walsoup.github.io/morocco-transit-map/)**
+Line 21 is listed in the catalog but isn't included in the current route export.
 
-Fully responsive for desktop, tablet, and mobile with GPS nearest-stop radar and full offline-first data exports.
+Planned, not built: Kénitra, Casablanca-Settat, Marrakech-Safi and ONCF rail.
 
----
+## Features
 
-## 🗺️ Coverage & Roadmap
-- [x] **Rabat–Salé–Témara–Skhirat**: ALSA Citybus lines + STRS Tramway T1 & T2
-- [ ] **Kénitra & North Extension**: Urban & suburban transit lines
-- [ ] **Casablanca-Settat**: Casa Tramway (T1–T4), Busway, and Alsa Al Baida
-- [ ] **Marrakech-Safi**: ALSA Marrakech & Electric BRT
-- [ ] **Trains / Rail (ONCF)**: Al Boraq (LGV), Al Atlas, TNR lines (coming soon)
+- Color-coded line geometries on a Leaflet map
+- Stop popups with French and Arabic names and the lines serving each stop
+- Search by line number or destination
+- Zone filters: Rabat Urban Core, Salé & North, Témara & South, Intercommunal, Airport Express, Tramway
+- Stop-by-stop timeline per line, with direction switch and fly-to on click
+- Nearest-stop finder: click the map or use your GPS location to list the 5 closest stops and their lines
+- Basemap switch: CARTO Positron, CARTO Dark Matter, OpenStreetMap, Esri satellite
+- Data modal with GeoJSON and CSV downloads
 
----
+## Run locally
 
-## 📊 1. The "Data Scientist" Approach: Transit Data Modeling
+Requires Python 3. No packages to install.
 
-In public transit data science, when transit operators (ALSA and STRS) partner directly with Google Transit without publishing an open downloadable GTFS `.zip` on their corporate portal, the **industry-standard open methodology** is to leverage **OpenStreetMap (OSM) Public Transport v2 Relations**.
-
-### Data Architecture & Pipeline (`etl_bus_data.py`)
-1. **Catalog Ingestion**: Extracts all active ALSA Citybus lines and STRS Tramway lines cataloged and maintained by the OSM transit community for Rabat–Salé–Témara.
-2. **OSM Overpass / API Extraction**: Retrieves full relation trees containing `type=route`, `route=bus` / `route=tram`, `network=ALSA Citybus RST` & `network=STRS`, including all member ways (driving/rail geometries) and nodes (`public_transport=platform` / `bus_stop` / `tram_stop`).
-3. **Topological Polyline Reconstruction**: Stitches street and rail segments into continuous polylines, handling roundabouts, reversible ways, and one-way loops.
-4. **Target / Stop Harmonization**: Indexes **1,191 unique transit targets (bus stops & tram stations)** with bilingual naming (Latin/Arabic), geo-coordinates, transit modes (`bus`, `tram`), amenity flags, and an inverted index of passing lines.
-5. **Standardized Exports**:
-   - `data/rabat_bus_routes.geojson`: Full vector route paths with metadata (distance, mode, zones, stops count).
-   - `data/rabat_bus_stops.geojson`: All bus & tram stops with interconnected lines.
-   - `data/routes.csv`: GTFS-style routes table.
-   - `data/stops.csv`: GTFS-style stops & stations table.
-   - `data/route_stops.csv`: Ordered sequence of stops per line & direction.
-   - `data/network_summary.json`: High-level network topology & hub connectivity matrix.
-
-### Key Network Figures
-| Metric | Value |
-| :--- | :--- |
-| **Active Transit Lines** | **44 lines** (42 Bus lines + **Tramway T1 & T2**) [Catalog: 45 lines] |
-| **Total Route Directions** | **87 directions** (Aller / Retour) |
-| **Total Unique Targets (Stops & Stations)** | **1,189 targets** |
-| **Total Network Length** | **1,620+ km** |
-| **Tramway Lines** | **T1** (Madinat Al Irfane ↔ Hay Karima, 19.5 km) & **T2** (Yacoub El Mansour ↔ Hôpital Moulay Abdellah, 17 km) |
-| **Top Transit Hubs** | **Abdelmoumen** (13 lines), **Jour et Nuit** (12), **Bab Mellah** (11 + Tram T1/T2), **Théâtre Mohammed V** (11), **Milano** (10), **Bab El Had** (9) |
-
----
-
-## 🌐 2. Interactive OpenStreetMap Web Demo
-
-An interactive, responsive single-page web application powered by **Leaflet.js** and **OpenStreetMap**:
-
-### Quick Start
-Start the server (starts the web demo and the REST API):
 ```bash
 python3 server.py
 ```
-Open **[http://localhost:8080](http://localhost:8080)** in your browser.
 
-### Features
-- **Route Visualizer**: Color-coded bus polylines across Rabat, Salé, Témara, Harhoura, Skhirat, Tamesna, Bouknadel, and Ain El Aouda.
-- **Bus Targets (Stops)**: Every stop is marked on the map. Clicking any stop displays its name (French + Arabic), coordinates, and interactive badges of every bus line that passes through it.
-- **Search & Filtering**: Search instantly by line number (e.g. `32H`, `1`, `AE`, `101`) or destination (`Harhoura`, `Bab El Had`, `Technopolis`, `Agdal`).
-- **Zone Filters**: Quick tabs for *Rabat Urban Core*, *Salé & North*, *Témara & South*, *Intercommunal*, and *Airport Express*.
-- **Itinerary Timeline**: Select any line to view its stop-by-stop sequence, switch direction (Aller vs Retour), and click any stop to fly straight to it.
-- **Nearest Stop Radar**: Click anywhere on the map (or use "My GPS Location") to instantly calculate the 5 closest bus stops and find out which buses you can catch!
-- **Multi-Basemap Toggle**: Switch between *CARTO Positron* (clean minimal), *CARTO Dark Matter*, *OpenStreetMap Standard*, and *Satellite Imagery*.
-- **Data Export & Analytics Modal**: Summary charts and direct download links for GeoJSON and CSV datasets.
+Then open http://localhost:8080. Set `PORT` to use another port.
 
----
+## API
 
-## 🤖 3. Future Agent & Developer REST API
+`server.py` also serves a small read-only JSON API with CORS enabled.
 
-The included `server.py` provides high-speed, CORS-enabled REST API endpoints designed to power your upcoming AI agent:
+| Endpoint | Returns |
+| :-- | :-- |
+| `/api/network` | Network summary and top transfer hubs |
+| `/api/lines` | All lines with endpoints, zones and distances |
+| `/api/lines/<ref>` | GeoJSON and stop sequence for one line, e.g. `/api/lines/32H` |
+| `/api/stops?q=agdal` | Stop search by name; add `line=32H` to filter by line |
+| `/api/nearest?lat=34.02&lon=-6.83&k=5` | Closest stops and the lines that reach them |
+| `/data/<filename>` | Raw `.geojson` and `.csv` files |
 
-| Endpoint | Method | Description |
-| :--- | :--- | :--- |
-| `/api/network` | `GET` | High-level network summary, line count, total km, and top transfer hubs. |
-| `/api/lines` | `GET` | List all 43 lines with their endpoints, zones, and distances. |
-| `/api/lines/<ref>` | `GET` | Full GeoJSON and stop sequences for a specific line (e.g. `/api/lines/32H`). |
-| `/api/stops?q=agdal` | `GET` | Search bus stops by name or filter with `?line=32H`. |
-| `/api/nearest?lat=34.02&lon=-6.83&k=5` | `GET` | Spatial query returning the closest bus stops & reachable lines for an agent's pathfinding. |
-| `/data/<filename>` | `GET` | Raw access to `.geojson` and `.csv` files. |
+## Data
 
----
+Files in `data/`:
 
-## 📁 Repository Structure
+| File | Contents |
+| :-- | :-- |
+| `rabat_bus_routes.geojson` | Route geometry and metadata, one feature per direction |
+| `rabat_bus_stops.geojson` | Stops and stations with the lines serving them |
+| `routes.csv` | Routes table, GTFS-style |
+| `stops.csv` | Stops table, GTFS-style |
+| `route_stops.csv` | Ordered stops per line and direction |
+| `network_summary.json` | Totals, hubs and line catalog |
+
+To rebuild them from OSM:
+
+```bash
+python3 etl_bus_data.py
 ```
-/home/wal/work/MAP/
-├── data/
-│   ├── rabat_bus_routes.geojson    # Full line geometries (84 features)
-│   ├── rabat_bus_stops.geojson     # 1,131 geolocated bus targets
-│   ├── routes.csv                  # Tabular routes (GTFS style)
-│   ├── stops.csv                   # Tabular stops (GTFS style)
-│   ├── route_stops.csv             # Sequence schedule table
-│   └── network_summary.json        # Analytics & metadata
-├── web/
-│   ├── index.html                  # Responsive OpenStreetMap web UI
-│   ├── style.css                   # Custom transit map styling & animations
-│   └── app.js                      # Leaflet map logic, filters, timeline & radar
-├── server.py                       # Zero-dependency Web & REST API server
-├── etl_bus_data.py                 # Reproducible OSM ETL extraction pipeline
-└── README.md                       # Documentation
+
+The script pulls route relations from OSM, joins the way segments into polylines, merges stops, assigns zones and writes the files above. It needs internet access.
+
+## Repository layout
+
 ```
+data/              exported datasets
+web/               front end (index.html, style.css, app.js)
+server.py          static server and API
+etl_bus_data.py    OSM extraction script
+.github/workflows/ GitHub Pages deploy
+```
+
+The Pages workflow publishes `web/` and `data/` on every push to `main`.
+
+## Credits
+
+- Transit data: © OpenStreetMap contributors (ODbL)
+- Basemaps: © OpenStreetMap contributors, © CARTO; satellite tiles © Esri
+- Map library: Leaflet

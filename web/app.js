@@ -83,7 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
     statLinesCount: document.getElementById('statLinesCount'),
     statRoutesCount: document.getElementById('statRoutesCount'),
     statStopsCount: document.getElementById('statStopsCount'),
-    statKmCount: document.getElementById('statKmCount')
+    statKmCount: document.getElementById('statKmCount'),
+    regionTitleFr: document.getElementById('regionTitleFr'),
+    regionTitleAr: document.getElementById('regionTitleAr'),
+    regionSub: document.getElementById('regionSub')
   };
 
   // =========================================================================
@@ -857,6 +860,116 @@ document.addEventListener('DOMContentLoaded', () => {
     else if (state.radarActive) deactivateRadar();
     else if (state.selectedLineRef) resetToAllRoutes();
   });
+
+  // =========================================================================
+  // Dynamic Region Detection when panning/zooming over Morocco
+  // =========================================================================
+  const MOROCCO_REGIONS = [
+    {
+      id: 'rabat',
+      nameFr: 'Rabat – Salé – Kénitra',
+      nameAr: 'الرباط - سلا - القنيطرة',
+      sub: 'ALSA Citybus · STRS Tramway (Actif)',
+      active: true,
+      bounds: [[33.60, -7.15], [34.35, -6.30]] // Covers Skhirat, Temara, Rabat, Sale, Kenitra
+    },
+    {
+      id: 'casablanca',
+      nameFr: 'Casablanca – Settat',
+      nameAr: 'الدار البيضاء - سطات',
+      sub: 'Tramway Casa, Busway & Alsa (À venir)',
+      active: false,
+      bounds: [[32.90, -7.95], [33.75, -7.15]]
+    },
+    {
+      id: 'tanger',
+      nameFr: 'Tanger – Tétouan – Al Hoceïma',
+      nameAr: 'طنجة - تطوان - الحسيمة',
+      sub: 'Alsa Tanger & Réseau du Nord (À venir)',
+      active: false,
+      bounds: [[34.80, -6.10], [35.95, -3.70]]
+    },
+    {
+      id: 'marrakech',
+      nameFr: 'Marrakech – Safi',
+      nameAr: 'مراكش - آسفي',
+      sub: 'Alsa Marrakech & Bus Électrique (À venir)',
+      active: false,
+      bounds: [[31.20, -9.40], [32.50, -7.50]]
+    },
+    {
+      id: 'fes',
+      nameFr: 'Fès – Meknès',
+      nameAr: 'فاس - مكناس',
+      sub: 'Citybus Fès & Meknès (À venir)',
+      active: false,
+      bounds: [[33.40, -5.80], [34.50, -4.50]]
+    },
+    {
+      id: 'souss',
+      nameFr: 'Souss – Massa (Agadir)',
+      nameAr: 'سوس - ماسة (أكادير)',
+      sub: 'Alsa Agadir & BHNS Amal (À venir)',
+      active: false,
+      bounds: [[29.80, -10.10], [31.10, -8.80]]
+    },
+    {
+      id: 'oriental',
+      nameFr: 'L’Oriental (Oujda – Nador)',
+      nameAr: 'الجهة الشرقية (وجدة - الناظور)',
+      sub: 'Réseau Urbain de l’Oriental (À venir)',
+      active: false,
+      bounds: [[34.20, -3.50], [35.40, -1.70]]
+    },
+    {
+      id: 'oncf',
+      nameFr: 'Lignes Nationales Ferroviaires ONCF',
+      nameAr: 'المكتب الوطني للسكك الحديدية',
+      sub: 'Al Boraq LGV, Al Atlas, TNR (Bientôt disponible)',
+      active: false,
+      bounds: [[27.00, -13.50], [36.00, -1.00]]
+    }
+  ];
+
+  let currentRegionId = 'rabat';
+
+  function updateRegionFromMap() {
+    const center = map.getCenter();
+    const lat = center.lat;
+    const lng = center.lng;
+
+    let matchedRegion = null;
+    for (const r of MOROCCO_REGIONS) {
+      const [[minLat, minLng], [maxLat, maxLng]] = r.bounds;
+      if (lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng) {
+        matchedRegion = r;
+        break;
+      }
+    }
+
+    if (!matchedRegion) {
+      matchedRegion = MOROCCO_REGIONS[MOROCCO_REGIONS.length - 1]; // Fallback to national
+    }
+
+    if (matchedRegion.id !== currentRegionId) {
+      currentRegionId = matchedRegion.id;
+      if (el.regionTitleFr && el.regionTitleAr && el.regionSub) {
+        if (matchedRegion.active) {
+          el.regionTitleFr.innerHTML = `Réseau urbain ${matchedRegion.nameFr}`;
+          el.regionTitleAr.textContent = `خريطة شبكة النقل الحضري ${matchedRegion.nameAr}`;
+          el.regionSub.innerHTML = `${matchedRegion.sub}`;
+          el.regionSub.style.color = 'var(--on-band)';
+        } else {
+          el.regionTitleFr.innerHTML = `${matchedRegion.nameFr} <span style="font-size:10px;background:#D9541E;color:#fff;padding:1px 5px;font-weight:700;letter-spacing:0.04em;vertical-align:middle;margin-left:4px;">À VENIR</span>`;
+          el.regionTitleAr.textContent = `${matchedRegion.nameAr} (قريباً)`;
+          el.regionSub.innerHTML = `⚠️ ${matchedRegion.sub}`;
+          el.regionSub.style.color = '#F4A261';
+        }
+      }
+    }
+  }
+
+  map.on('moveend', updateRegionFromMap);
 
   loadData();
 });

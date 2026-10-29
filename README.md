@@ -2,7 +2,18 @@
 
 An open-source transit data pipeline and interactive OpenStreetMap web application mapping public transit across Morocco.
 
+🚀 **Live Interactive Demo:** [https://walsoup.github.io/morocco-transit-map/](https://walsoup.github.io/morocco-transit-map/)
+
 Currently covers the **Rabat–Salé–Kénitra / Rabat–Salé–Témara** metropolitan area (ALSA Citybus & STRS Tramway T1/T2), expanding to other Moroccan transit regions and national rail/trains (ONCF) soon!
+
+---
+
+## 🌐 Live Demo & Web App
+
+You can access the live map directly in your browser:
+👉 **[walsoup.github.io/morocco-transit-map](https://walsoup.github.io/morocco-transit-map/)**
+
+Fully responsive for desktop, tablet, and mobile with GPS nearest-stop radar and full offline-first data exports.
 
 ---
 

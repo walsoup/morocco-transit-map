@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réseau urbain Rabat – Salé – Témara | ALSA Citybus & STRS Tramway</title>
+  <meta name="description" content="Plan interactif des lignes ALSA Citybus et du tramway STRS de Rabat – Salé – Témara, issu des données OpenStreetMap.">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Archivo for Latin signage, IBM Plex Sans Arabic for the Arabic track -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- ================= SIDEBAR: the printed panel ================= -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-header">
+        <!-- navy title band, as printed on the platform map -->
+        <div class="band">
+          <div class="band-fr">Réseau urbain Rabat – Salé – Témara</div>
+          <div class="band-ar arabic-text" dir="rtl">خريطة شبكة النقل الحضري للرباط - سلا - تمارا</div>
+          <div class="band-sub">ALSA Citybus · STRS Tramway</div>
+        </div>
+
+        <!-- network figures -->
+        <div class="strip" id="statsBar">
+          <div><div class="v" id="statLinesCount">45</div><div class="k">Lignes</div></div>
+          <div><div class="v" id="statRoutesCount">87</div><div class="k">Sens</div></div>
+          <div><div class="v" id="statStopsCount">1 191</div><div class="k">Arrêts</div></div>
+          <div><div class="v" id="statKmCount">1 620</div><div class="k">Km</div></div>
+        </div>
+
+        <div class="pad">
+          <!-- search well -->
+          <div class="search-box">
+            <span class="search-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+            </span>
+            <input type="text" id="searchInput" placeholder="Ligne (T1, 32, 202) ou destination…" autocomplete="off" spellcheck="false">
+            <button id="clearSearchBtn" class="clear-btn" title="Effacer" aria-label="Effacer la recherche" style="display:none;">&times;</button>
+          </div>
+        </div>
+
+        <div class="pad" style="padding-top:0">
+          <div class="eyebrow">Filtrer par zone</div>
+          <div class="plates" id="zoneChips">
+            <button class="plate on" data-zone="all">Toutes</button>
+            <button class="plate" data-zone="Tramway">Tramway</button>
+            <button class="plate" data-zone="Rabat Urban Core">Rabat</button>
+            <button class="plate" data-zone="Salé &amp; North">Salé</button>
+            <button class="plate" data-zone="Témara, Harhoura &amp; South">Témara</button>
+            <button class="plate" data-zone="Intercommunal">Intercommunal</button>
+            <button class="plate" data-zone="Airport Express">Aéroport</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= LINE LIST ================= -->
+      <div class="lines-list-container" id="linesListContainer">
+        <div class="list-meta-header">
+          <span class="count" id="matchingLinesCount">45 lignes</span>
+          <button class="btn-text" id="toggleAllRoutesMapBtn">Tout afficher</button>
+        </div>
+        <div class="lines-list" id="linesList"></div>
+      </div>
+
+      <!-- ================= ACTIVE LINE: band + ribbon ================= -->
+      <div class="active-line-panel" id="activeLinePanel">
+        <div class="active-band">
+          <div class="info">
+            <h2 id="activeLineTitle">—</h2>
+            <div class="meta"><span id="activeLineDist">—</span> · <span id="activeLineStopCount">—</span></div>
+          </div>
+          <button class="close-panel-btn" id="closeActiveLineBtn" title="Retour au réseau" aria-label="Fermer le détail de la ligne">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+
+        <div class="direction-tabs" id="directionTabs"></div>
+
+        <div class="timeline-head">
+          <span class="lbl">Itinéraire</span>
+          <button class="btn-xs" id="fitRouteBoundsBtn">Centrer sur la ligne</button>
+        </div>
+        <ol class="ribbon" id="stopsTimeline"></ol>
+      </div>
+
+      <!-- ================= THUMB-ZONE ACTIONS ================= -->
+      <div class="sidebar-footer">
+        <button class="btn solid" id="radarBtn" title="Arrêt le plus proche">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><line x1="21" y1="12" x2="17" y2="12"></line><line x1="7" y1="12" x2="3" y2="12"></line><line x1="12" y1="7" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="17"></line></svg>
+          Arrêt le plus proche
+        </button>
+        <button class="btn ghost" id="statsModalBtn" title="Réseau &amp; données">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Réseau &amp; données
+        </button>
+      </div>
+    </aside>
+
+    <!-- ================= MAP ================= -->
+    <main class="map-viewport">
+      <div id="map"></div>
+
+      <div class="map-controls">
+        <div class="ctrl">
+          <div class="ctrl-head">Couches</div>
+          <label class="toggle-item">
+            <input type="checkbox" id="toggleRoutesCheckbox" checked>
+            <span class="dot bus"></span> Bus ALSA
+          </label>
+          <label class="toggle-item">
+            <input type="checkbox" id="toggleTramCheckbox" checked>
+            <span class="dot tram"></span> Tramway T1 / T2
+          </label>
+          <label class="toggle-item">
+            <input type="checkbox" id="toggleStopsCheckbox" checked>
+            <span class="dot stops"></span> Arrêts
+          </label>
+        </div>
+
+        <div class="ctrl">
+          <div class="ctrl-head">Fond de plan</div>
+          <select id="basemapSelect" title="Changer le fond de plan">
+            <option value="osm" selected>OpenStreetMap</option>
+            <option value="positron">Carte claire</option>
+            <option value="dark">Fond sombre</option>
+            <option value="satellite">Satellite</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="mobile-sidebar-toggle" id="mobileSidebarToggle" aria-label="Ouvrir le panneau">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <div class="radar-banner" id="radarBanner">
+        <span class="radar-pulse"></span>
+        <span>Cliquez sur la carte pour trouver les arrêts les plus proches</span>
+        <button id="cancelRadarBtn" class="banner-close" aria-label="Annuler">&times;</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- ================= STOP PLATE ================= -->
+  <!-- ================= RÉSEAU & DONNÉES ================= -->
+  <div class="stats-backdrop" id="statsModal">
+    <div class="analytics-box">
+      <div class="analytics-band">
+        <div>
+          <h2>Réseau Rabat – Salé – Témara</h2>
+          <p>Chiffres du réseau et pôles de correspondance</p>
+          <div class="ar arabic-text" dir="rtl">شبكة النقل الحضري · الرباط - سلا - تمارا</div>
+        </div>
+        <button class="close-analytics-btn" id="closeAnalyticsBtn" aria-label="Fermer">&times;</button>
+      </div>
+
+      <div class="analytics-body">
+        <div class="metric-strip">
+          <div><div class="v" id="anTotalLines">45</div><div class="k">Lignes</div><div class="sub">43 bus + 2 tramway</div></div>
+          <div><div class="v" id="anTotalStops">1 191</div><div class="k">Arrêts</div><div class="sub">plateformes géolocalisées</div></div>
+          <div><div class="v" id="anTotalKm">1 620</div><div class="k">Kilomètres</div><div class="sub">longueur cumulée</div></div>
+          <div><div class="v" id="anAvgKm">18,6</div><div class="k">km / sens</div><div class="sub">moyenne par direction</div></div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Principaux pôles de correspondance</div>
+          <div class="hub-grid" id="hubMatrix"></div>
+        </div>
+
+        <div class="section" style="border-bottom:none">
+          <div class="section-title">Données ouvertes — GeoJSON &amp; CSV</div>
+          <div class="exports">
+            <a href="data/rabat_bus_routes.geojson" download class="export-plate">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Lignes.geojson
+            </a>
+            <a href="data/rabat_bus_stops.geojson" download class="export-plate">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Arrêts.geojson
+            </a>
+            <a href="data/routes.csv" download class="export-plate">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              routes.csv
+            </a>
+            <a href="data/stops.csv" download class="export-plate">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              stops.csv
+            </a>
+            <a href="data/route_stops.csv" download class="export-plate">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              route_stops.csv
+            </a>
+            <a href="data/network_summary.json" download class="export-plate">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              summary.json
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RST — Design Direction Specimen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EFE3;          /* printed map stock */
+    --paper-2:#EDE6D6;        /* recessed well */
+    --paper-3:#E4DBC7;        /* ghost zones */
+    --ink:#191E1C;            /* terminus plate */
+    --band:#1E2C48;           /* navy title band */
+    --band-deep:#16223A;
+    --sea:#B4C8CF;
+    --line:#1F2421;
+    --hair:rgba(25,30,28,.16);
+    --tx:#1B201E;
+    --tx-2:#4A5350;
+    --tx-3:#7C8580;
+
+    /* the network's own chip colours, taken off the printed map */
+    --c-red:#C0392B; --c-amber:#D9541E; --c-orange:#E08A2B; --c-yellow:#DDB438;
+    --c-olive:#6E9B3F; --c-green:#3E7A5E; --c-teal:#4A8C8C; --c-blue:#3B6FA0;
+    --c-navy:#2F4A7C; --c-plum:#5A4A8C; --c-purple:#7B4B94; --c-rose:#B0455F;
+    --c-brown:#8C6239; --c-t1:#3B3160; --c-t2:#C85F7E;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:#DAD3C2;
+    font-family:'Archivo',system-ui,sans-serif;
+    color:var(--tx);
+    padding:40px;
+    display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start;
+    -webkit-font-smoothing:antialiased;
+  }
+  .ar{font-family:'IBM Plex Sans Arabic',sans-serif}
+  .panel{
+    background:var(--paper);
+    width:390px;
+    border:1px solid rgba(25,30,28,.22);
+    box-shadow:0 1px 0 rgba(255,255,255,.5) inset, 0 10px 30px rgba(60,50,30,.14);
+  }
+
+  /* ---- navy band, exactly like the map's title bar ---- */
+  .band{background:var(--band);color:#F2EFE6;padding:12px 16px}
+  .band .fr{font-size:13px;font-weight:600;letter-spacing:.01em}
+  .band .ar-line{font-size:16px;font-weight:700;line-height:1.5;color:#FFF}
+
+  .strip{
+    display:grid;grid-template-columns:repeat(4,1fr);
+    border-bottom:1px solid var(--hair);
+  }
+  .strip div{padding:10px 6px;text-align:center;position:relative}
+  .strip div+div{border-left:1px solid var(--hair)}
+  .strip .v{font-size:17px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .strip .k{font-size:10px;font-weight:600;color:var(--tx-3);text-transform:uppercase;letter-spacing:.08em;margin-top:1px}
+
+  .pad{padding:14px 16px}
+  .eyebrow{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--tx-3);margin-bottom:10px}
+
+  /* ---- zone filter plates ---- */
+  .plates{display:flex;gap:5px;flex-wrap:wrap}
+  .plate{
+    font-size:12px;font-weight:600;padding:5px 10px;
+    background:var(--paper-2);border:1px solid var(--hair);color:var(--tx-2);
+    cursor:pointer;
+  }
+  .plate.on{background:var(--ink);border-color:var(--ink);color:#F4EFE3}
+
+  /* ---- line rows: chip + terminus ---- */
+  .row{
+    display:flex;align-items:center;gap:12px;
+    padding:9px 0;border-bottom:1px solid var(--hair);
+  }
+  .chip{
+    min-width:40px;height:28px;padding:0 7px;
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:700;font-size:15px;font-variant-numeric:tabular-nums;
+    letter-spacing:.01em;
+  }
+  .disc{
+    width:28px;height:28px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:700;font-size:14px;flex-shrink:0;
+  }
+  .row .dest{flex:1;min-width:0}
+  .row .dest .fr{font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .dest .ar{font-size:12.5px;color:var(--tx-2);line-height:1.45}
+  .row .km{font-size:12px;font-weight:600;color:var(--tx-3);font-variant-numeric:tabular-nums;text-align:right}
+  .row .km b{display:block;color:var(--tx);font-size:12.5px}
+
+  /* ---- the interchange matrix: black plate + chip grid ---- */
+  .matrix{display:flex;gap:8px;flex-wrap:wrap}
+  .block{border:2px solid var(--ink)}
+  .block .head{
+    background:var(--ink);color:#F4EFE3;padding:4px 10px;text-align:center;
+    font-size:12px;font-weight:600;
+  }
+  .block .head .ar{font-size:13px;font-weight:600;display:block;line-height:1.4}
+  .grid{display:grid;grid-template-columns:repeat(3,34px)}
+  .grid span{
+    height:24px;display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;
+    border-right:1px solid rgba(244,239,227,.35);border-bottom:1px solid rgba(244,239,227,.35);
+  }
+
+  /* ---- route ribbon ---- */
+  .ribbon{padding:2px 0 0}
+  .ribbon svg{display:block}
+
+  /* ---- terminus plate in situ ---- */
+  .terminus{display:inline-flex;flex-direction:column;align-items:center;gap:3px}
+  .terminus .name{background:var(--ink);color:#F4EFE3;font-size:11px;font-weight:600;padding:3px 8px;white-space:nowrap}
+  .terminus .chips{display:flex;gap:2px}
+  .terminus .chips span{width:22px;height:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700}
+
+  /* ---- swatches ---- */
+  .sw{display:flex;flex-wrap:wrap;gap:4px;width:340px}
+  .sw i{width:52px;height:40px;display:block;position:relative}
+  .sw i::after{content:attr(data-n);position:absolute;bottom:-15px;left:0;font-size:8px;color:#5b5342;font-style:normal}
+
+  /* ---- type specimen ---- */
+  .type{width:340px}
+  .type h1{font-size:27px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .type h2{font-size:17px;font-weight:700;letter-spacing:-.01em;margin-top:10px}
+  .type p{font-size:13.5px;line-height:1.5;color:var(--tx-2);margin-top:4px;max-width:46ch}
+  .type .num{font-variant-numeric:tabular-nums;font-weight:700}
+
+  /* ---- states ---- */
+  .btn{font:inherit;font-size:12.5px;font-weight:600;padding:9px 14px;border:1px solid var(--ink);cursor:pointer}
+  .btn.solid{background:var(--ink);color:var(--paper)}
+  .btn.ghost{background:transparent;color:var(--tx)}
+  .btn.tram{background:var(--c-t2);border-color:var(--c-t2);color:#fff}
+</style>
+</head>
+<body>
+
+  <!-- ============ SIDEBAR PANEL ============ -->
+  <div class="panel">
+    <div class="band">
+      <div class="fr">Réseau urbain Rabat – Salé – Témara</div>
+      <div class="ar-line ar">خريطة شبكة النقل الحضري للرباط - سلا - تمارا</div>
+    </div>
+
+    <div class="strip">
+      <div><div class="v">45</div><div class="k">Lignes</div></div>
+      <div><div class="v">87</div><div class="k">Sens</div></div>
+      <div><div class="v">1191</div><div class="k">Arrêts</div></div>
+      <div><div class="v">1620</div><div class="k">Km</div></div>
+    </div>
+
+    <div class="pad">
+      <div class="eyebrow">Filtrer par zone</div>
+      <div class="plates">
+        <div class="plate on">Toutes</div>
+        <div class="plate">Tramway</div>
+        <div class="plate">Rabat</div>
+        <div class="plate">Salé</div>
+        <div class="plate">Témara</div>
+        <div class="plate">Aéroport</div>
+      </div>
+    </div>
+
+    <div class="pad" style="padding-top:0">
+      <div class="eyebrow">Lignes · 45</div>
+
+      <div class="row">
+        <div class="disc" style="background:var(--c-t1)">1</div>
+        <div class="dest">
+          <div class="fr">Madinat Al Irfane → Hay Karima</div>
+          <div class="ar">مدينة الإرفان ← حي كريمة</div>
+        </div>
+        <div class="km"><b>11.7</b>km</div>
+      </div>
+
+      <div class="row">
+        <div class="disc" style="background:var(--c-t2)">2</div>
+        <div class="dest">
+          <div class="fr">Yacoub El Mansour → Hôpital Moulay Abdellah</div>
+          <div class="ar">يعقوب المنصور ← مولاي عبد الله</div>
+        </div>
+        <div class="km"><b>17.0</b>km</div>
+      </div>
+
+      <div class="row">
+        <div class="chip" style="background:var(--c-amber)">1</div>
+        <div class="dest">
+          <div class="fr">Bab Chellah → Doha</div>
+          <div class="ar">باب شالة ← الدوحة</div>
+        </div>
+        <div class="km"><b>8.4</b>km</div>
+      </div>
+
+      <div class="row">
+        <div class="chip" style="background:var(--c-olive)">5</div>
+        <div class="dest">
+          <div class="fr">Bab El Had → Hay Salam</div>
+          <div class="ar">باب الأحد ← حي السلام</div>
+        </div>
+        <div class="km"><b>12.1</b>km</div>
+      </div>
+
+      <div class="row" style="border-bottom:none">
+        <div class="chip" style="background:var(--c-navy)">202</div>
+        <div class="dest">
+          <div class="fr">Technopolis → Gare Rabat Ville</div>
+          <div class="ar">تكنوبوليس ← الرباط المدينة</div>
+        </div>
+        <div class="km"><b>21.3</b>km</div>
+      </div>
+    </div>
+
+    <!-- the signature: interchange matrix -->
+    <div class="pad" style="border-top:1px solid var(--hair);background:var(--paper-2)">
+      <div class="eyebrow">Principaux pôles de correspondance</div>
+      <div class="matrix">
+        <div class="block">
+          <div class="head"><span class="ar">باب الأحد</span>Bab El Had</div>
+          <div class="grid">
+            <span style="background:var(--c-amber)">1</span>
+            <span style="background:var(--c-red)">2</span>
+            <span style="background:var(--c-orange)">3</span>
+            <span style="background:var(--c-olive)">4</span>
+            <span style="background:var(--c-green)">5</span>
+            <span style="background:var(--c-teal)">21</span>
+            <span style="background:var(--c-blue)">22</span>
+            <span style="background:var(--c-navy)">23</span>
+            <span style="background:var(--c-plum)">24</span>
+            <span style="background:var(--c-purple)">25</span>
+            <span style="background:var(--c-rose)">26</span>
+            <span style="background:var(--c-brown)">38</span>
+          </div>
+        </div>
+        <div class="block">
+          <div class="head"><span class="ar">باب شالة</span>Bab Chellah</div>
+          <div class="grid">
+            <span style="background:var(--c-blue)">6</span>
+            <span style="background:var(--c-amber)">7</span>
+            <span style="background:var(--c-yellow)">8</span>
+            <span style="background:var(--c-navy)">31</span>
+            <span style="background:var(--c-plum)">32</span>
+            <span style="background:var(--c-purple)">33</span>
+            <span style="background:var(--c-olive)">34</span>
+            <span style="background:var(--c-rose)">35</span>
+            <span style="background:var(--c-brown)">36</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pad" style="display:flex;gap:8px;border-top:1px solid var(--hair)">
+      <button class="btn solid" style="flex:1">Arrêt le plus proche</button>
+      <button class="btn ghost" style="flex:1">Données &amp; export</button>
+    </div>
+  </div>
+
+  <!-- ============ ROUTE PANEL: ribbon itinerary ============ -->
+  <div class="panel">
+    <div class="band" style="display:flex;align-items:center;gap:12px">
+      <div class="chip" style="background:var(--c-amber)">1</div>
+      <div>
+        <div class="fr">Bab Chellah → Doha</div>
+        <div class="ar ar-line" style="font-size:13px;font-weight:500;color:#C7CEDC">باب شالة ← الدوحة · 8.4 km · 14 arrêts</div>
+      </div>
+    </div>
+
+    <div class="pad">
+      <div class="eyebrow">Itinéraire</div>
+      <div class="ribbon">
+        <svg width="356" height="430" viewBox="0 0 356 430" font-family="Archivo">
+          <line x1="20" y1="14" x2="20" y2="410" stroke="#D9541E" stroke-width="4"/>
+          <!-- terminus -->
+          <rect x="13" y="7" width="14" height="14" fill="#191E1C"/>
+          <text x="44" y="19" font-size="13.5" font-weight="700" fill="#1B201E">Bab Chellah</text>
+          <text x="44" y="33" font-size="12" font-weight="500" fill="#4A5350" font-family="IBM Plex Sans Arabic">باب شالة</text>
+          <!-- intermediate stops: white core, ink ring -->
+          <g>
+            <circle cx="20" cy="62" r="5" fill="#F4EFE3" stroke="#191E1C" stroke-width="2"/>
+            <text x="44" y="59" font-size="12.5" font-weight="600" fill="#1B201E">Place Moulay Ismaïl</text>
+            <text x="44" y="72" font-size="11" font-weight="500" fill="#7C8580" font-family="IBM Plex Sans Arabic">ساحة مولى إسماعيل</text>
+            <circle cx="20" cy="106" r="5" fill="#F4EFE3" stroke="#191E1C" stroke-width="2"/>
+            <text x="44" y="103" font-size="12.5" font-weight="600" fill="#1B201E">Av. Fal Ould Oumeir</text>
+            <text x="44" y="116" font-size="11" font-weight="500" fill="#7C8580" font-family="IBM Plex Sans Arabic">شارع فال ولد عمير</text>
+            <!-- interchange: black square + chips -->
+            <rect x="13" y="139" width="14" height="14" fill="#191E1C"/>
+            <text x="44" y="151" font-size="13.5" font-weight="700" fill="#1B201E">Bab El Had</text>
+            <text x="44" y="165" font-size="12" font-weight="500" fill="#4A5350" font-family="IBM Plex Sans Arabic">باب الأحد</text>
+            <rect x="140" y="138" width="19" height="13" fill="#3B6FA0"/><text x="149.5" y="147.5" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+            <rect x="161" y="138" width="19" height="13" fill="#6E9B3F"/><text x="170.5" y="147.5" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">21</text>
+            <rect x="182" y="138" width="19" height="13" fill="#5A4A8C"/><text x="191.5" y="147.5" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">24</text>
+            <rect x="203" y="138" width="19" height="13" fill="#C85F7E"/><text x="212.5" y="147.5" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">T2</text>
+            <circle cx="20" cy="184" r="5" fill="#F4EFE3" stroke="#191E1C" stroke-width="2"/>
+            <text x="44" y="181" font-size="12.5" font-weight="600" fill="#1B201E">Hassani Hospital</text>
+            <text x="44" y="194" font-size="11" font-weight="500" fill="#7C8580" font-family="IBM Plex Sans Arabic">المستشفى الحسني</text>
+            <circle cx="20" cy="228" r="5" fill="#F4EFE3" stroke="#191E1C" stroke-width="2"/>
+            <text x="44" y="225" font-size="12.5" font-weight="600" fill="#1B201E">Mohammed V Avenue</text>
+            <text x="44" y="238" font-size="11" font-weight="500" fill="#7C8580" font-family="IBM Plex Sans Arabic">شارع محمد الخامس</text>
+            <circle cx="20" cy="272" r="5" fill="#F4EFE3" stroke="#191E1C" stroke-width="2"/>
+            <text x="44" y="269" font-size="12.5" font-weight="600" fill="#1B201E">Agdal Station</text>
+            <text x="44" y="282" font-size="11" font-weight="500" fill="#7C8580" font-family="IBM Plex Sans Arabic">محطة أكدال</text>
+            <circle cx="20" cy="316" r="5" fill="#F4EFE3" stroke="#191E1C" stroke-width="2"/>
+            <text x="44" y="313" font-size="12.5" font-weight="600" fill="#1B201E">Hay Riad</text>
+            <text x="44" y="326" font-size="11" font-weight="500" fill="#7C8580" font-family="IBM Plex Sans Arabic">حي الرياض</text>
+            <circle cx="20" cy="360" r="5" fill="#F4EFE3" stroke="#191E1C" stroke-width="2"/>
+            <text x="44" y="357" font-size="12.5" font-weight="600" fill="#1B201E">Technopolis</text>
+            <text x="44" y="370" font-size="11" font-weight="500" fill="#7C8580" font-family="IBM Plex Sans Arabic">تكنوبوليس</text>
+          </g>
+          <!-- terminus -->
+          <rect x="13" y="396" width="14" height="14" fill="#C0392B"/>
+          <text x="44" y="409" font-size="13.5" font-weight="700" fill="#1B201E">Doha</text>
+          <text x="44" y="423" font-size="12" font-weight="500" fill="#4A5350" font-family="IBM Plex Sans Arabic">الدوحة</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TYPE + PALETTE ============ -->
+  <div>
+    <div class="type" style="background:var(--paper);padding:20px;border:1px solid rgba(25,30,28,.22)">
+      <div class="eyebrow">Archivo · IBM Plex Sans Arabic</div>
+      <h1>Rabat–Salé–Témara</h1>
+      <h2>خريطة شبكة النقل الحضري</h2>
+      <p>One grotesque carries the whole interface. Hierarchy comes from weight and ink, not from size inflation or a second display face. Every figure that lines up is tabular so nothing jitters as it changes.</p>
+      <p><span class="num">1 191</span> arrêts · <span class="num">87</span> directions · <span class="num">1 620</span> km · <span class="num">34.0216° N</span></p>
+      <div style="display:flex;gap:8px;margin-top:14px">
+        <button class="btn solid">Arrêt le plus proche</button>
+        <button class="btn ghost">Zoom sur la ligne</button>
+        <button class="btn tram">T2</button>
+      </div>
+    </div>
+
+    <div class="sw" style="margin-top:34px">
+      <i style="background:var(--paper)" data-n="paper"></i>
+      <i style="background:var(--paper-2)" data-n="well"></i>
+      <i style="background:var(--paper-3)" data-n="ghost"></i>
+      <i style="background:var(--band)" data-n="band"></i>
+      <i style="background:var(--ink)" data-n="ink"></i>
+      <i style="background:var(--sea)" data-n="sea"></i>
+      <i style="background:var(--c-t1)" data-n="t1"></i>
+      <i style="background:var(--c-t2)" data-n="t2"></i>
+      <i style="background:var(--c-amber)" data-n="amber"></i>
+      <i style="background:var(--c-olive)" data-n="olive"></i>
+      <i style="background:var(--c-blue)" data-n="blue"></i>
+      <i style="background:var(--c-plum)" data-n="plum"></i>
+      <i style="background:var(--c-rose)" data-n="rose"></i>
+      <i style="background:var(--c-red)" data-n="red"></i>
+    </div>
+  </div>
+
+</body>
+</html>

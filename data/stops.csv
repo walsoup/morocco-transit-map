@@ -1,0 +1,1192 @@
+stop_id,stop_name,stop_name_ar,lat,lon,lines,modes,routes_count,has_shelter,has_bench
+6988270404,Bab Chellah,,34.02276,-6.836135,1;22,bus,2,True,False
+8974356444,Bab Mellah,,34.025084,-6.829509,1;2;3;4;5;10;22;23;24;25;26,bus,11,False,False
+10076042730,Bab Khmiss,,34.036405,-6.817469,1;3;22;25,bus,4,False,False
+8960247614,Diar,,34.041527,-6.816497,1;3,bus,2,False,False
+10077787860,Mkinsiya,,34.043999,-6.817636,1;3,bus,2,False,False
+10077787862,Kwass,,34.048395,-6.81542,1;3,bus,2,False,False
+10077787864,Residence Mehdi,,34.051144,-6.812811,1;3,bus,2,False,False
+8960300423,bouzid 1,,34.054322,-6.80939,1;3;22,bus,3,False,False
+10077787867,Bouzid,,34.056066,-6.807248,1;3;22,bus,3,False,False
+8960300425,Farouk,,34.058698,-6.803942,1;3;22,bus,3,False,False
+10076042740,Marché de légumes au gros,,34.062264,-6.799515,1;3,bus,2,False,False
+10099056231,AV hay Ennahda,,34.06465,-6.796503,1;3,bus,2,False,False
+10077787877,Ihsan,,34.068283,-6.79188,1;3,bus,2,False,False
+10077787880,Av.Amal,,34.070762,-6.794039,1,bus,1,False,False
+10099059367,Entree Said Hajji,,34.072415,-6.795445,1,bus,1,False,False
+10099059369,Said Hajji,,34.074594,-6.793342,1;22,bus,2,False,False
+10099059872,Said Hajji 2,,34.077782,-6.790181,1;22,bus,2,False,False
+10099059874,Res.Touahri,,34.079971,-6.787987,1;22,bus,2,False,False
+8932611505,Bouchouk,,34.08135,-6.78642,1;22,bus,2,False,False
+10077822208,Boochouk 1,,34.084488,-6.783412,1,bus,1,False,False
+12156186626,Block Enajah,,34.087099,-6.781285,1,bus,1,False,False
+12146386659,Entree Doha,,34.090319,-6.778479,1,bus,1,False,False
+10077822209,Doha Centre 1,,34.088772,-6.776016,1,bus,1,False,False
+10077822211,Doha Centre,,34.087638,-6.774287,1,bus,1,False,False
+10077822212,Doha Centre,,34.087784,-6.774114,1,bus,1,False,False
+10077822210,Doha Centre 1,,34.088936,-6.775889,1,bus,1,False,False
+12146386658,Entree Doha,,34.090497,-6.778308,1,bus,1,False,False
+12156186627,Block Enajah,,34.087239,-6.781392,1,bus,1,False,False
+10705157305,محطة بوشوكBoochouk 1,,34.084567,-6.783556,1,bus,1,False,False
+10082766664,Bouknadel(Bouchouk),,34.081819,-6.786616,1;22;204,bus,3,False,False
+10076042748,Res.Touahri,,34.080072,-6.788037,1;22,bus,2,False,False
+6732642319,Said Hajji 2,,34.077913,-6.790201,1;22,bus,2,False,False
+10076042746,Said Hajji,,34.074674,-6.793431,1;22,bus,2,False,False
+10077787881,Entree Said Hajji,,34.072551,-6.795481,1,bus,1,False,False
+10077787879,Av.Amal,,34.070611,-6.79421,1,bus,1,False,False
+10077787878,Ihsan,,34.068547,-6.791903,1;3,bus,2,False,False
+10099056232,AV hay Ennahda,,34.064659,-6.796769,1;3,bus,2,False,False
+10076042739,Marché de légumes au gros,,34.062285,-6.799719,1;3,bus,2,False,False
+8960300424,Farouk,,34.058871,-6.803997,1;3;22,bus,3,False,False
+10077787866,Bouzid,,34.056215,-6.807359,1;3;22,bus,3,False,False
+8960300422,bouzid 1,,34.054366,-6.809622,1;3;22,bus,3,False,False
+10077787865,Residence Mehdi,,34.051221,-6.813036,1;3,bus,2,False,False
+10077787863,Kwass,,34.048454,-6.81567,1;3,bus,2,False,False
+10077787861,Mkinsiya,,34.043945,-6.817791,1;3,bus,2,False,False
+8960247615,Diar,,34.041495,-6.816685,1;3,bus,2,False,False
+10076042731,Bab Khmiss,,34.036431,-6.817582,1;3;22;25,bus,4,False,False
+3696236925,Abdelmoumen,,34.024217,-6.827419,1;2;3;4;5;10;22;23;24;25;26;106;108,bus,13,True,True
+3696236724,Jour Et Nuit,,34.022351,-6.830989,1;2;3;4;5;22;23;24;25;26;106;108,bus,12,False,False
+10076848820,Théâtre Mohammed V,,34.021216,-6.833106,1;2;3;4;5;23;24;25;26;106;108,bus,11,False,False
+12156150456,Bab Chellah,,34.022745,-6.836179,2;5;23;24,bus,4,True,False
+12154484527,Sidi Bel Abbas,,34.035467,-6.815145,2;4;5;10;23;24;26,bus,7,False,False
+3586496250,Cimetière Sidi Bel Abbas,,34.035391,-6.813244,2;4;5;10;23;24,bus,6,False,False
+3696241011,Tiliouine تيليوين,تيليوين,34.03488,-6.806809,2;4;5;10;23;24;26,bus,7,False,False
+10077481162,Bettana,,34.034512,-6.798733,2;4;10,bus,3,False,False
+8958219672,Aljahed,,34.03481,-6.79236,2;4;10;24,bus,4,False,False
+10078039792,Mhedra,,34.033391,-6.787906,2;10;24;29;201;202;204,bus,7,False,False
+8958219675,Moulay Ismail,,34.030673,-6.778778,2;10;24;29;201;202;204,bus,7,False,False
+8970574121,Bab Karia,,34.028709,-6.76932,2;10;24;29;201;202;204,bus,7,False,False
+10076848825,Prefecture,,34.027363,-6.763657,2;10;24;29;201;202;204,bus,7,False,False
+10078039794,Avenue Moulay Abdellah,,34.025564,-6.764567,2,bus,1,False,False
+10096510778,Hijra,,34.024774,-6.768172,2,bus,1,False,False
+10078039796,Imam Malik,,34.02206,-6.772235,2,bus,1,False,False
+10078039797,Nahda,,34.020898,-6.769664,2,bus,1,False,False
+10096510784,Lycée Al Moutanabbi,,34.018847,-6.770705,2,bus,1,False,False
+10096510813,Douar Jbala,,34.016673,-6.768463,2,bus,1,False,False
+10096510814,Secteur 8,,34.015487,-6.765808,2,bus,1,False,False
+10096510816,Mosquée Salam,مسجد السلام,34.017284,-6.764249,2,bus,1,False,False
+10096515436,Mosquée Hssayen,مسجد احصين,34.020181,-6.761092,2;9,bus,2,False,False
+10078039802,Collège Laayoun,,34.022804,-6.758088,2;9,bus,2,False,False
+12148512342,Diour Al Maliya,,34.024516,-6.75622,2;9,bus,2,False,False
+10078039803,Diour Al Maliya,,34.024557,-6.756268,2,bus,1,False,False
+10096515437,Collège Laayoun,,34.022863,-6.758165,2,bus,1,False,False
+10078039801,Mosquée Hssayen,مسجد احصين,34.020317,-6.761118,2,bus,1,False,False
+10078039800,Mosquée Salam,مسجد السلام,34.017367,-6.76428,2,bus,1,False,False
+10078039799,Secteur 8,,34.015629,-6.765843,2,bus,1,False,False
+10078039798,Douar Jbala,,34.016696,-6.76831,2,bus,1,False,False
+6731711242,Lycée Al Moutanabbi,,34.018973,-6.770675,2,bus,1,False,False
+10096510781,Nahda,,34.020965,-6.769636,2,bus,1,False,False
+10096510780,Imam Malik,,34.021928,-6.772241,2,bus,1,False,False
+10078039795,Hijra,,34.024677,-6.768174,2,bus,1,False,False
+10096510776,Avenue Moulay Abdellah,,34.025449,-6.764587,2,bus,1,False,False
+10076848826,Prefecture,,34.027598,-6.763385,2;10;24;29;201;202;204,bus,7,False,False
+8958219676,Bab Karia,,34.02898,-6.769166,2;10;24;29;201;202;204,bus,7,False,False
+8958219674,Moulay Ismail,,34.030933,-6.778722,2;10;24;29;201;202;204,bus,7,False,False
+10078039793,Mhedra,,34.033393,-6.78772,2;10;24;29;201;202;204,bus,7,False,False
+8958219673,Aljahed,,34.035018,-6.792192,2;4;10;24,bus,4,False,False
+10077481163,Bettana,,34.034825,-6.799809,2;4;10,bus,3,False,False
+4995934821,Tiliouine تيليوين,تيليوين,34.035111,-6.806962,2;4;5;10;23;24;26,bus,7,False,False
+3696238694,Cimetière Sidi Bel Abbas,,34.035604,-6.814764,2;4;5;10;23;24,bus,6,False,False
+12156277543,Bab Chellah,,34.022771,-6.836098,3,bus,1,True,False
+10099078000,Ecole Taha Hssine,,34.072275,-6.786954,3;201;204;201B,bus,4,False,False
+8960300433,Ex Police Bouknadel,,34.07576,-6.782635,3;201;204;201B,bus,4,False,False
+10082304741,Ecole Police Bouknadel,,34.079951,-6.777908,3;201;201B,bus,3,False,False
+12146587996,Qantra,,34.082721,-6.77504,3;201;201B,bus,3,False,False
+10082304740,Doha,,34.085706,-6.772236,3;201;201B,bus,3,False,False
+12146588000,Recidence Halima,,34.09122,-6.766916,3;201;201B,bus,3,False,False
+10082304738,Ofppt,,34.095529,-6.762849,3;201;201B,bus,3,False,False
+10082304674,Douar Malqia,,34.103299,-6.757006,3;201;201B,bus,3,False,False
+10082304673,Rass Kadouss,,34.108621,-6.752122,3;201;201B,bus,3,False,False
+8969479530,Bouknadel,,34.115663,-6.745095,3;201;201B,bus,3,False,False
+10082304557,Centre De Sante Bouknadel,,34.121029,-6.740676,3;201;201B,bus,3,False,False
+10082260593,Gare de Sidi Bouknadel,,34.124364,-6.737905,3;201;201B,bus,3,False,False
+10082260591,Lycee Bouknadel,,34.12615,-6.736421,3;201;201B,bus,3,False,False
+8969479528,Zerdal,,34.129465,-6.733702,3;201;201B,bus,3,False,False
+11948939724,Plage des Nation1,,34.137899,-6.726973,3,bus,1,False,False
+10083892694,Golf 5,,34.145711,-6.721178,3,bus,1,False,False
+11948876298,Plage des Nation 2,,34.152275,-6.715512,3,bus,1,False,False
+10032128513,L30 Oulad Sbita,,34.154367,-6.713762,3,bus,1,False,False
+10083892692,Ouled Sbayta,,34.159129,-6.709752,3,bus,1,False,False
+10083892690,Foret Ouled Sbayta,,34.164106,-6.704857,3,bus,1,False,False
+11785154451,Blad Dandoune,,34.172525,-6.697454,3,bus,1,False,False
+11785295093,Garajat,,34.176852,-6.693397,3,bus,1,False,False
+10083892688,Fakhara,,34.178922,-6.691915,3,bus,1,False,False
+10083892686,Entree Sidi Taibi,,34.184628,-6.688255,3,bus,1,False,False
+10083892648,Sidi Taibi,,34.190125,-6.684682,3,bus,1,False,False
+10083892649,Sidi Taibi,,34.190341,-6.684903,3,bus,1,False,False
+10083892687,Entree Sidi Taibi,,34.18468,-6.688495,3,bus,1,False,False
+10083892689,Fakhara,,34.178918,-6.692144,3,bus,1,False,False
+11785295090,Garajat,,34.176764,-6.69386,3,bus,1,False,False
+11781609638,Blad Dandoune,,34.172511,-6.697739,3,bus,1,False,False
+11781261887,Foret Ouled Sbayta,,34.163092,-6.706535,3,bus,1,False,False
+10083892693,Ouled Sbayta,,34.159203,-6.710052,3,bus,1,False,False
+10032128512,L30 Oulad Sbita,,34.154199,-6.7142,3,bus,1,False,False
+11948921173,Plage des Nation 2,,34.152397,-6.715783,3,bus,1,False,False
+10083892695,Golf 5,,34.145701,-6.721515,3,bus,1,False,False
+11948939723,Plage des Nation1,,34.137957,-6.727201,3,bus,1,False,False
+8969479527,Zerdal,,34.129501,-6.733934,3;201;201B,bus,3,False,False
+10082260592,Lycee Bouknadel,,34.126168,-6.736653,3;201;201B,bus,3,False,False
+10082260594,Gare de Sidi Bouknadel,,34.124467,-6.738053,3;201;201B,bus,3,False,False
+10082304556,Centre De Sante Bouknadel,,34.121116,-6.74081,3;201;201B,bus,3,False,False
+8969479529,Bouknadel,,34.115704,-6.745296,3;201;201B,bus,3,False,False
+10082304672,Rass Kadouss,,34.108984,-6.752083,3;201;201B,bus,3,False,False
+8969479531,Douar Malqia,,34.103246,-6.75727,3;201;201B,bus,3,False,False
+10082304737,Ofppt,,34.095238,-6.763423,3;201;201B,bus,3,False,False
+12146587999,Recidence Halima,,34.091074,-6.767331,3;201;201B,bus,3,False,False
+10082304739,Doha,,34.085649,-6.772437,3;201;201B,bus,3,False,False
+8969479532,Qantra,,34.082639,-6.775354,3;201;201B,bus,3,False,False
+10082766663,Ecole Police Bouknadel,,34.079947,-6.778078,3;201;201B,bus,3,False,False
+8960300432,Ex Police Bouknadel,,34.075816,-6.782736,3;201;204;201B,bus,4,False,False
+10082304749,Ecole Taha Hssine,,34.072301,-6.787179,3;201;204;201B,bus,4,False,False
+10078226361,Tribunal,,34.03687,-6.785893,4;29;201;202;204,bus,5,False,False
+8960300428,Hay Salam Sale,,34.040304,-6.785279,4;29;201;202;204,bus,5,False,False
+5794802474,Hay Salam,,34.043474,-6.784688,4;29;201;202;204,bus,5,True,True
+10078226364,Chat. Hay Salam,,34.045423,-6.78432,4;29;201;202;204;201B,bus,6,False,False
+10078226365,Centre de santé Hay Salam 2,,34.04705,-6.781433,4,bus,1,False,False
+10078226371,Hay Al Andalous,,34.046873,-6.778873,4,bus,1,False,False
+10078226373,Hay Salam,,34.046615,-6.77578,4,bus,1,False,False
+10078226375,Aviation Hay Salam 1,,34.047899,-6.774042,4,bus,1,False,False
+10078226377,Aviation Hay Salam 2,,34.052488,-6.773482,4,bus,1,False,False
+12146994200,Masjid Othman Ibn Affane,,34.058331,-6.769678,4,bus,1,False,False
+12146994199,préfecture av aviation,,34.060445,-6.767706,4,bus,1,False,False
+12146994198,Al Akssa,,34.063155,-6.765093,4,bus,1,False,False
+12146994197,Doha,,34.065213,-6.763152,4,bus,1,False,False
+10078226387,Hawat,,34.068205,-6.760915,4;25;26,bus,3,False,False
+10077027113,Entree Mazza,,34.071318,-6.757799,4;25,bus,2,False,False
+10078226389,Residence Malawi,,34.074928,-6.755138,4;25,bus,2,False,False
+8969381114,Safae,,34.0779,-6.752481,4;25,bus,2,False,False
+10078226392,Bayt Al Mostakbal,,34.079982,-6.750694,4,bus,1,False,False
+6739808943,Citybus RST Sale,,34.082101,-6.748792,4,bus,1,False,False
+10078226394,Ben Aouich,,34.084717,-6.745931,4,bus,1,False,False
+10078226397,Mosquee Ben Aouich,,34.086704,-6.743249,4,bus,1,False,False
+8969381116,Oulad Erayahi,,34.088511,-6.740861,4,bus,1,False,False
+10078226401,Entree ben Aouich,,34.090212,-6.737976,4,bus,1,False,False
+10078226402,Brahma,,34.092379,-6.734303,4,bus,1,False,False
+12146994190,Entree Oulad Ayachi,,34.098642,-6.727093,4,bus,1,False,False
+10078226403,Oulad Ayachi,,34.102141,-6.721343,4,bus,1,False,False
+10078226404,Al omrane Souk Elhad,,34.10412,-6.71867,4,bus,1,False,False
+10078226405,Al Omrane,,34.106957,-6.715708,4,bus,1,False,False
+10078226407,Rond Point Souk Elhad,,34.108985,-6.713672,4,bus,1,False,False
+10078226408,Souk ElHad,,34.11487,-6.721215,4,bus,1,False,False
+12146994117,Av.Ennasser,,34.118527,-6.725655,4,bus,1,False,False
+10078226410,Entree Zerdal,,34.123737,-6.732359,4,bus,1,False,False
+12160307955,Terminus Zerdal,,34.123832,-6.733676,4;201,bus,2,False,False
+10082260590,Terminus Zerdal,,34.123717,-6.733641,4;201,bus,2,False,False
+10078226411,Entree Zerdal,,34.123616,-6.732526,4,bus,1,False,False
+12146994118,Av.Ennasser,,34.118269,-6.725717,4,bus,1,False,False
+10078226409,Souk ElHad,,34.114751,-6.721444,4,bus,1,False,False
+8969479519,Rond Point Souk Elhad,,34.109243,-6.713963,4,bus,1,False,False
+10078226406,Al Omrane,,34.107193,-6.716066,4,bus,1,False,False
+8969479518,Al omrane Souk Elhad,,34.104267,-6.718995,4,bus,1,False,False
+12146994189,Oulad Ayachi,,34.10226,-6.721414,4,bus,1,False,False
+8969479517,Entree Oulad Ayachi,,34.098931,-6.726892,4,bus,1,False,False
+12146994191,Brahma,,34.092485,-6.73431,4,bus,1,False,False
+12146994192,Entree ben Aouich,,34.090332,-6.737836,4,bus,1,False,False
+8969381115,Oulad Erayahi,,34.08851,-6.741117,4,bus,1,False,False
+10078226396,Mosquee Ben Aouich,,34.086713,-6.743603,4,bus,1,False,False
+10078226395,Ben Aouich,,34.084885,-6.746036,4,bus,1,False,False
+10078226393,Citybus RST Sale,,34.082171,-6.748864,4,bus,1,False,False
+10078226391,Bayt Al Mostakbal,,34.079725,-6.751122,4,bus,1,False,False
+8969381113,Safae,,34.077995,-6.75267,4;25,bus,2,False,False
+10078226390,Residence Malawi,,34.075375,-6.755078,4;25,bus,2,False,False
+10077027114,Entree Mazza,,34.071269,-6.758205,4;25,bus,2,False,False
+10078226388,Hawat,,34.068319,-6.761027,4;25;26,bus,3,False,False
+10078226382,Doha,,34.065301,-6.763241,4,bus,1,False,False
+10078226381,Al Akssa,,34.063219,-6.765188,4,bus,1,False,False
+10078226380,préfecture av aviation,,34.060518,-6.767729,4,bus,1,False,False
+10078226379,Masjid Othman Ibn Affane,,34.058468,-6.769691,4,bus,1,False,False
+10078226378,Aviation Hay Salam 2,,34.052547,-6.773599,4,bus,1,False,False
+10078226376,Aviation Hay Salam 1,,34.047927,-6.77411,4,bus,1,False,False
+8970574118,Hay el Andalous,,34.047066,-6.77884,4,bus,1,False,False
+10078226366,Centre de santé Hay Salam 2,,34.047286,-6.781357,4,bus,1,False,False
+10078226363,Chat. Hay Salam,,34.04533,-6.784657,4;29;201;202;204;201B,bus,6,False,False
+10082770878,Hay Salam,,34.043622,-6.784924,4;29;201;202;204,bus,5,True,True
+8960300427,Hay Salam Sale,,34.040346,-6.785519,4;29;201;202;204,bus,5,False,False
+10078226362,Tribunal,,34.036486,-6.78642,4;29;201;202;204,bus,5,False,False
+10078284180,Gare Routier Sale,,34.036067,-6.802148,5,bus,1,False,False
+10078284182,Doha,,34.03901,-6.798875,5,bus,1,False,False
+8960407136,Jardin Moulay Abdellah,,34.04159,-6.79546,5,bus,1,False,False
+12146973471,Touarga,,34.043108,-6.79442,5,bus,1,False,False
+10078284184,Ly.Khalid IbnElWalid,,34.046242,-6.792317,5,bus,1,False,False
+8970574119,Douar Jdid,,34.046742,-6.791496,5;202,bus,2,False,False
+10077481157,Mosque Al Quds,,34.046711,-6.788583,5;26,bus,2,False,False
+10077481155,Institut de technologie hôtelière,,34.049225,-6.785466,5;26,bus,2,False,False
+10078284186,Avenue Boukraa,,34.051134,-6.783611,5,bus,1,False,False
+10078284188,Lycee Mohamed Sbihi,,34.053879,-6.783092,5,bus,1,False,False
+10078284191,Ecole Mohamed Hassare,,34.056737,-6.782876,5,bus,1,False,False
+10078284192,Rue Ain Jemaa,,34.058642,-6.782573,5,bus,1,False,False
+10078284194,Super Hay Rahma,,34.062013,-6.781785,5;23,bus,2,False,False
+10076090324,Lycee Mohamed Zefzaf,,34.064363,-6.780179,5;23,bus,2,False,False
+3586521112,Jnan 2,,34.067309,-6.778261,5;23,bus,2,False,False
+12156317356,Jnan,,34.06974,-6.77547,5;23,bus,2,False,False
+12156317357,M.Jeunesse Sale,,34.070204,-6.774344,5;23,bus,2,False,False
+8960407132,Av. Mohamed v,,34.073307,-6.766857,5;23,bus,2,False,False
+12147023601,Dar Al Yousr,,34.075111,-6.763996,5;23,bus,2,False,False
+12147023604,mosque sidi abdellah,,34.07617,-6.765417,5;23,bus,2,False,False
+3586618969,Sidi Abdellah,,34.077875,-6.767622,5;23,bus,2,False,False
+2817076543,Sidi Abdellah,,34.078063,-6.767714,5;23,bus,2,False,False
+10076090327,mosque sidi abdellah,,34.076353,-6.765889,5;23,bus,2,False,False
+8960407131,Dar Al Yousr,,34.075028,-6.764221,5;23,bus,2,False,False
+12147023603,Ecole Sidi Abdellah,,34.07451,-6.764585,5;23,bus,2,False,False
+12147023602,Avenue Mohamed V,,34.073671,-6.766625,5;23,bus,2,False,False
+10076090326,Suret National,,34.072886,-6.768656,5;23,bus,2,False,False
+12146973496,Av. Mohamed v,,34.071188,-6.772819,5;23,bus,2,False,False
+3586521111,M.Jeunesse Sale,,34.07043,-6.774604,5;23,bus,2,False,False
+3696242866,Jnan 2,,34.067119,-6.778984,5;23,bus,2,False,False
+10076090325,Jnan,,34.069805,-6.77672,5;23,bus,2,False,False
+10078284195,Lycee Mohamed Zefzaf,,34.064308,-6.780871,5;23,bus,2,False,False
+3696242867,Super Hay Rahma سوق ممتاز حي الرحمة,سوق ممتاز حي الرحمة,34.061864,-6.782705,5;23;25;201;204;201B,bus,6,False,False
+12156317355,Super Hay Rahma سوق ممتاز حي الرحمة,سوق ممتاز حي الرحمة,34.060619,-6.782272,5,bus,1,False,False
+10078284193,Rue Ain Jemaa,,34.058983,-6.782667,5,bus,1,False,False
+10078284190,Ecole Mohamed Hassare,,34.056287,-6.783058,5,bus,1,False,False
+10078284189,Lycee Mohamed Sbihi,,34.053353,-6.783319,5,bus,1,False,False
+10078284187,Avenue Boukraa,,34.051209,-6.783691,5,bus,1,False,False
+10077481156,Institut de technologie hôtelière,,34.049414,-6.785639,5;26,bus,2,False,False
+10077481158,Mosque Al Quds,,34.04716,-6.78855,5;26,bus,2,False,False
+8970574120,Douar Jdid,,34.046918,-6.791348,5;29;202,bus,3,False,False
+10078284185,Ly.Khalid IbnElWalid,,34.046565,-6.792816,5,bus,1,False,False
+8960407135,Jardin Moulay Abdellah,,34.04195,-6.795962,5,bus,1,False,False
+10078284183,Doha,,34.039126,-6.798967,5,bus,1,False,False
+10078284181,Gare Routier Sale,,34.036206,-6.802289,5,bus,1,False,False
+10078618977,Hizb AL Istiklal,,34.020329,-6.840277,6;8;102,bus,3,False,False
+8968579006,Mat. Les Orangers,,34.018221,-6.839575,6;8;102;106;108,bus,5,True,False
+3150442171,Gare Rabat Ville,,34.014925,-6.838687,6;8;102;108,bus,4,True,True
+3150442177,Ibn Khaldoun,,34.010902,-6.840789,6,bus,1,False,False
+8968579009,Nations Unies,,34.001718,-6.84355,6,bus,1,False,False
+3150442162,Atlas,,33.996547,-6.847079,6;101,bus,2,False,False
+3150442180,Jbel Tazekka,,33.995452,-6.850259,6;101,bus,2,False,False
+10108899403,Ibn Sina,,33.98868,-6.851569,6;35,bus,2,True,False
+10078618983,Clinique Ibn Sina,,33.988802,-6.854872,6;39;104,bus,3,True,False
+10078618986,Av.Med Bn Abdl Rgragui,,33.988197,-6.859121,6;30,bus,2,True,False
+10078618988,Cit.Univ.Rabat,,33.984912,-6.862241,6;30,bus,2,True,False
+8968579011,Madinat el Irfane,,33.981889,-6.865028,6;30,bus,2,False,False
+10078618990,Hôpital Cheikh Zaid,,33.978049,-6.867622,6;30,bus,2,True,False
+8968579013,Allal Al Fassi,,33.974207,-6.870875,6;30,bus,2,False,False
+12148095876,Centre N. R. Science,,33.970545,-6.873105,6,bus,1,False,False
+10078618992,Avenue Far,,33.968239,-6.875214,6,bus,1,True,True
+8968579014,Club Trav Public,,33.965091,-6.877278,6,bus,1,False,False
+10078618994,Assanaouber,,33.961972,-6.88068,6,bus,1,True,False
+8968579015,Mosquee saif,,33.957705,-6.879037,6,bus,1,False,False
+10078618997,Hay Riad,,33.956784,-6.877748,6;30,bus,2,True,False
+10078618998,Caisse Maroc Retail,,33.954484,-6.874434,6;30,bus,2,True,False
+10078618999,Agence Urbain Rabat-Sale,,33.952702,-6.872028,6;30,bus,2,True,False
+3150442161,Aswak Essalam,,33.948729,-6.869782,6;30;37;37B,bus,4,True,False
+10078619002,Mosque Al Bachir,,33.940405,-6.885835,6;7;35;39,bus,4,True,False
+8968613419,Guich Oudaya,,33.936897,-6.887232,6;7;35;39,bus,4,False,False
+10078634186,lycée maati bouabid,,33.934422,-6.889065,6;35;38,bus,3,False,False
+10089975545,ISTA Temara,,33.931987,-6.893801,6;35;38,bus,3,False,False
+10089975547,Ouhoud,,33.930613,-6.897423,6;35;38,bus,3,False,False
+3150442184,H.Ouled Benaser,,33.928748,-6.902346,6;31;303;32H,bus,4,False,False
+3150442173,Hay Nehda,,33.927377,-6.906066,6;31;303;32H,bus,4,False,False
+12148119307,Ecole Al Irfan,,33.924798,-6.908075,6;31,bus,2,False,False
+10093405184,Ofppt,,33.922989,-6.908877,6;31,bus,2,False,False
+10093405185,Mosquée Redouane,,33.919728,-6.910178,6;31,bus,2,False,False
+10093405182,Hay Khazali,,33.916253,-6.912002,6;31,bus,2,False,False
+10093405181,Rue de Rabat,,33.913767,-6.913644,6;31,bus,2,False,False
+10093405180,Avenue du Caire,,33.911217,-6.915935,6;31,bus,2,False,False
+10093405179,Mosquée Al Houda مسجد الهدى,مسجد الهدى,33.908911,-6.918353,6;31,bus,2,False,False
+3150442189,Hôpital Fath El Kheir,,33.906598,-6.920702,6;31,bus,2,False,False
+10078634190,Lycee Ahmed Nejahi,,33.90479,-6.922756,6,bus,1,False,False
+10078634191,Av. Abdlkrim Khtabi,,33.903169,-6.924456,6,bus,1,False,False
+10078634192,Ecole Les Heures Joyeuses,,33.901511,-6.926289,6,bus,1,False,False
+10078634193,Oulad Dlim,,33.899865,-6.925457,6;7,bus,2,False,False
+10078634195,Residence riffe,,33.89713,-6.928759,6;7,bus,2,False,False
+10078634197,Residence Nacer,,33.895654,-6.930461,6;7,bus,2,False,False
+8944527995,Marché de Gros سوق الخضر و الفواكه بالجملة,,33.893687,-6.932809,6;7,bus,2,False,False
+10078634198,Residence Nacer,,33.895156,-6.930699,6;7,bus,2,False,False
+10078634194,Residence riffe,,33.897078,-6.928495,6;7,bus,2,False,False
+1770217635,Oulad Dlim,,33.899747,-6.925242,6;7,bus,2,False,False
+12148119310,Ecole Les Heures Joyeuses,,33.901465,-6.926184,6,bus,1,False,False
+12148119309,Av. Abdlkrim Khtabi,,33.903105,-6.924419,6,bus,1,False,False
+12148119308,Lycee Ahmed Nejahi,,33.904705,-6.922741,6,bus,1,False,False
+10093405178,Hôpital Fath El Kheir,,33.906312,-6.920921,6;31,bus,2,False,False
+3150442183,Mosquée Al Houda مسجد الهدى,مسجد الهدى,33.908656,-6.918468,6;31,bus,2,False,False
+3150442187,Avenue du Caire,,33.911035,-6.915916,6;31,bus,2,False,False
+3150442194,Rue de Rabat,,33.913582,-6.913629,6;31,bus,2,False,False
+3150442174,Hay Khazali,,33.916115,-6.911988,6;31,bus,2,False,False
+3150442186,Mosquée Redouane,,33.919519,-6.910134,6;31,bus,2,False,False
+3150442195,Ofppt,,33.922912,-6.908763,6;31,bus,2,False,False
+3150442158,Ecole Al Irfan,,33.92465,-6.908096,6;31,bus,2,False,False
+8968613421,Hay Nehda,,33.927238,-6.905865,6;31;303;32H,bus,4,False,False
+10078634189,Mokataa,,33.92937,-6.900298,6;35;38,bus,3,False,False
+10078634188,Ouhoud,,33.930487,-6.897491,6;35;38,bus,3,False,False
+10078634187,ISTA Temara,,33.93183,-6.893915,6;35;38,bus,3,False,False
+10078634185,lycée maati bouabid,,33.934368,-6.888741,6;35;38,bus,3,False,False
+10092266827,Guich Oudaya,,33.936892,-6.887062,6;7;35;39,bus,4,False,False
+10078619003,Mosque Al Bachir,,33.940114,-6.885263,6;7;35;39,bus,4,True,False
+10078619000,Aswak Essalam,,33.948616,-6.869547,6;30;37;37B,bus,4,True,False
+12148095885,Agence Urbain Rabat-Sale,,33.952854,-6.871984,6;30,bus,2,True,False
+12148095884,Caisse Maroc Retail,,33.954186,-6.873839,6;30,bus,2,True,False
+12148095883,Hay Riad,,33.95688,-6.877675,6;30,bus,2,True,False
+6757365358,Mosquee saif,,33.958055,-6.879231,6,bus,1,False,False
+10108899407,Assanaouber,,33.96186,-6.880563,6,bus,1,True,False
+12148095878,Club Trav Public,,33.964983,-6.877349,6,bus,1,False,False
+10078618993,Avenue Far,,33.968312,-6.874915,6,bus,1,True,True
+10078618991,Centre N. R. Science,,33.970196,-6.87332,6,bus,1,True,True
+6726659199,Allal Al Fassi,,33.974145,-6.870759,6;30,bus,2,False,False
+10078618989,Hôpital Cheikh Zaid,,33.97694,-6.868468,6;30,bus,2,True,False
+8968579012,Madinat el Irfane,,33.981516,-6.864074,6;30,bus,2,False,False
+10078618987,Cit.Univ.Rabat,,33.984494,-6.862284,6;30,bus,2,True,False
+10078618985,Av.Med Bn Abdl Rgragui,,33.988108,-6.858824,6;30,bus,2,True,False
+10078618984,Clinique Ibn Sina,,33.988712,-6.855068,6;9;39;104,bus,4,True,False
+3150442178,Ibn Sina,,33.988604,-6.851409,6;35,bus,2,False,True
+10078618982,Ministère de la Jeunesse,,33.992187,-6.851355,6,bus,1,True,False
+12148095830,Atlas,,33.996507,-6.846914,6;101,bus,2,False,False
+8968579010,Nations Unies,,34.00143,-6.843337,6,bus,1,False,False
+10078618980,Kolyate,,34.009193,-6.839649,6,bus,1,True,False
+10078618979,Gare Rabat Ville,,34.015342,-6.838648,6;102,bus,2,True,False
+3150442200,Mat. Les Orangers,,34.018111,-6.839362,6;102,bus,2,True,False
+10078618978,Hizb AL Istiklal,,34.020355,-6.840102,6;8;102,bus,3,False,False
+10078956087,Av. Hassan II (Bab El Had)Terminus,,34.017941,-6.844529,7;31;33;34;35;36;38;107;32H,bus,9,False,False
+10078956090,Mosque Hassan II,,34.013881,-6.848057,7;31;33;34;35;36;38;107;32H,bus,9,False,False
+10089935657,Bab Tamesna,,34.011206,-6.85139,7;35,bus,2,False,False
+3586378583,Avenue de Bin El Ouidane,,34.007876,-6.85186,7;35,bus,2,True,True
+5574347121,Fal Ould Oumeir,,34.002946,-6.851431,7;101,bus,2,False,False
+10078976728,Avenue de France,,33.998302,-6.849113,7,bus,1,True,True
+8974356419,Rue Jbel Moussa,,33.993522,-6.846686,7,bus,1,True,True
+10078976730,Rue Brahim Tadili,,33.989995,-6.8476,7,bus,1,False,False
+10078976732,Hopital Ibn Sina,,33.985282,-6.853435,7;35;39,bus,3,False,False
+3150442176,Hopital des Spécialités,,33.982188,-6.856396,7;35;39,bus,3,True,False
+3150442199,Mosquée Lalla Sokaina,,33.975573,-6.862732,7;35;39,bus,3,False,False
+10078976743,Rue Al Khalida,,33.969362,-6.866967,7;30;35;39,bus,4,True,False
+3150442175,Hopital Militaire,,33.966108,-6.870101,7;30;35;39,bus,4,False,False
+10089975319,Ministère de l'interieur,,33.964184,-6.871928,7;30;35;39,bus,4,False,True
+10078976750,Av.Abderrahim Bouab,,33.96025,-6.875682,7;30;35;39,bus,4,False,False
+10078976756,Avenue Abderrahim Bouabid1,,33.956141,-6.879184,7;35;39,bus,3,False,False
+8970574131,Avenue Al Haour,,33.954597,-6.880344,7;35;39,bus,3,False,False
+10078976758,Ecole Riad Al Andalous,,33.950766,-6.883179,7;35;39,bus,3,False,False
+8968613417,Mohafada,,33.946734,-6.884382,7;35;39,bus,3,False,False
+3150442163,Rond point zagoura,,33.929434,-6.891183,7;30;35;36;37;39;306;37B,bus,8,False,False
+10078976773,Milano,,33.926671,-6.894033,7;30;35;36;37;39;303;306;306B;37B,bus,10,False,False
+8970574129,College Firdaous,,33.924165,-6.896827,7;38;303,bus,3,False,False
+10078976776,Anciene Marche,,33.92073,-6.900592,7;38,bus,2,False,False
+8970574127,Mosquee Al Quds,,33.917457,-6.904057,7;38,bus,2,False,False
+10078976778,Avenue Al Houmane Charkawi,,33.916064,-6.906047,7;38,bus,2,False,False
+10078976779,Najem el akar,,33.914301,-6.908832,7;38,bus,2,False,False
+4332674681,Jnane temara,,33.912655,-6.910826,7;38,bus,2,False,False
+10078976782,Residence Bassatine,,33.910551,-6.913135,7;38,bus,2,False,False
+10090643641,Masjib Al Houda,,33.907405,-6.916571,7;38,bus,2,False,False
+4332674679,Hay Kora,,33.905255,-6.918952,7;38,bus,2,False,False
+8970574125,Krouch,,33.902939,-6.921627,7,bus,1,False,False
+8970574124,Krouch,,33.902706,-6.921506,7,bus,1,False,False
+4332674678,Hay Kora,,33.905019,-6.918839,7;38,bus,2,False,False
+10090643642,Masjib Al Houda,,33.907304,-6.916325,7;38,bus,2,False,False
+10078976781,Residence Bassatine,,33.910322,-6.913052,7;38,bus,2,False,False
+4332674680,Jnane temara,,33.912552,-6.910672,7;38,bus,2,False,False
+10078976780,Najem el akar,,33.914114,-6.908675,7;38,bus,2,False,False
+10078976777,Avenue Al Houmane Charkawi,,33.915794,-6.906087,7;38,bus,2,False,False
+8970574126,Mosquee Al Quds,,33.917377,-6.903763,7;38,bus,2,False,False
+10078976775,Anciene Marche,,33.920653,-6.900223,7;38,bus,2,False,False
+8970574128,College Firdaous,,33.924135,-6.896523,7;38,bus,2,False,False
+10078976774,Milano,,33.926568,-6.893718,7;30;37;39;37B,bus,5,False,False
+10078976770,Rond point zagoura,,33.92936,-6.890874,7;30;37;39;37B,bus,5,False,False
+8968613418,Mohafada,,33.946725,-6.884113,7;35;39,bus,3,False,False
+10078976757,Ecole Riad Al Andalous,,33.950655,-6.882907,7;35;39,bus,3,False,False
+8970574130,Avenue Al Haour,,33.954808,-6.879853,7;35;39,bus,3,False,False
+10078976751,Avenue Abderrahim Bouabid1,,33.957484,-6.8776,7;30;35;39,bus,4,False,False
+3150442198,Av.Abderrahim Bouab,,33.960097,-6.875124,7;30;35;39,bus,4,True,False
+10089975320,Ministère de l'interieur,,33.964088,-6.871297,7;30;35;39,bus,4,True,True
+10078976744,Hopital Militaire,,33.96674,-6.868811,7;30;35;39,bus,4,False,False
+8970574132,Avenue Al Melia,,33.970236,-6.865457,7;35;39,bus,3,False,False
+8974356417,Mosquée Lalla Sokaina,,33.975575,-6.862386,7;35;39,bus,3,False,False
+10078976733,Hopital des Spécialités,,33.982119,-6.856119,7;35;39,bus,3,True,False
+1824603746,Hopital Ibn Sina,,33.98513,-6.853233,7;35;39,bus,3,False,False
+10078976731,Rue Brahim Tadili,,33.98979,-6.847469,7,bus,1,True,True
+10078976729,Rue Jbel Moussa,,33.993786,-6.846724,7,bus,1,True,True
+10106747041,Avenue de France,,33.99822,-6.848893,7,bus,1,True,True
+3593340052,Rue Dayet Aoua,,34.004457,-6.852027,7;35,bus,2,True,True
+3586378582,Avenue de Bin El Ouidane,,34.007695,-6.851806,7;35,bus,2,True,True
+8974356420,Bab Tamesna,,34.01111,-6.851303,7;35,bus,2,False,False
+10078956089,Mosque Hassan II,,34.014183,-6.847602,7;31;34;35;36;38;107;32H,bus,8,False,False
+10078956088,Av. Hassan II (Bab El Had)Terminus,,34.01793,-6.844361,7;31;33;34;35;38;107;32H,bus,8,False,False
+12155613079,Yacoub el Mansour,,34.012445,-6.832221,8;102;108,bus,3,False,False
+8974356426,Bab Tourga,,34.007902,-6.828459,8;102;108,bus,3,True,True
+10080333223,Jardin Sania,,34.001679,-6.827481,8;102;108,bus,3,False,False
+10080333225,Mamda,,33.998614,-6.827523,8;108,bus,2,False,False
+10080562206,Ecole 11 Janvier,,33.994369,-6.823812,8;101;108,bus,3,False,False
+10080333228,Mabela,,33.995136,-6.82003,8;101;108,bus,3,False,False
+8977069409,Jardin mini parc,,33.992446,-6.818347,8;37;102;104;37B,bus,5,False,False
+8977069399,Route Setta,,33.988329,-6.818128,8;37;102;104;37B,bus,5,False,False
+10080333233,Taqadoum,,33.986885,-6.819941,8;37;102;104;37B,bus,5,False,False
+10082141489,Avenue Al Haouz,,33.984162,-6.825169,8;37;102;104;37B,bus,5,False,False
+10080333234,Avenue Mohammed VI,,33.980873,-6.829635,8,bus,1,False,False
+8974356432,Ambassade saoudien,,33.973683,-6.829946,8,bus,1,False,False
+10080333238,Groupe Scolaire Atlas,,33.968632,-6.828646,8,bus,1,False,False
+8974356434,Ambassade Koweit,,33.962148,-6.82689,8,bus,1,False,False
+10117562319,Ambassade U.S.A.,,33.957792,-6.825713,8,bus,1,False,False
+10114762480,Ecole Blaise Pascal,,33.953095,-6.824556,8,bus,1,False,False
+10114762565,Ambassade France,,33.947969,-6.823152,8,bus,1,False,False
+10117562318,Royal Golf Dar Es Salam,,33.935845,-6.820655,8,bus,1,False,False
+10117562308,S.N.R.T,,33.915044,-6.817534,8,bus,1,False,False
+10117562307,Checkpoint Police,,33.911671,-6.818318,8,bus,1,False,False
+10080333247,Route Golf Dar Essalam,,33.898863,-6.828843,8,bus,1,False,False
+8974356438,Villa Taroub,,33.894093,-6.832928,8,bus,1,False,False
+10117562304,Ouled Mbarek,,33.881637,-6.844998,8,bus,1,False,False
+10080345154,Les Maisons Indigo 3,,33.876354,-6.847619,8,bus,1,False,False
+8974356439,Cimet. Oulad Mbarek,,33.872885,-6.851836,8,bus,1,False,False
+10080345155,Ain Halouf,,33.863559,-6.855096,8,bus,1,False,False
+10117500710,Quiada,,33.857256,-6.856286,8,bus,1,False,False
+10080345157,El Menzeh,,33.85246,-6.853977,8,bus,1,False,False
+1824581019,Résidences El Menzeh,,33.846738,-6.848868,8,bus,1,False,False
+12148475777,Residence Gendarme,,33.842897,-6.843982,8,bus,1,False,False
+10080345158,Residence la Coline,,33.834383,-6.831135,8,bus,1,False,False
+12148475781,Oulba,,33.830833,-6.821321,8,bus,1,False,False
+10089193283,Pachalik,,33.809055,-6.791371,8;40,bus,2,False,False
+10089193286,Daya,,33.806117,-6.79054,8;40;303,bus,3,False,False
+8974356442,Hay Pam,,33.801763,-6.789337,8;40;303,bus,3,False,False
+10082772482,Ain Aouda Terminus,,33.799491,-6.788694,8;40;303,bus,3,False,False
+10080345161,Ain Aouda Terminus,,33.799521,-6.788517,8;40;303,bus,3,False,False
+10089213771,Hay Pam,,33.801854,-6.789191,8;40;303,bus,3,False,False
+10089193285,Daya,,33.806144,-6.790367,8;40;303,bus,3,False,False
+8974356441,Pachalik,,33.809096,-6.791201,8;40,bus,2,False,False
+12148475780,Oulba,,33.830813,-6.821001,8,bus,1,False,False
+12148475779,Residence la Coline,,33.834412,-6.830719,8,bus,1,False,False
+12148475778,Residence Gendarme,,33.842825,-6.843544,8,bus,1,False,False
+8974356440,Résidences El Menzeh,,33.846502,-6.848219,8,bus,1,False,False
+12148475776,El Menzeh,,33.851618,-6.853091,8,bus,1,False,False
+1824581024,Quiada,,33.857087,-6.856215,8,bus,1,False,False
+10080345156,Ain Halouf,,33.862992,-6.854878,8,bus,1,False,False
+10117520573,Cimet. Oulad Mbarek,,33.872676,-6.851957,8,bus,1,False,False
+10117562303,Les Maisons Indigo 3,,33.876089,-6.847675,8,bus,1,False,False
+12148475770,Residence Emeraud,,33.885603,-6.842778,8,bus,1,False,False
+10117562305,Villa Taroub,,33.893765,-6.83299,8,bus,1,False,False
+10117562306,Route Golf Dar Essalam,,33.89859,-6.828887,8,bus,1,False,False
+8974356437,Checkpoint Police,,33.911453,-6.818245,8,bus,1,False,False
+10080333246,S.N.R.T,,33.914983,-6.817387,8,bus,1,False,False
+8974356435,Royal Golf Dar Es Salam,,33.935813,-6.820513,8,bus,1,False,False
+10080333249,Ouled Mbarek,,33.881578,-6.844856,8,bus,1,False,False
+10080333242,Ambassade France,,33.947961,-6.822945,8,bus,1,False,False
+10080333241,Ecole Blaise Pascal,,33.953096,-6.824325,8,bus,1,False,False
+10080333240,Ambassade U.S.A.,,33.957819,-6.82559,8,bus,1,False,False
+8974356433,Ambassade Koweit,,33.962262,-6.826738,8,bus,1,False,False
+10080333239,Groupe Scolaire Atlas,,33.96869,-6.82841,8,bus,1,False,False
+8974356431,Ambassade saoudien,,33.973733,-6.829747,8,bus,1,False,False
+10080333235,Avenue Mohammed VI,,33.980871,-6.829432,8,bus,1,False,False
+8974356430,Arrêt 8,,33.982408,-6.828594,8;104,bus,2,False,False
+8977069400,Avenue Al Haouz,,33.984223,-6.824791,8;9;37;102;104;37B,bus,6,False,False
+10087870500,Taqadoum,,33.986817,-6.819742,8;9;37;102;104;37B,bus,6,False,False
+10087870499,Route Setta,,33.988247,-6.818037,8;9;37;102;104;37B,bus,6,False,False
+10087870492,Jardin mini parc,,33.992548,-6.818209,8;37;102;104;37B,bus,5,False,False
+8974356428,Mabela,,33.995114,-6.819751,8;101;108,bus,3,False,False
+10080333227,Ecole 11 Janvier,,33.994425,-6.824538,8;101;108,bus,3,False,False
+8974356427,Zaytoun,,33.99422,-6.827281,8;108,bus,2,False,False
+10080333226,Mamda,,33.997905,-6.827343,8;108,bus,2,False,False
+10080333222,Sidi Khalifa,,34.003236,-6.827089,8;102;108,bus,3,False,False
+8974356425,Bab Tourga,,34.00728,-6.827552,8;102;108,bus,3,False,False
+10088023947,Gare Rabat Ville,,34.015797,-6.834722,8,bus,1,False,False
+12155980909,Gare routière,,33.991333,-6.867807,9;104;106,bus,3,False,False
+10082141272,Av. Moulay Rachid,,33.991403,-6.859286,9;104,bus,2,False,False
+1824603809,CHU Ibn Sina (Souissi),,33.985261,-6.849975,9;104,bus,2,True,False
+10092266823,Forêt Ibn Sina,,33.982092,-6.845589,9;104,bus,2,False,False
+8977069410,Av. A. Balafrej,,33.979383,-6.84222,9;104,bus,2,False,False
+8977069411,Balafrej,,33.976979,-6.838161,9;37;104;37B,bus,4,False,False
+10087870502,Ambassade Irak,,33.979647,-6.834417,9;37;104;37B,bus,4,False,False
+10082141488,Ambassade Libya,,33.981614,-6.830247,9;37;104;37B,bus,4,False,False
+10082141498,Jardin mini parc,,33.991717,-6.817955,9,bus,1,False,False
+10080562204,Al-linbiaat,,33.991011,-6.812604,9;101;108,bus,3,False,False
+10080562203,Zone Industrielle,,33.990238,-6.806262,9;101;108,bus,3,False,False
+12158563272,Z. Industrielle 2,,33.990162,-6.804059,9,bus,1,False,False
+12158563274,Z. Industrielle,,33.99076,-6.798984,9,bus,1,False,False
+10098636585,Entree sale el jadida,,33.999806,-6.751096,9,bus,1,False,False
+10076012129,Arrêt 9,,33.997392,-6.748258,9,bus,1,False,False
+8974356457,Arrêt 9,,33.995554,-6.74631,9,bus,1,False,False
+12158563276,Sale Al Jadid A. Bouregreg,,33.988834,-6.738466,9,bus,1,False,False
+10095785978,Sale Al Jadida,,33.990719,-6.736685,9,bus,1,False,False
+10095785979,Av.Atlas,,33.993032,-6.739031,9,bus,1,False,False
+12148512345,Av.Hassan II,,33.998103,-6.744022,9,bus,1,False,False
+10082379588,Mogador,,34.000287,-6.746253,9,bus,1,False,False
+8959926238,Residence Esammad,,34.00332,-6.747064,9;201;204,bus,3,False,False
+10082379586,Residence Famille,,34.006159,-6.743563,9;201;204,bus,3,False,False
+8959926236,Residence Edallal,,34.008284,-6.741009,9;10;201;204,bus,4,False,False
+10080238094,Residence Maamoura,,34.012291,-6.736392,9;10;201;204,bus,4,False,False
+10080238097,Residence Safae 2,,34.016193,-6.739436,9;10;24;29;201;202;204,bus,7,False,False
+10080238099,Residence Dyar 8,,34.018387,-6.742429,9;10;24;29;201;202;204,bus,7,False,False
+8959926229,Residence Safae,,34.022211,-6.747607,9;10;24;29;201;202;204,bus,7,False,False
+10076848830,Hôpital Moulay Abdellah,,34.025268,-6.753783,9;10;24;29;201;202;204,bus,7,False,False
+8932549959,Terminus L10-L21,,33.988436,-6.736605,10,bus,1,False,False
+10098636587,Sale Al Jadida,,33.990394,-6.736231,10;204,bus,2,False,False
+10076012154,Avenue Wahda,,33.992142,-6.73436,10,bus,1,False,False
+10095785981,Police Sale Al Jadida,,33.994255,-6.736384,10,bus,1,False,False
+10095785980,Residence Alia,,33.995782,-6.737931,10,bus,1,False,False
+12158629409,Pharmacie Mimoza,,33.999446,-6.739188,10,bus,1,False,False
+10080238090,Av. Moulay Rachid,,34.003136,-6.741082,10,bus,1,False,False
+8959926227,Hay el Wafaa,,34.026043,-6.757671,10;24;201;202;204,bus,5,False,False
+10076848828,Rue el jorf,,34.02679,-6.760708,10;24;201;202;204,bus,5,False,False
+8958219671,Pont Hassan II,,34.035011,-6.817042,10,bus,1,False,False
+10080245030,Av. Moulay Ismail,,34.023067,-6.829158,10,bus,1,False,False
+12158629412,Mokataa Av. Moulay Ismail,,34.020683,-6.827032,10,bus,1,False,False
+8960437127,Arrêt 10,,34.016892,-6.823908,10,bus,1,False,False
+10080245031,Ambassade D' Egypte,,34.018202,-6.824804,10,bus,1,False,False
+8950936525,Hassan,,34.01394,-6.825618,10,bus,1,False,False
+10083629624,Place Union Afrique,,34.017667,-6.828224,10;106,bus,2,False,False
+10080245029,Jour Et Nuit,,34.022478,-6.831269,10,bus,1,False,False
+10076848827,Rue el jorf,,34.026491,-6.760854,10;24;201;202;204,bus,5,False,False
+8959926228,Hay el Wafaa,,34.025777,-6.757869,10;24;201;202;204,bus,5,False,False
+10076848829,Hôpital Moulay Abdellah,,34.025008,-6.753885,10;24;29;201;202;204,bus,6,False,False
+8959926230,Residence Safae,,34.021997,-6.747858,10;24;201;202;204,bus,5,False,False
+10080238098,Residence Dyar 8,,34.018166,-6.742721,10;24;29;201;202;204,bus,6,False,False
+10080238096,Residence Safae 2,,34.015894,-6.739663,10;24;29;201;202;204,bus,6,False,False
+10080238095,Residence Maamoura,,34.012241,-6.736883,10;24;201;204,bus,4,False,False
+8959926235,Residence Edallal,,34.008405,-6.7413,10;201;204,bus,3,False,False
+12158629411,Oulad Hlal,,34.006151,-6.742969,10,bus,1,False,False
+10080238089,Av. Moulay Rachid,,34.003324,-6.741591,10,bus,1,False,False
+12158629410,Pharmacie Mimoza,,33.999066,-6.739369,10,bus,1,False,False
+8959926239,Residence Alia,,33.99572,-6.738084,10,bus,1,False,False
+10076012153,Police Sale Al Jadida,,33.994371,-6.736849,10,bus,1,False,False
+10095785976,Avenue Wahda,,33.992112,-6.734471,10,bus,1,False,False
+1631787343,Sale Al Jadida,,33.990602,-6.736219,10;204,bus,2,False,False
+10076042732,Arrêt 22,,34.040335,-6.816872,22,bus,1,False,False
+8960247616,Sidi Moussa,,34.041365,-6.820254,22,bus,1,False,False
+10076042733,Bab Sebta,,34.043004,-6.822745,22,bus,1,False,False
+10076042734,Bab Chafaa,,34.043772,-6.824234,22,bus,1,False,False
+8960300419,El Borj,,34.046212,-6.827692,22,bus,1,False,False
+10098721157,Ins. Abid,,34.049072,-6.827025,22,bus,1,False,False
+10098721264,Lycée Abderahman Hadi,,34.05197,-6.824277,22,bus,1,False,False
+8960300420,Bourchad,,34.054065,-6.822341,22,bus,1,False,False
+10076042737,Molhaqa Sidi Moussa,,34.057742,-6.81638,22,bus,1,False,False
+10076042738,Le Triangle,,34.055029,-6.814208,22,bus,1,False,False
+12170459817,Residence Fadwa,,34.052138,-6.812781,22,bus,1,False,False
+10076042741,Dar El Hajj,,34.061452,-6.804663,22,bus,1,False,False
+10076042743,Gp.Scolaire Qiabi,,34.063682,-6.80299,22,bus,1,False,False
+12154215485,Ins.Special Chmaou,,34.066361,-6.801122,22,bus,1,False,False
+10076042745,Residence Al Arsa,,34.06997,-6.797816,22,bus,1,False,False
+12154215486,Residence Al Arsa,,34.069921,-6.798165,22,bus,1,False,False
+10076042744,Ins.Special Chmaou,,34.066434,-6.80125,22,bus,1,False,False
+12154215484,Gp.Scolaire Qiabi,,34.063767,-6.803054,22,bus,1,False,False
+10076042742,Dar El Hajj,,34.061313,-6.8048,22,bus,1,False,False
+12170459816,Residence Fadwa,,34.052192,-6.812656,22,bus,1,False,False
+12154215494,Le Triangle,,34.0552,-6.814089,22,bus,1,False,False
+12154215495,Molhaqa Sidi Moussa,,34.057801,-6.816193,22,bus,1,False,False
+8960300421,Bourchad,,34.054094,-6.822422,22,bus,1,False,False
+10076042735,Lycée Abderahman Hadi,,34.052013,-6.824469,22,bus,1,False,False
+10076042736,Ins. Abid,,34.049131,-6.827169,22,bus,1,False,False
+8960300418,El Borj,,34.045612,-6.827121,22,bus,1,False,False
+10098721156,Bab Chafaa,,34.043644,-6.824298,22,bus,1,False,False
+10098721155,Bab Sebta,,34.042515,-6.822257,22,bus,1,False,False
+8960300417,Sidi Moussa,,34.041245,-6.820402,22,bus,1,False,False
+10115002460,Arrêt 22,,34.040225,-6.816796,22,bus,1,False,False
+8969381108,Dar El Hamra دار الحمراء,دار الحمراء,34.058998,-6.785357,23;25;201;204;201B,bus,5,False,False
+3586510199,Dar El Hamra دار الحمراء,دار الحمراء,34.059111,-6.785539,23;25;201;204;201B,bus,5,False,False
+8960407127,La Poste Sale,,34.04501,-6.807517,23,bus,1,False,False
+10076848821,Collège Omar ibn Al Khattab,,34.031811,-6.803333,24,bus,1,False,False
+8960247612,Av. Mediouna,,34.028686,-6.800481,24,bus,1,False,False
+10076848823,Quartier Bettana,,34.033809,-6.796178,24,bus,1,False,False
+8970574122,Univ Mohammed V,,34.01983,-6.734603,24;29;202,bus,3,False,False
+8970574123,Univ Mohammed V,,34.019995,-6.734877,24;29;202,bus,3,False,False
+10076848824,Quartier Bettana,,34.033747,-6.796389,24,bus,1,False,False
+8960247611,Av. Mediouna,,34.02878,-6.800326,24,bus,1,False,False
+10076848822,Collège Omar ibn Al Khattab,,34.031902,-6.803135,24,bus,1,False,False
+10077027083,Diar,,34.040917,-6.815182,25,bus,1,False,False
+10077027085,Mohammed V-Opéra,,34.043118,-6.811179,25,bus,1,False,False
+10077027087,Tabriquet,,34.046728,-6.801828,25,bus,1,False,False
+10077027089,Rostal,,34.04754,-6.800773,25,bus,1,False,False
+8969381107,Hay Karima,,34.050694,-6.797682,25,bus,1,False,False
+10077027091,Residence el manssour,,34.054017,-6.794449,25,bus,1,False,False
+3674168626,Hay Karima حي كريمة,حي كريمة,34.054816,-6.79347,25;201;204;201B,bus,4,False,False
+10077027093,Frougui 2,,34.057465,-6.788322,25;201;201B,bus,3,False,False
+3586516918,Super Hay Rahma سوق ممتاز حي الرحمة,سوق ممتاز حي الرحمة,34.060994,-6.78285,25;201;204;201B,bus,4,False,False
+10077027094,Av D rue ouled tayma,,34.05921,-6.779998,25,bus,1,False,False
+10077027096,RP. Hay Inbiat,,34.05794,-6.778135,25,bus,1,False,False
+8969479521,Mosqueee Fatih,,34.057753,-6.777063,25;26,bus,2,False,False
+10077027098,Centre Al Wiam,,34.059888,-6.77499,25,bus,1,False,False
+8969381110,Ibn Al Haytem,,34.060914,-6.773582,25;26,bus,2,False,False
+10077027102,Mosquee haj omar,,34.063885,-6.769053,25;26,bus,2,False,False
+10077027104,Charika Hamra,,34.065869,-6.764384,25;26,bus,2,False,False
+8969381112,Ibn Haytam Cabinet,,34.067765,-6.761535,25;26,bus,2,False,False
+10078226412,Bayt Al Mostakbal,,34.080644,-6.751688,25,bus,1,False,False
+10078226413,Bayt Al Mostakbal,,34.08043,-6.751903,25,bus,1,False,False
+10077027105,Charika Hamra,,34.066033,-6.764505,25;26,bus,2,False,False
+10077027103,Mosquee haj omar,,34.064113,-6.76914,25;26,bus,2,False,False
+10077027100,poste,,34.062336,-6.772082,25;26,bus,2,False,False
+8969381109,Ibn Al Haytem,,34.061121,-6.773753,25;26,bus,2,False,False
+10077027099,Centre Al Wiam,,34.060059,-6.775162,25;26,bus,2,False,False
+8969479522,Mosqueee Fatih,,34.057835,-6.777224,25;26,bus,2,False,False
+10077027097,RP. Hay Inbiat,,34.058104,-6.77798,25,bus,1,False,False
+10077027095,Av D rue ouled tayma,,34.059415,-6.779847,25,bus,1,False,False
+3586510200,Frougui 2,,34.05759,-6.78857,25;201;204;201B,bus,4,False,False
+3674168625,Hay Karima حي كريمة,حي كريمة,34.054951,-6.793601,25;201;204;201B,bus,4,False,False
+10077027092,Residence el manssour,,34.054203,-6.794574,25,bus,1,False,False
+8969381106,Av Mohamed V,,34.050803,-6.797844,25,bus,1,False,False
+10077027090,Rostal,,34.047778,-6.801002,25,bus,1,False,False
+10077027088,Tabriquet,,34.046933,-6.801987,25,bus,1,False,False
+8960407128,La Poste Sale,,34.045242,-6.807721,25,bus,1,False,False
+10077027086,Mohammed V-Opéra,,34.043379,-6.811343,25,bus,1,False,False
+10077027084,Diar,,34.041091,-6.815399,25,bus,1,False,False
+8969479526,Al Fida,,34.035711,-6.798357,26,bus,1,False,False
+10077481160,Sehb,,34.037729,-6.79639,26,bus,1,False,False
+10077481159,Hay Assalam,,34.044445,-6.789919,26,bus,1,False,False
+8960407134,Al Haytem,,34.050914,-6.783207,26,bus,1,False,False
+10077481152,Rue Chichan,,34.053181,-6.781197,26,bus,1,False,False
+10077481153,bn Al Haytem,,34.055324,-6.77884,26,bus,1,False,False
+10077027101,poste,,34.062148,-6.771978,26,bus,1,False,False
+12160307932,Surete National Mazza,,34.069606,-6.756749,26,bus,1,False,False
+10077481149,Mosquee Mazza,,34.069971,-6.754399,26,bus,1,False,False
+10077481148,Avenue Ariha شارع أريحا,,34.069621,-6.750019,26,bus,1,False,False
+8969479520,Mazza,,34.069137,-6.747486,26,bus,1,False,False
+12160307931,Mazza,,34.069206,-6.747465,26,bus,1,False,False
+12160307934,Avenue Ariha شارع أريحا,,34.069762,-6.749984,26,bus,1,False,False
+12160307933,Mosqueee Mazza,,34.070148,-6.754496,26,bus,1,False,False
+10077481150,Surete National Mazza,,34.069737,-6.756783,26,bus,1,False,False
+10077481154,Ibn Haytam,,34.055382,-6.77928,26,bus,1,False,False
+8960407133,Al Haytem,,34.051074,-6.783362,26,bus,1,False,False
+8969479523,Mosquee Lalla Latifa,,34.04223,-6.79196,26,bus,1,False,False
+10077481161,Sehb,,34.03788,-6.796588,26,bus,1,False,False
+8969479525,Al Fida,,34.0358,-6.798545,26,bus,1,False,False
+10085682155,Dar Esseka,,34.026819,-6.724935,29,bus,1,False,False
+10085682156,Foret Sidi Amira,,34.032019,-6.689575,29,bus,1,False,False
+12151761765,Sidi Chafi,,34.030788,-6.665531,29,bus,1,False,False
+10085684131,El Arjat,,34.028583,-6.648021,29,bus,1,False,False
+10085684134,Entree Souk Khmis,,34.022231,-6.6022,29,bus,1,False,False
+10085684135,Shoul,,33.893841,-6.606722,29,bus,1,False,False
+10085684273,Sidi Azzouz,,33.880653,-6.646781,29,bus,1,False,False
+12154213113,Sidi Azzouz,,33.880531,-6.646826,29,bus,1,False,False
+12170459815,Shoul,,33.893752,-6.606541,29,bus,1,False,False
+12154213114,Entree Souk Khmis,,34.022173,-6.602012,29,bus,1,False,False
+10085684132,El Arjat,,34.028994,-6.649076,29,bus,1,False,False
+10085682157,Foret Sidi Amira,,34.032363,-6.689437,29,bus,1,False,False
+10085682154,Dar Esseka,,34.026345,-6.723372,29,bus,1,False,False
+11841571359,Arrêt 30,,34.001408,-6.855177,30,bus,1,False,False
+3586376542,Gare d'Agdal محطة اكدال,محطة اكدال,34.001432,-6.855241,30;35,bus,2,True,True
+10089935666,Arrêt 30,,33.996917,-6.859265,30;35,bus,2,False,False
+3674171945,Ministère de l'Energie et des Mines وزارة الطاقة والمعادن,وزارة الطاقة والمعادن,33.994604,-6.858184,30,bus,1,False,False
+3593108779,Abou Marouane Essaadi أبو مروان السعدي,أبو مروان السعدي,33.993771,-6.855426,30;35,bus,2,False,False
+10085786285,Arrêt 30,,33.970407,-6.867097,30,bus,1,False,False
+3150442172,Guich Oudaya,,33.935972,-6.884143,30;37;37B,bus,3,False,False
+3150442170,Firdaous,,33.927035,-6.896762,30;35;36;37;38;39;306;306B;37B,bus,9,True,False
+10088023550,Moulay Ali Cherif(Trminus L37B),,33.928717,-6.900481,30;35;36;38;39;303;306;306B;37B,bus,9,False,False
+10087921406,Massira,,33.929504,-6.902059,30;31;36;37;39;306;32H;306B,bus,8,False,False
+10087921407,Hay Atlas,,33.931267,-6.90449,30;31;36;37;39;306;32H;306B,bus,8,False,False
+10087921408,Police Temara,,33.933376,-6.911388,30;34;37;39;306;306B,bus,6,False,False
+10085786398,La Poste RN1,,33.927428,-6.916586,30;34;37;39;306;306B,bus,6,False,False
+10088022647,Centre Temara,,33.923692,-6.918878,30;34;37;39;303;306;306B,bus,7,False,False
+10088022648,Al Islahia,,33.920772,-6.922087,30;34;37;39;306;306B,bus,6,False,False
+10085786404,Arrêt 30,,33.918893,-6.925672,30;32H,bus,2,False,False
+10095706679,Tribunal de prem. Instance(Al Wifak),,33.923021,-6.930541,30;32H,bus,2,False,False
+10085786406,Tribunal de prem. Instance(Al Wifak),,33.922908,-6.930693,30;32H,bus,2,False,False
+10095706597,Arrêt 30,,33.918807,-6.925779,30;32H,bus,2,False,False
+10082848350,Al Islahia,,33.920447,-6.922036,30;34;37;39;303;306;306B,bus,7,False,False
+10082818967,Centre Temara,,33.923354,-6.918991,30;34;37;39;303;306;306B,bus,7,False,False
+10085786397,La Poste RN1,,33.926371,-6.916846,30;34;37;39;306;306B,bus,6,False,False
+10082933270,Police Temara,,33.933255,-6.911279,30;34;37;39;306;306B,bus,6,True,False
+10082933271,Hay Atlas,,33.931157,-6.904644,30;31;36;37;39;306;32H;306B,bus,8,True,False
+10082819009,Moulay Ali Cherif(Trminus L37B),,33.928594,-6.900573,30;35;36;37;38;39;303;306;306B;37B,bus,10,False,False
+10087921405,Firdaous,,33.926961,-6.896914,30;35;36;37;38;39;303;306;306B;37B,bus,10,True,False
+10085786393,Guich Oudaya,,33.935796,-6.883864,30;37;37B,bus,3,False,False
+10085786286,Arrêt 30,,33.970366,-6.866791,30,bus,1,False,False
+10089935667,Arrêt 30,,33.996639,-6.85545,30;35,bus,2,False,False
+3586376541,Gare d'Agdal محطة اكدال,محطة اكدال,34.001248,-6.855099,30;35,bus,2,True,True
+6847168411,Arrêt 30,,34.001419,-6.855064,30,bus,1,False,False
+10082225567,Bab Tamesna,,34.011059,-6.852135,31;33;34;36;38;107;32H,bus,7,False,False
+10080562297,Aakari,,34.006635,-6.856237,31;33;34;36;38;101;106;32H,bus,8,False,False
+10080562298,Pax,,34.004232,-6.858315,31;33;34;36;38;101;32H,bus,7,False,True
+10080562300,Douar Bouhala,,34.005402,-6.862796,31;33;101,bus,3,False,False
+10080562303,Arrêt 31,,34.003531,-6.865908,31;101;107,bus,3,False,False
+10080562305,Arrêt 31,,34.001435,-6.867593,31;101;107,bus,3,False,False
+8977069405,Assalam,,33.996845,-6.871244,31;101;107,bus,3,False,False
+10080562307,Arrêt 31,,33.993435,-6.871908,31;101;107,bus,3,False,False
+10082141250,Mohamed Msarni,,33.991004,-6.872766,31;104;106,bus,3,False,False
+8977069414,CS El Malek,,33.988727,-6.874765,31;104;106,bus,3,False,False
+10093405187,Arrêt 31,,33.985825,-6.877021,31,bus,1,False,False
+10090484430,Arrêt 31,,33.981775,-6.877275,31;36;101;107,bus,4,False,False
+8977069416,Hassan Marrakchi,,33.978341,-6.879981,31;36;101;107,bus,4,False,False
+8974733419,Complexe sportif Moulay-Abdallah,,33.962158,-6.885221,31;34;36;38;32H,bus,5,False,False
+10090484473,Zoo de Rabat,,33.954007,-6.891217,31;34;36;38;32H,bus,5,False,False
+8974733423,Cheikh Dawi,,33.935391,-6.909561,31;34;32H,bus,3,False,False
+10090643543,Police,,33.933561,-6.908804,31;36;39;306;32H;306B,bus,6,False,False
+10090643644,Krouch,,33.902298,-6.921198,31;38,bus,2,False,False
+10090643768,Al Baraka,,33.897182,-6.921138,31;38,bus,2,False,False
+10090643770,Douar Bab Saad,,33.890779,-6.921561,31;38,bus,2,False,False
+10090643816,Douar Rbiaa,,33.886602,-6.922203,31;38,bus,2,False,False
+10090643815,Douar Oqba,,33.88173,-6.921949,31;38,bus,2,False,False
+10090643814,Jamaat Mers El Khir,,33.872737,-6.919766,31;38,bus,2,False,False
+3150442181,Gp.Scol Moumen,,33.866652,-6.925077,31,bus,1,False,False
+3150442193,Arrêt 31,,33.863036,-6.929339,31,bus,1,False,False
+3150442192,Mers el Kheir (Terminus),,33.862921,-6.933452,31,bus,1,False,False
+10093328222,Arrêt 31,,33.863012,-6.929055,31,bus,1,False,False
+10093328221,Gp.Scol Moumen,,33.866335,-6.925094,31,bus,1,False,False
+3150442179,Jamaat Mers El Khir,,33.872716,-6.919415,31;38,bus,2,False,False
+3150442168,Douar Oqba,,33.88172,-6.921724,31;38,bus,2,False,False
+3150442169,Douar Rbiaa,,33.88667,-6.921836,31;38,bus,2,False,False
+3150442167,Douar Bab Saad,,33.89102,-6.921235,31;38,bus,2,False,False
+10090643769,Al Baraka,,33.897446,-6.920787,31;38,bus,2,False,False
+3150442182,Krouch,,33.90233,-6.921056,31;38,bus,2,False,False
+12148095888,H.Ouled Benaser,,33.928613,-6.902356,31;303;32H,bus,3,False,False
+10090643544,Police,,33.933907,-6.909346,31;36;39;306;32H;306B,bus,6,False,False
+8974733424,Cheikh Dawi,,33.935306,-6.909363,31;34;36;32H,bus,4,False,False
+10090601986,Ouled Motaa,,33.940193,-6.903557,31;34;36;32H,bus,4,False,False
+8974733420,Zoo de Rabat,,33.953628,-6.891253,31;34;36;38;32H,bus,5,False,False
+8974733418,Complexe sportif Moulay-Abdallah,,33.962133,-6.885032,31;34;36;38;32H,bus,5,False,False
+10080562314,Hassan Marrakchi,,33.978211,-6.879847,31;36;101;104;107,bus,5,False,False
+10080562313,Hay Bouitat,,33.981569,-6.87718,31;101;104;107,bus,4,False,False
+10093405186,Arrêt 31,,33.985631,-6.876966,31,bus,1,False,False
+8977069415,CS El Malek,,33.988645,-6.874548,31;104;106,bus,3,False,False
+10082141251,Mohamed Msarni,,33.990814,-6.87266,31;101;106,bus,3,False,False
+10080562308,Arrêt 31,,33.993464,-6.871676,31;101;107,bus,3,False,False
+10080562306,Assalam,,33.996826,-6.870944,31;101;107,bus,3,False,False
+10080562304,Arrêt 31,,34.001377,-6.867269,31;101;107,bus,3,False,False
+10080562302,Arrêt 31,,34.003577,-6.865525,31;101;107,bus,3,False,False
+8977069404,Al Houria,,34.005398,-6.864087,31;107,bus,2,False,False
+10080562301,Douar Bouhala,,34.005222,-6.862975,31;33;101,bus,3,False,False
+10080562299,Pax,,34.003482,-6.858606,31;33;34;36;38;101;32H,bus,7,False,False
+10082225566,Bab Tamesna,,34.011059,-6.851855,31;33;34;36;38;107;32H,bus,7,False,False
+10085898587,Stade Hockey (L'Abattoire) Yacoub El Mansour,,34.007436,-6.86585,33,bus,1,False,False
+10085893534,Nwayel,,34.005197,-6.870377,33,bus,1,False,False
+10085893532,Rue Al Karam,,34.001642,-6.874006,33,bus,1,False,False
+10085893530,Residence Sabbah,,33.996364,-6.879251,33,bus,1,False,True
+10085893528,Residence Sabbah 2,,33.992999,-6.88277,33,bus,1,False,False
+12152808719,El Masbah,,33.991019,-6.884107,33,bus,1,False,False
+12152808708,Jardin El Kifah,,33.989482,-6.882918,33,bus,1,False,False
+12152808707,Diour Police,,33.987793,-6.884657,33,bus,1,False,False
+12152808705,Cimetiere Chebanate,,33.985055,-6.887396,33,bus,1,False,False
+12152808703,Chebanate,,33.983692,-6.888746,33,bus,1,False,False
+10085893522,Province chabanate,,33.981957,-6.887635,33,bus,1,False,False
+12152808700,Ec.Hohamed Belghazi,,33.980698,-6.887956,33,bus,1,False,False
+12152808699,Al Manal,,33.977376,-6.890037,33,bus,1,False,False
+10080562320,Rue Al Hazar,,33.975659,-6.891984,33,bus,1,False,False
+10080562321,Av. El Menzeh,,33.974436,-6.893478,33,bus,1,False,False
+10080562324,El Menzeh,,33.972444,-6.895938,33,bus,1,False,False
+12150223463,Ecole Americaine,,33.974458,-6.898525,33,bus,1,False,False
+12150223462,Rue Mer Du Japon,,33.972445,-6.903159,33,bus,1,False,False
+6745875630,Entree Hay Fatah,,33.969628,-6.90726,33,bus,1,False,False
+10085893455,Lot Fond.Hassan II,,33.953413,-6.924106,33,bus,1,False,False
+1700427465,Miramar,,33.948138,-6.928985,33,bus,1,False,False
+10085893452,Plage Harhoura,,33.945888,-6.931394,33,bus,1,False,False
+10085893448,Mosque Harhoura,,33.941633,-6.936,33,bus,1,False,False
+12150223418,Yasmina Club,,33.938021,-6.940095,33,bus,1,False,False
+8974733431,Cheikh Zaid Palace,,33.932318,-6.948086,33;32H,bus,2,False,False
+10095745830,Plage Casino,,33.928081,-6.955436,33;32H,bus,2,False,False
+10095745838,Le Rivage,,33.925924,-6.958534,33;32H,bus,2,False,False
+12150141201,Contrebande,,33.918423,-6.967335,33,bus,1,False,False
+8974733437,Sable d'or,,33.916094,-6.97066,33,bus,1,False,False
+1700427704,Plage Sidi Abed,,33.913873,-6.975217,33,bus,1,False,False
+12150021637,Sidi Abed,,33.911936,-6.977561,33,bus,1,False,False
+12150021635,Miramar,,33.90819,-6.982123,33,bus,1,False,False
+8974733439,Les Trois Palmier,,33.905802,-6.987657,33,bus,1,False,False
+12150021625,Petit Bador,,33.901931,-6.992994,33,bus,1,False,False
+8974733442,Kasbah Plage,,33.888004,-7.012809,33,bus,1,False,False
+12150021624,Chiahna,,33.883909,-7.018443,33,bus,1,False,False
+8974733443,Chiahna 1,,33.878154,-7.025262,33,bus,1,False,False
+12150021622,Bahara,,33.876123,-7.027947,33,bus,1,False,False
+8974733445,Palais Royal de Skhirat,,33.869644,-7.038738,33,bus,1,False,False
+12150021619,Palais Royal de Skhirat 1,,33.865455,-7.04673,33,bus,1,False,False
+8974733446,Entree Plage Skhirat,,33.864064,-7.053661,33,bus,1,False,False
+10085839242,Plage Skhirat(Terminus),,33.865603,-7.056072,33,bus,1,False,False
+6817166408,Plage Skhirat(Terminus),,33.865484,-7.056359,33,bus,1,False,False
+12150021617,Entree Plage Skhirat,,33.863879,-7.053604,33,bus,1,False,False
+10085839243,Palais Royal de Skhirat 1,,33.865299,-7.0467,33,bus,1,False,False
+12150021620,Palais Royal de Skhirat,,33.869501,-7.038545,33,bus,1,False,False
+12150021621,Bahara,,33.875889,-7.027956,33,bus,1,False,False
+12150021623,Chiahna 1,,33.878035,-7.025181,33,bus,1,False,False
+11005642178,Chiahna,,33.883749,-7.018398,33,bus,1,False,False
+1558969227,Kasbah Plage,,33.88786,-7.012735,33,bus,1,False,False
+8974733441,Petit Bador,,33.901673,-6.992956,33,bus,1,False,False
+8974733440,Les Trois Palmier,,33.905953,-6.987018,33,bus,1,False,False
+12150021634,Miramar,,33.907969,-6.982129,33,bus,1,False,False
+12150021636,Sidi Abed,,33.911839,-6.977369,33,bus,1,False,False
+12150137791,Plage Sidi Abed,,33.913802,-6.9749,33,bus,1,False,False
+8974733436,Sable d'or,,33.916439,-6.969837,33,bus,1,False,False
+12150137800,Arrêt 33,,33.918403,-6.967044,33,bus,1,False,False
+12150141202,Sable D'or 1,,33.92096,-6.963585,33,bus,1,False,False
+10095745839,Le Rivage,,33.925772,-6.958396,33;32H,bus,2,False,False
+10095745831,Plage Casino,,33.927845,-6.955461,33;32H,bus,2,False,False
+8974733430,Cheikh Zaid Palace,,33.932188,-6.947932,33;32H,bus,2,False,False
+12150223419,Yasmina Club,,33.937893,-6.939942,33,bus,1,False,False
+10085893447,Mosque Harhoura,,33.941482,-6.935907,33,bus,1,True,False
+10085893451,Plage Harhoura,,33.945759,-6.931296,33,bus,1,False,False
+12150223420,Miramar,,33.948098,-6.928783,33,bus,1,False,True
+10085893456,Lot Fond.Hassan II,,33.953403,-6.923856,33,bus,1,False,False
+12150223421,Entree Hay Fatah,,33.969461,-6.907192,33,bus,1,False,False
+12150223461,Rue Mer Du Japon,,33.972369,-6.902999,33,bus,1,False,False
+10085893457,Ecole Americaine,,33.974244,-6.89853,33,bus,1,False,False
+10080562323,El Menzeh,,33.972376,-6.89566,33,bus,1,False,False
+10080562322,Av. El Menzeh,,33.974317,-6.893293,33,bus,1,False,False
+10080562319,Rue Al Hazar,,33.975585,-6.891787,33,bus,1,False,False
+12152808698,Al Manal,,33.977269,-6.889885,33,bus,1,False,False
+12152808701,Ec.Hohamed Belghazi,,33.980569,-6.88787,33,bus,1,False,False
+12152808702,Province chabanate,,33.982027,-6.887448,33,bus,1,False,False
+12152808704,Chebanate,,33.983395,-6.888914,33,bus,1,False,False
+12152808706,Cimetiere Chebanate,,33.984884,-6.88743,33,bus,1,False,False
+10085893525,Diour Police,,33.987525,-6.8846,33,bus,1,False,False
+12152808709,Jardin El Kifah,,33.989392,-6.882767,33,bus,1,False,False
+12152808718,El Masbah,,33.991149,-6.883953,33,bus,1,False,False
+10085893527,Residence Sabbah 2,,33.99285,-6.882471,33,bus,1,False,False
+10085893529,Residence Sabbah,,33.996227,-6.878951,33,bus,1,False,True
+10085893531,Rue Al Karam,,34.001311,-6.873834,33,bus,1,False,False
+10085893533,Nwayel,,34.005044,-6.870111,33,bus,1,False,False
+10085898588,L'Abattoire Yacoub El Mansour,,34.007739,-6.866642,33,bus,1,False,False
+8974699714,Gare Rabat Agdal محطة اكدال,,34.00155,-6.859919,34;36;38;106,bus,4,False,False
+10083629620,Centre de Transfusion Sanguine,,33.998739,-6.861347,34;36;38;106;32H,bus,5,False,False
+10083629463,lycée Abd elkrim khetabi,,33.992713,-6.865081,34;38;106;32H,bus,4,False,False
+10090484424,Gare routière,,33.989719,-6.867324,34;38;32H,bus,3,False,False
+10090484426,Arahba,,33.984399,-6.871197,34;38;32H,bus,3,False,False
+10090484428,Dar Nachr Al Maarifa,,33.981023,-6.873696,34;38;32H,bus,3,False,False
+8974733417,RATR,,33.978991,-6.875177,34;38;32H,bus,3,False,False
+10090601985,Ouled Motaa,,33.940331,-6.903729,34;36;32H,bus,3,False,False
+8974733426,Gare Temara,,33.915706,-6.927437,34;37;39;303;306;32H;306B,bus,7,False,False
+8977071026,Pharmacie Skikina,,33.910962,-6.932457,34;37;39;303;306;306B,bus,6,False,False
+10088022716,Sidi Ali,,33.907803,-6.935879,34;37;39;303;306;306B,bus,6,False,False
+10088023217,Sidi Ali,,33.90455,-6.939423,34;37;39;303;306;306B,bus,6,False,False
+10088023218,Arrêt 34,,33.901434,-6.942668,34;37;303;306;306B,bus,5,False,False
+10092266830,Anciene souk El Arbiaa,,33.898399,-6.949587,34;37;39;306;306B,bus,5,False,False
+10088023413,Ain Attig,,33.895986,-6.955708,34;37;39;303;306;306B,bus,6,False,False
+10082848340,El Manzeh,,33.892645,-6.961239,34;37;39;303;306;306B,bus,6,False,False
+10092266832,Lot.Jnan Ain Atiq,,33.890824,-6.964168,34;37;39;306;306B,bus,5,False,False
+8977071029,Lot. Lhaj Abed,,33.888523,-6.969382,34;37;39;303;306;306B,bus,6,False,False
+8977071030,Residence Al Hamd,,33.88739,-6.975241,34;37;39;303;306;306B,bus,6,False,False
+10088023524,Alkhiria,,33.883571,-6.979292,34;37;39;303;306;306B,bus,6,False,False
+10088023536,Q.I. Ai Attiq,,33.884307,-6.98667,34;37,bus,2,False,False
+10082848335,Alkhiria,,33.883452,-6.979235,34;37;39;303;306;306B,bus,6,False,False
+10088023523,Residence Al Hamd,,33.887303,-6.975086,34;37;39;303;306;306B,bus,6,False,False
+10088023522,Lot. Lhaj Abed,,33.888369,-6.969438,34;37;39;303;306;306B,bus,6,False,False
+10092266833,Lot.Jnan Ain Atiq,,33.890697,-6.964054,34;37;39;306;306B,bus,5,False,False
+10088023521,El Manzeh,,33.892662,-6.960897,34;37;39;303;306;306B,bus,6,False,False
+8977071028,Ain Attig,,33.895755,-6.955498,34;37;39;303;306;306B,bus,6,False,False
+10092266831,Anciene souk El Arbiaa,,33.898263,-6.949446,34;37;39;306;306B,bus,5,False,False
+8977071027,Oulad Bouchicha,,33.90148,-6.942482,34;37;39;303;306;306B,bus,6,False,False
+10082848341,Hopital sidi lahcen,,33.904576,-6.939045,34;37;39;303;306;306B,bus,6,False,False
+10082848342,Sidi Ali,,33.907677,-6.935632,34;37;39;303;306;306B,bus,6,False,False
+10088022715,Pharmacie Skikina,,33.910905,-6.932339,34;37;39;303;306;306B,bus,6,False,False
+10088022714,Gare Temara,,33.915597,-6.927286,34;37;39;303;306;32H;306B,bus,7,False,False
+8974699716,RATR,,33.978871,-6.87497,34;32H,bus,2,False,False
+10090484429,Dar Nachr Al Maarifa,,33.981074,-6.873368,34;38;32H,bus,3,False,False
+10090484425,Arahba,,33.984218,-6.87096,34;38;32H,bus,3,False,False
+8974699715,Gare routière,,33.989685,-6.867019,34;38;32H,bus,3,False,False
+10083629461,lycée Abd elkrim khetabi,,33.992619,-6.864744,34;36;38;106;32H,bus,5,False,False
+10083629619,Centre de Transfusion Sanguine,,33.998489,-6.861152,34;36;38;106;32H,bus,5,False,False
+8974699713,Gare Rabat Agdal محطة اكدال,,34.001767,-6.85956,34;36;38;106;210AE,bus,5,False,False
+2995242953,Mokataa,,33.92957,-6.900182,35;38,bus,2,False,False
+8977071023,Milano,,33.925658,-6.894232,35;36;306;306B,bus,4,False,False
+10082969860,Arrêt 35,,33.923367,-6.891235,35;36;306;306B,bus,4,True,False
+10089975548,Ecole omar ben el khattab,,33.921883,-6.889429,35;36;306,bus,3,False,False
+10089975549,Avenue Ibn Sina,,33.919233,-6.89055,35;36;306,bus,3,False,False
+10082819013,Avenue Ibn Sina,,33.919303,-6.890274,35;36;303;306,bus,4,False,False
+10082819012,Ecole omar ben el khattab,,33.921903,-6.889252,35;36;303;306;306B,bus,5,False,False
+10082819011,Mosquee Enasser,,33.924942,-6.888876,35;36;303;306,bus,4,False,False
+10082819010,Parc Maghreb Al Arabi,,33.929343,-6.889272,35;36;303;306,bus,4,False,False
+3593108778,Abou Marouane Essaadi أبو مروان السعدي,أبو مروان السعدي,33.99374,-6.854736,35,bus,1,False,False
+10080562309,Arrêt 36,,33.989299,-6.871505,36;101;107,bus,3,False,False
+10080562311,Regragui,,33.986596,-6.873596,36;101;107,bus,3,False,False
+10080562316,Ofppt,,33.976008,-6.881817,36;101;107,bus,3,False,False
+10080562315,Ofppt,,33.975781,-6.88158,36;101;104;107,bus,4,False,False
+10080562312,Regragui,,33.986358,-6.8735,36;101;107,bus,3,False,False
+10080562310,Arrêt 36,,33.989147,-6.871287,36;101;107,bus,3,False,False
+10087870501,Ambassade Libya,,33.981835,-6.830381,37;104;37B,bus,3,False,False
+10082141487,Ambassade Irak,,33.979725,-6.834541,37;104;37B,bus,3,False,False
+10092266825,Balafrej,,33.977205,-6.838215,37;104;37B,bus,3,False,False
+12156682742,Ecs Informatique,,33.97336,-6.842437,37;37B,bus,2,False,False
+10087870505,Ambassade du Canada,,33.969573,-6.846416,37;37B,bus,2,False,False
+10087870508,Rue Ouled Bousbaa,,33.966294,-6.849933,37;37B,bus,2,False,False
+10087921347,Avenue Mehdi Ben Barka,,33.962541,-6.854069,37;37B,bus,2,False,False
+10087921349,Avenue Mehdi Ben Barka 1,,33.959766,-6.857259,37;37B,bus,2,False,False
+10087921398,Avenue Mehdi Ben Barka 2,,33.958291,-6.858976,37;37B,bus,2,False,False
+10087921400,Hay Riad Av. Ben Barka,,33.956122,-6.861398,37;37B,bus,2,False,False
+10087921404,Villas Hay Riad,,33.951227,-6.866509,37;37B,bus,2,False,False
+10087921403,Annakhil,,33.954291,-6.862988,37;37B,bus,2,False,False
+10087921401,Hay Riad Av. Ben Barka,,33.95598,-6.861025,37;37B,bus,2,False,False
+10087921399,Avenue Mehdi Ben Barka 2,,33.958097,-6.858607,37;37B,bus,2,False,False
+4363428690,Avenue Mehdi Ben Barka 1,,33.95981,-6.8566,37;37B,bus,2,False,False
+10087921348,Avenue Mehdi Ben Barka,,33.962346,-6.853822,37;37B,bus,2,False,False
+10087870507,Rue Ouled Bousbaa,,33.966154,-6.849879,37;37B,bus,2,False,False
+10087870506,Ambassade du Canada,,33.969406,-6.846353,37;37B,bus,2,False,False
+12156682743,Ecs Informatique,,33.973242,-6.842203,37;37B,bus,2,False,False
+10090643546,Prefecture,,33.938438,-6.897302,38,bus,1,False,False
+10090643547,Ibn Batouta,,33.936393,-6.892539,38,bus,1,False,False
+10090643819,Foret Tamesna,,33.854008,-6.912931,38,bus,1,False,False
+10090643821,Arrêt 38,,33.838279,-6.907854,38,bus,1,False,False
+8977423220,Arrêt 38,,33.838316,-6.911915,38,bus,1,False,False
+10090643822,Doha,,33.840162,-6.913511,38,bus,1,False,False
+10090643824,Douar Rbiaa,,33.839841,-6.918535,38,bus,1,False,False
+10090643826,Arrêt 38,,33.837166,-6.922285,38,bus,1,False,False
+8977071038,Maison de jeunesses,,33.835314,-6.92489,38;303,bus,2,False,False
+10090643829,Arrêt 38,,33.827866,-6.917729,38,bus,1,False,False
+10090643827,Arrêt 38,,33.830438,-6.914076,38,bus,1,False,False
+10082811003,Ecole Tamesna,,33.82996,-6.911035,38;303,bus,2,False,False
+10082811002,Sidi Yahia,,33.829097,-6.906746,38,bus,1,False,False
+10090643840,Residence Tawhid,,33.831575,-6.903032,38,bus,1,False,False
+10090643832,Sidi Yahia,,33.829279,-6.907176,38,bus,1,False,False
+10090643831,Ecole Tamesna,,33.830097,-6.910946,38;303,bus,2,False,False
+8977071039,Maison de jeunesses,,33.835214,-6.924655,38;303,bus,2,False,False
+10090643828,Arrêt 38,,33.830573,-6.914249,38,bus,1,False,False
+10090643830,Arrêt 38,,33.827999,-6.917905,38,bus,1,False,False
+10082811004,Arrêt 38,,33.83694,-6.922134,38,bus,1,False,False
+10090643825,Arrêt 38,,33.839748,-6.918279,38,bus,1,False,False
+10090643823,Doha,,33.840029,-6.913694,38,bus,1,False,False
+8977423221,Arrêt 38,,33.838295,-6.912064,38,bus,1,False,False
+10090643820,Arrêt 38,,33.838325,-6.907594,38,bus,1,False,False
+10090643818,Foret Tamesna,,33.855056,-6.912847,38,bus,1,False,False
+10090643548,Ibn Batouta,,33.9363,-6.891351,38,bus,1,False,False
+10090643545,Prefecture,,33.938567,-6.897172,38,bus,1,False,False
+10092266828,Villat,,33.934803,-6.887427,39,bus,1,False,False
+10082848331,Jnane Zahra,,33.874163,-6.978345,39;303,bus,2,False,False
+8977071033,Residence Marwa,,33.869941,-6.973448,39;303,bus,2,False,False
+10082848304,Mosquee Autoroute,,33.862346,-6.963643,39;303,bus,2,False,False
+10082848302,Chraoutta,,33.856976,-6.955261,39;303,bus,2,False,False
+8977071035,Annour 2,,33.845777,-6.940721,39;303,bus,2,False,False
+10092286393,Annour Centre,,33.849173,-6.933517,39,bus,1,False,False
+10092286394,Annour Centre,,33.849338,-6.933715,39,bus,1,False,False
+8977071034,Annour 2,,33.845853,-6.94051,39;303,bus,2,False,False
+10082848303,Chraoutta,,33.857071,-6.954948,39;303,bus,2,False,False
+10082848305,Mosquee Autoroute,,33.862496,-6.963536,39;303,bus,2,False,False
+8977071032,Residence Marwa,,33.869979,-6.973191,39;303,bus,2,False,False
+10082848332,Jnane Zahra,,33.874293,-6.978127,39;303,bus,2,False,False
+10092266829,Arrêt 39,,33.934918,-6.887334,39,bus,1,False,False
+10089193282,Oum Azza,,33.880884,-6.78559,40,bus,1,False,False
+12153468958,Oum Azza,,33.880944,-6.785362,40,bus,1,False,False
+10080555977,Hay Ennahda,,33.974102,-6.821677,101;108,bus,2,False,False
+10080555978,ISTA Hay Ennahda,,33.975257,-6.821903,101;102;108,bus,3,False,False
+10080555980,Ennahda,,33.976535,-6.818793,101;102;108,bus,3,False,False
+10080562029,Hay El Idari,,33.977827,-6.816044,101;102;108,bus,3,False,False
+10080562031,Hay Industrielle,,33.986798,-6.803558,101;102;108,bus,3,False,False
+10080562080,Charekat,,33.989661,-6.803693,101;108,bus,2,False,False
+12158563271,Al-linbiaat,,33.991133,-6.812532,101;108,bus,2,False,False
+10080562205,Jardin mini parc,,33.99294,-6.817662,101,bus,1,False,False
+10080562291,Hilton,,33.993504,-6.836999,101,bus,1,False,False
+10106733793,Moulay Abdellah,,33.994365,-6.841528,101,bus,1,True,True
+10080562294,Cite Univ D'Agdal,,33.997657,-6.843225,101,bus,1,False,False
+10080562295,Arrêt 101,,34.000173,-6.851083,101,bus,1,True,True
+8977069403,Al Houria,,34.005508,-6.86427,101;107,bus,2,False,False
+10080562317,Arrêt 101,,33.976225,-6.886099,101,bus,1,False,False
+8977071017,Lycee Bir Anzarene,,33.97421,-6.890702,101;104;106,bus,3,False,False
+8977071019,El Massira,,33.96986,-6.897895,101;104;106,bus,3,False,False
+10080562327,Mosquee Reduane,,33.968011,-6.90035,101;104;106;107,bus,4,False,False
+10108899405,Ecole Essanabil,,33.965609,-6.903239,101;104;106;107,bus,4,False,False
+10080562329,Hay Fath Terminus,,33.964728,-6.90583,101;104;106;107,bus,4,False,False
+12184198155,Hay Fath Terminus,,33.964837,-6.905526,101;104;106;107,bus,4,False,False
+10080562328,Ecole Essanabil,,33.96557,-6.90308,101;104;106;107,bus,4,False,False
+10108899406,Mosquee Reduane,,33.968005,-6.900145,101;104;106;107,bus,4,False,False
+8977071020,El Massira,,33.969779,-6.897734,101;104;106,bus,3,False,False
+10083597363,Hay Fath Massira,,33.970727,-6.894186,101;104;106,bus,3,False,False
+8977071018,Lycee Bir Anzarene,,33.974038,-6.890456,101;104;106,bus,3,False,False
+4510444089,Arrêt 101,,33.999943,-6.85133,101,bus,1,True,True
+11876112174,Jbel Tazekka,,33.99539,-6.85019,101,bus,1,False,False
+10106733794,Cite Univ D'Agdal,,33.997555,-6.843431,101,bus,1,False,False
+10080562293,Moulay Abdellah,,33.9941,-6.841575,101,bus,1,True,True
+10080562292,Hilton,,33.993235,-6.836975,101,bus,1,False,False
+10080562032,Hay Industrielle,,33.98741,-6.803775,101;102;108,bus,3,False,False
+10080562028,Hay Nahda,,33.977948,-6.816198,101;108,bus,2,False,False
+10080555979,ISTA Hay Nahda,,33.976652,-6.81892,101;102;108,bus,3,False,False
+10080555981,Lycée Moulay Abdallah,,33.974441,-6.817852,101;108,bus,2,False,False
+8977069402,Hay Ennahda,,33.97389,-6.821251,101;108,bus,2,False,False
+10080333230,Jardin mini parc,,33.993707,-6.818292,102;108,bus,2,False,False
+10080805699,Masjid Hassan 2,,33.995295,-6.817441,102,bus,1,False,False
+10080805700,Youssoufia,,33.996938,-6.815382,102,bus,1,False,False
+10080805701,Ec.Idriss Badawi,,33.998244,-6.816659,102,bus,1,False,False
+10080805702,Res. Police,,33.998812,-6.819009,102,bus,1,False,False
+8977069398,Aït Atta,,33.99953,-6.825497,102,bus,1,False,False
+8974356424,Yacoub el Mansour,,34.012468,-6.83211,102;108,bus,2,False,False
+10080805703,Arrêt 102,,34.022778,-6.840918,102,bus,1,False,False
+10080805704,Mosquée Chouhada,,34.026648,-6.842887,102,bus,1,False,False
+10080805706,Rue Togo,,34.024929,-6.846771,102,bus,1,False,False
+8977069397,Place d'Italie,,34.0229,-6.849216,102,bus,1,False,False
+12170459819,Place d'Italie,,34.022732,-6.849432,102,bus,1,False,False
+12170459820,Banque Populaire,,34.023037,-6.845694,102,bus,1,False,False
+10080805705,Ec.Ahmed Cherkaoui,,34.0248,-6.844068,102,bus,1,False,False
+5769102796,Mosquée Chouhada,,34.026337,-6.842031,102,bus,1,False,False
+3150442164,Bab El Had,,34.022987,-6.841257,102,bus,1,True,True
+12155613067,Masjid Hassan 2,,33.995388,-6.817554,102,bus,1,False,False
+8977069413,Ibn Rochd,,33.991627,-6.864689,104,bus,1,False,False
+10092266824,Av. A. Balafrej,,33.979494,-6.842079,104,bus,1,False,False
+10082141274,Forêt Ibn Sina,,33.982122,-6.845423,104,bus,1,True,False
+1824603870,CHU Ibn Sina (Souissi),,33.98548,-6.850038,104,bus,1,False,False
+10082141273,Av. Moulay Rachid,,33.99164,-6.859095,104,bus,1,False,False
+8977069412,Ibn Rochd,,33.991835,-6.864543,104,bus,1,False,False
+12155980910,Gare routière,,33.991481,-6.867817,104;106,bus,2,False,False
+10082141191,Marche Bouitat,,33.984615,-6.87862,104;106,bus,2,False,False
+10082141124,Arrêt 104,,33.980576,-6.882689,104;106,bus,2,False,False
+10082114859,Complexe sportif Al Amal,,33.977867,-6.885598,104,bus,1,False,False
+10083597364,Hay Fath Massira,,33.970875,-6.894475,104;106,bus,2,False,False
+10096554684,Marche Bouitat,,33.984557,-6.878455,106,bus,1,False,False
+10080562296,Aakkari,,34.006362,-6.856058,106,bus,1,False,False
+3586387006,Choukmane,,34.008845,-6.852781,106,bus,1,True,True
+10083629621,Jardin d'esssais botanique,,34.009958,-6.848468,106,bus,1,False,False
+10083629622,Avenue de la Victoire,,34.01162,-6.841996,106,bus,1,False,False
+10083629623,My.El Hassan,,34.015401,-6.831897,106;108;210AE,bus,3,True,True
+10083629625,Tour Hassan,,34.021132,-6.824965,106;108,bus,2,False,False
+12174760312,Abdelmoumen,,34.024286,-6.827316,106;108,bus,2,True,True
+10115253878,Avenue de la Victoire,,34.011728,-6.842214,106,bus,1,False,False
+10115253879,Jardin d'esssais botanique,,34.010169,-6.84827,106,bus,1,False,False
+10115253880,Choukmane,,34.009053,-6.852806,106,bus,1,True,True
+8974356421,Bab Tamesna,,34.011858,-6.851639,107,bus,1,False,False
+8974699712,Hassan II,,34.008892,-6.854899,107,bus,1,False,False
+10082225570,Arrêt 107,,34.009977,-6.859994,107,bus,1,False,False
+10082225575,Arrêt 107,,34.007783,-6.862019,107,bus,1,False,False
+8977069406,Al Majd,,33.990103,-6.871265,107,bus,1,False,False
+10082225591,Arrêt 107,,33.972704,-6.884609,107,bus,1,False,False
+10082225593,Arrêt 107,,33.969578,-6.887361,107,bus,1,False,False
+10082225594,Arrêt 107,,33.968175,-6.889555,107,bus,1,False,False
+10082225597,Arrêt 107,,33.967339,-6.894238,107,bus,1,False,False
+10082225600,Arrêt 107,,33.968449,-6.897654,107,bus,1,False,False
+10082225601,Arrêt 107,,33.968302,-6.897871,107,bus,1,False,False
+10082225596,Arrêt 107,,33.967208,-6.894236,107,bus,1,False,False
+10082225595,Arrêt 107,,33.967991,-6.889448,107,bus,1,False,False
+10082225590,Arrêt 107,,33.972611,-6.884487,107,bus,1,False,False
+10082225574,Arrêt 107,,34.007669,-6.861709,107,bus,1,False,False
+10082225569,Arrêt 107,,34.010047,-6.85966,107,bus,1,False,False
+8960300430,Ihsan,,34.069451,-6.790719,201;204;201B,bus,3,False,False
+10082379318,Avenue D,,34.065607,-6.787401,201;204;201B,bus,3,False,False
+10082379511,Arrêt 201,,34.062284,-6.782919,201;204,bus,2,False,False
+10082379582,Houlyoud,,34.051484,-6.791051,201;204;201B,bus,3,False,False
+10082379584,Souk Assalihine,,34.050379,-6.789668,201;204;201B,bus,3,False,False
+10082379587,Residence Famille,,34.006381,-6.743828,201;204,bus,2,False,False
+12148512343,Residence Esammad,,34.00349,-6.747068,201;204,bus,2,False,False
+8959926241,Arrêt 201,,33.985628,-6.739725,201,bus,1,False,False
+10082379609,Arrêt 201,,33.978622,-6.739066,201,bus,1,False,False
+10082379610,Arrêt 201,,33.978867,-6.738886,201,bus,1,False,False
+10082379589,Arrêt 201,,33.985869,-6.73943,201,bus,1,False,False
+10082379585,Souk Assalihine,,34.050378,-6.789294,201;204;201B,bus,3,False,False
+10082379583,Houlyoud,,34.05214,-6.791486,201;204;201B,bus,3,False,False
+10082379317,Avenue D,,34.065663,-6.787115,201;204;201B,bus,3,False,False
+8960300431,Ihsan,,34.069358,-6.790618,201;204;201B,bus,3,False,False
+10082771003,Arrêt 204,,33.992723,-6.732934,204,bus,1,False,False
+10082771004,Sala Al Jadida Terminus L204,,33.99641,-6.727387,204,bus,1,False,False
+10095785977,Arrêt 204,,33.992854,-6.733018,204,bus,1,False,False
+12153569661,Maghreb el Arabi(Chiga) Terminus,,33.916105,-6.892072,303;306;306B,bus,3,False,False
+8977071024,Arrêt 303,,33.924793,-6.911912,303;32H,bus,2,False,False
+8977071025,Arrêt 303,,33.924593,-6.915089,303,bus,1,False,False
+8977071037,Arrêt 303,,33.838783,-6.934308,303,bus,1,False,False
+10082848292,Arrêt 303,,33.835342,-6.930677,303,bus,1,False,False
+12155269799,Tamesna,,33.836286,-6.921976,303,bus,1,False,False
+8977423219,Tamesna,,33.830909,-6.914727,303,bus,1,False,False
+8977423218,Sidi Yahya,,33.823755,-6.903502,303,bus,1,False,False
+10082810988,Arrêt 303,,33.810087,-6.89228,303,bus,1,False,False
+10082810987,Arrêt 303,,33.807527,-6.886308,303,bus,1,False,False
+10082810986,Arrêt 303,,33.803048,-6.866666,303,bus,1,False,False
+8977071045,Arrêt 303,,33.80162,-6.83035,303,bus,1,False,False
+8977071046,Arrêt 303,,33.805245,-6.809309,303,bus,1,False,False
+8977071047,Arrêt 303,,33.805775,-6.804898,303,bus,1,False,False
+10082772487,Arrêt 303,,33.807821,-6.792654,303,bus,1,False,False
+12155269797,Tamesna,,33.831074,-6.914681,303,bus,1,False,False
+12155269798,Tamesna,,33.83644,-6.921883,303,bus,1,False,False
+10082848291,Arrêt 303,,33.835518,-6.930456,303,bus,1,False,False
+8977071036,Arrêt 303,,33.839,-6.934089,303,bus,1,False,False
+10082819006,Arrêt 303,,33.924233,-6.915094,303,bus,1,False,False
+10082819008,Arrêt 303,,33.927814,-6.908544,303;32H,bus,2,False,False
+8977417631,Arrêt 303,,33.918817,-6.896795,303,bus,1,False,False
+10082933264,Entrepot Municipal Skhirat,,33.870548,-7.000019,306;306B,bus,2,True,False
+8977417629,Karnawall Maroc,,33.864369,-7.011204,306;306B,bus,2,False,False
+8977417628,Cumm. Skhirat,,33.861627,-7.018305,306;306B,bus,2,False,False
+12154529638,Ain Hayat,,33.857428,-7.028777,306;306B,bus,2,False,False
+12154529637,Centre De Sante skhirat,,33.854413,-7.034571,306;306B,bus,2,False,False
+12154529636,Poste skhirat,,33.851835,-7.038619,306;306B,bus,2,False,False
+12154529635,Rissani,,33.849106,-7.041622,306;306B,bus,2,False,False
+12154529633,Mun. Skhirat,,33.845412,-7.045984,306;306B,bus,2,True,False
+12154529634,Arrêt 306,,33.839353,-7.044961,306,bus,1,False,False
+8977417620,Sabbah ⵚⴱⴱⴰⵃ صباح,,33.803447,-7.036023,306,bus,1,False,False
+8977417623,Arrêt 306,,33.839417,-7.044814,306,bus,1,False,False
+8977417618,Skhirat,,33.845173,-7.045996,306;306B,bus,2,True,False
+10082933251,Rissani,,33.848916,-7.041596,306;306B,bus,2,True,False
+9983915608,Poste skhirat,,33.851717,-7.038435,306;306B,bus,2,False,False
+10082933262,Centre De Sante skhirat,,33.854309,-7.034458,306;306B,bus,2,True,False
+8977417627,Ain Hayat,,33.857318,-7.028601,306;306B,bus,2,False,False
+12154529639,Commune Skhirat,,33.861541,-7.018212,306;306B,bus,2,False,False
+12154529640,Karnawall Maroc,,33.863992,-7.011186,306;306B,bus,2,False,False
+12154529641,Entrepot Municipal Skhirat,,33.870398,-6.999752,306;306B,bus,2,False,False
+10082819014,Maghreb el Arabi(Chiga) Terminus,,33.916583,-6.891997,306;306B,bus,2,False,False
+12150577786,Zone Economique,,34.13632,-6.724991,201B,bus,1,False,False
+12154428783,Zone Economique,,34.136388,-6.725074,201B,bus,1,False,False
+10088120871,Aeroport,,34.035609,-6.748041,210AE,bus,1,False,False
+10088120866,My.El Hassan,,34.01568,-6.831276,210AE,bus,1,False,False
+5289375822,Gare Rabat Ville,,34.015863,-6.834763,210AE,bus,1,False,False
+10095704326,Arrêt 32H,,33.927798,-6.90883,32H,bus,1,False,False
+10095704327,Arrêt 32H,,33.924865,-6.912048,32H,bus,1,False,False
+10095704329,Mosquée Annour,,33.922232,-6.914932,32H,bus,1,False,False
+10095704332,Arrêt 32H,,33.919494,-6.918031,32H,bus,1,False,False
+10095704331,Arrêt 32H,,33.917008,-6.920584,32H,bus,1,False,False
+10095704335,Arrêt 32H,,33.914795,-6.923004,32H,bus,1,False,False
+10095706681,Arrêt 32H,,33.925805,-6.931942,32H,bus,1,False,False
+10095706713,Arrêt 32H,,33.929013,-6.929125,32H,bus,1,False,False
+8974733429,Amina Bint Wahb,,33.931032,-6.929998,32H,bus,1,False,False
+10095697011,Harhoura,,33.934208,-6.941923,32H,bus,1,False,False
+10095697012,Harhoura,,33.934049,-6.941934,32H,bus,1,False,False
+8974733428,Amina Bint Wahb,,33.9309,-6.929932,32H,bus,1,False,False
+10095706712,Arrêt 32H,,33.928997,-6.928995,32H,bus,1,False,False
+10095706680,Arrêt 32H,,33.925703,-6.931854,32H,bus,1,False,False
+10095704336,Arrêt 32H,,33.914657,-6.922902,32H,bus,1,False,False
+10095704330,Arrêt 32H,,33.916973,-6.920344,32H,bus,1,False,False
+10095704333,Arrêt 32H,,33.919354,-6.917774,32H,bus,1,False,False
+10095704328,Mosquée Annour,,33.922159,-6.914788,32H,bus,1,False,False
+8977417617,Mimouza,,33.837919,-7.05717,306B,bus,1,False,False
+11134670705,Hay El Fath,,33.836282,-7.060211,306B,bus,1,False,False
+9983822391,Skhirat Label'vie,,33.829983,-7.075053,306B,bus,1,False,False
+12152181697,Skhirat Label'vie,,33.829876,-7.074968,306B,bus,1,False,False
+12154529630,Hay El Fath,,33.836177,-7.060164,306B,bus,1,False,False
+12154529631,Mimosa,,33.837896,-7.05696,306B,bus,1,False,False
+10087921402,Annakhil,,33.954311,-6.863479,37B,bus,1,False,False
+3150442196,Villas Hay Riad,,33.95147,-6.866653,37B,bus,1,True,False
+12153569660,Moulay Ali Cherif(Trminus L37B),,33.92866,-6.900502,37B,bus,1,False,False
+5787396394,Arrêt 37B,,33.966645,-6.835972,37B,bus,1,False,False
+1311854956,Madinat Al Irfane مدينة العرفان,مدينة العرفان,33.982636,-6.864271,T1,tram,1,False,False
+1311857650,Cité Universitaire Souissi الحي الجامعي السويسي,الحي الجامعي السويسي,33.98614,-6.860896,T1,tram,1,False,False
+1385128927,Ibn Rochd ابن رشد,ابن رشد,33.989213,-6.857942,T1,tram,1,False,False
+1385128949,Ibn Sina ابن سينا,ابن سينا,33.995197,-6.852286,T1,tram,1,False,False
+1311859342,Agdal-Avenue de France أكدال-شارع فرنسا,أكدال-شارع فرنسا,33.997213,-6.849261,T1,tram,1,False,False
+1311859666,Nations Unies الأمم المتحدة,الأمم المتحدة,33.99971,-6.843914,T1,tram,1,False,False
+1385128955,Stade Al Madina,,34.004477,-6.843088,T1,tram,1,False,False
+1653197103,Bibliothèque Nationale,المكتبة الوطنية,34.009072,-6.842961,T1,tram,1,False,False
+1653197102,Bab Rouah باب الرواح,باب الرواح,34.011743,-6.839371,T1,tram,1,False,False
+1653197109,Mohammed V - Gare de Rabat,محمد الخامس - محطة القطار الرباط,34.015998,-6.836144,T1,tram,1,False,False
+1653197100,Place Al Joulane L1,ساحة الجولان الخط الأول,34.018033,-6.831434,T1,tram,1,False,False
+1311863524,Tour Hassan,صومعة حسان,34.019333,-6.826619,T1;T2,tram,2,True,True
+1385104817,Place du 16 Novembre ساحة 16 نونبر,ساحة 16 نونبر,34.024986,-6.825255,T1;T2,tram,2,False,False
+1654142232,Pont Hassan II قنطرة الحسن الثاني,قنطرة الحسن الثاني,34.025387,-6.822164,T1;T2,tram,2,False,False
+1654158466,Bab Lamrissa باب لمريسة,باب لمريسة,34.032142,-6.819391,T1;T2,tram,2,False,False
+1385104795,Gare de Salé,محطة القطار سلا,34.037941,-6.81629,T1,tram,1,False,False
+1385104799,Diar ديار,ديار,34.040864,-6.81544,T1,tram,1,False,False
+1385104815,Mohammed V-Opéra محمد الخامس-أوبرا,محمد الخامس-أوبرا,34.043155,-6.811408,T1,tram,1,False,False
+1385104828,La Poste البريد,البريد,34.045462,-6.806797,T1,tram,1,False,False
+1385104814,Tabriquet تابريكت,تابريكت,34.047587,-6.800922,T1,tram,1,False,False
+1385104813,Hay Karima حي كريمة,حي كريمة,34.054145,-6.79442,T1,tram,1,False,False
+4592889795,Hay Karima حي كريمة,حي كريمة,34.054174,-6.794467,T1,tram,1,False,False
+2972388834,Tabriquet تابريكت,تابريكت,34.0476,-6.800961,T1,tram,1,False,False
+4592889798,La Poste البريد,البريد,34.045496,-6.806827,T1,tram,1,False,False
+2972378149,Mohammed V-Opéra محمد الخامس-أوبرا,محمد الخامس-أوبرا,34.043187,-6.811426,T1,tram,1,False,False
+2972388882,Diar ديار,ديار,34.040891,-6.815473,T1,tram,1,False,False
+2972388898,Gare de Salé محطة القطار سلا,محطة القطار سلا,34.037945,-6.816324,T1,tram,1,False,False
+4592889792,Bab Lamrissa باب لمريسة,باب لمريسة,34.032154,-6.819422,T1;T2,tram,2,False,False
+2972378141,Pont Hassan II قنطرة الحسن الثاني,قنطرة الحسن الثاني,34.025417,-6.822137,T1;T2,tram,2,False,False
+2972388903,Place du 16 Novembre ساحة 16 نونبر,ساحة 16 نونبر,34.025347,-6.825348,T1;T2,tram,2,False,False
+4592889803,Tour Hassan صومعة حسان,صومعة حسان,34.019365,-6.826644,T1;T2,tram,2,True,True
+4592816492,Place Al Joulane L1 ساحة الجولان الخط الأول,ساحة الجولان الخط الأول,34.018063,-6.831452,T1,tram,1,False,False
+4592816490,Mohammed V - Gare de Rabat محمد الخامس - محطة القطار الرباط,محمد الخامس - محطة القطار الرباط,34.016024,-6.836155,T1,tram,1,False,False
+4592815884,Bab Rouah باب الرواح,باب الرواح,34.011761,-6.839404,T1,tram,1,False,False
+4592815885,Bibliothèque Nationale المكتبة الوطنية,المكتبة الوطنية,34.009085,-6.843001,T1,tram,1,False,False
+4592816491,Nations Unies الأمم المتحدة,الأمم المتحدة,33.999708,-6.843962,T1,tram,1,False,False
+4592815883,Agdal-Avenue de France أكدال-شارع فرنسا,أكدال-شارع فرنسا,33.997245,-6.849273,T1,tram,1,False,False
+4592815888,Ibn Sina ابن سينا,ابن سينا,33.995214,-6.852322,T1,tram,1,False,False
+4592889797,Ibn Rochd ابن رشد,ابن رشد,33.98924,-6.857979,T1,tram,1,False,False
+4592815886,Cité Universitaire Souissi الحي الجامعي السويسي,الحي الجامعي السويسي,33.986158,-6.860932,T1,tram,1,False,False
+4592816489,Madinat Al Irfane مدينة العرفان,مدينة العرفان,33.982654,-6.864307,T1,tram,1,False,False
+13727028582,Stade Al Madina,,34.004466,-6.843129,T1,tram,1,False,False
+6753377459,Yacoub El Mansour,,33.991452,-6.871732,T2,tram,1,False,False
+6753377457,Oued Dahab,,33.995303,-6.871833,T2,tram,1,False,False
+6753377454,Essalam,,34.000878,-6.867842,T2,tram,1,False,False
+6450146832,Al Houria,,34.005046,-6.864555,T2,tram,1,False,False
+1385128965,Hôpital Moulay Youssef,مستشفى مولاي يوسف,34.010772,-6.859149,T2,tram,1,False,False
+1385128993,Sidi Mohammed Ben Abdellah,سيدي محمد ابن عبد الله,34.016144,-6.854657,T2,tram,1,False,False
+1385128950,Place de Russie ساحة روسيا,ساحة روسيا,34.018796,-6.850003,T2,tram,1,False,False
+1385128984,Bab El Had باب الحد,باب الحد,34.020676,-6.842943,T2,tram,1,False,False
+1653197107,Medina Rabat الرباط المدينة العتيقة,الرباط المدينة العتيقة,34.021854,-6.838891,T2,tram,1,False,False
+1653197101,Bab Chellah باب شالة,باب شالة,34.023664,-6.834159,T2,tram,1,False,False
+1385129014,Place Al Joulane L2,ساحة الجولان الخط الثاني,34.018865,-6.831424,T2,tram,1,False,False
+1385128920,Arrazi الرازي,الرازي,34.035465,-6.812605,T2,tram,1,False,False
+1385129016,Bettana بطانة,بطانة,34.034975,-6.806677,T2,tram,1,False,False
+1385128952,Hassan II الحسن الثاني,الحسن الثاني,34.034671,-6.799653,T2,tram,1,False,False
+7213813772,Hay Essalam حي السلام,حي السلام,34.034234,-6.793301,T2,tram,1,False,False
+7446934255,Zarbia زربية,Zarbia زربية,34.032351,-6.786987,T2,tram,1,False,False
+7660579360,Moulay Ismaïl,مولاي اسماعيل,34.030999,-6.780563,T2,tram,1,False,False
+7660579362,La Rocade الطريق المداري,La Rocade الطريق المداري,34.029872,-6.77408,T2,tram,1,False,False
+7660579364,Bab Karia باب القرية,Bab Karia باب القرية,34.028483,-6.76796,T2,tram,1,False,False
+7660579366,Hssaine حصين,Hssaine حصين,34.027134,-6.762436,T2,tram,1,False,False
+7660579368,Hay El Wafaa حي الوفاء,Hay El Wafaa حي الوفاء,34.026188,-6.758961,T2,tram,1,False,False
+7660579370,Hôpital Moulay Abdellah مستشفى مولاي عبدالله,,34.025135,-6.753636,T2,tram,1,False,False
+4592889796,Hôpital Moulay Youssef مستشفى مولاي يوسف,مستشفى مولاي يوسف,34.010798,-6.859194,T2,tram,1,False,False
+4592889802,Sidi Mohammed Ben Abdellah سيدي محمد ابن عبد الله,سيدي محمد ابن عبد الله,34.016162,-6.854696,T2,tram,1,False,False
+4592889801,Place de Russie ساحة روسيا,ساحة روسيا,34.018813,-6.850016,T2,tram,1,False,False
+4592889791,Bab El Had باب الحد,باب الحد,34.020692,-6.842949,T2,tram,1,False,False
+4592889799,Medina Rabat الرباط المدينة العتيقة,الرباط المدينة العتيقة,34.021883,-6.838908,T2,tram,1,False,False
+4592889790,Bab Chellah باب شالة,باب شالة,34.023696,-6.834178,T2,tram,1,False,False
+4592889800,Place Al Joulane L2 ساحة الجولان الخط الثاني,ساحة الجولان الخط الثاني,34.018874,-6.831393,T2,tram,1,False,False
+4592889789,Arrazi الرازي,الرازي,34.035496,-6.812581,T2,tram,1,False,False
+4592889793,Bettana بطانة,بطانة,34.035004,-6.806678,T2,tram,1,False,False
+4592889794,Hassan II الحسن الثاني,الحسن الثاني,34.034709,-6.799646,T2,tram,1,False,False

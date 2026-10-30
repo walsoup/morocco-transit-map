@@ -98,3 +98,11 @@ The Pages workflow publishes `web/` and `data/` on every push to `main`.
 - Transit data: © OpenStreetMap contributors (ODbL)
 - Basemaps: © OpenStreetMap contributors, © CARTO; satellite tiles © Esri
 - Map library: Leaflet
+
+## License
+
+The code in this repository is released under the [MIT License](LICENSE). Transit data derived from OpenStreetMap stays under the [ODbL](https://opendatacommons.org/licenses/odbl/) (© OpenStreetMap contributors).
+
+## Work in progress
+
+This map is still a work in progress. Feedback is welcome - if you spot a wrong route, a missing stop, or anything that could be better, open an issue.

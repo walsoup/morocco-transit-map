@@ -1156,6 +1156,7 @@ stop_id,stop_name,stop_name_ar,lat,lon,lines,modes,routes_count,has_shelter,has_
 4592889797,Ibn Rochd ابن رشد,ابن رشد,33.98924,-6.857979,T1,tram,1,False,False
 4592815886,Cité Universitaire Souissi الحي الجامعي السويسي,الحي الجامعي السويسي,33.986158,-6.860932,T1,tram,1,False,False
 4592816489,Madinat Al Irfane مدينة العرفان,مدينة العرفان,33.982654,-6.864307,T1,tram,1,False,False
+13727028582,Stade Al Madina,,34.004466,-6.843129,T1,tram,1,False,False
 6753377459,Yacoub El Mansour,,33.991452,-6.871732,T2,tram,1,False,False
 6753377457,Oued Dahab,,33.995303,-6.871833,T2,tram,1,False,False
 6753377454,Essalam,,34.000878,-6.867842,T2,tram,1,False,False

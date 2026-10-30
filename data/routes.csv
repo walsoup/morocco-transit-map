@@ -1,88 +1,88 @@
 route_id,line_ref,mode,route_name,origin,destination,zone,length_km,stops_count,color
-14659790,1,bus,L1:Bab Chellah-Doha,Bab Chellah,Doha Centre,Rabat Urban Core,11.38,24,#E63946
+14659790,1,bus,L1:Bab Chellah-Doha,Bab Chellah,Doha Centre,Rabat Urban Core,11.39,24,#E63946
 13010110,1,bus,L1:Doha-Bab Chellah,Doha Centre,Bab Chellah,Rabat Urban Core,11.91,26,#E63946
-14659938,2,bus,L2:Bab Chellah-Karia,Mohammed V theater,Diour El Maliya,Salé & North,12.52,23,#1D3557
+14659938,2,bus,L2:Bab Chellah-Karia,Mohammed V theater,Diour El Maliya,Salé & North,12.34,23,#1D3557
 13010205,2,bus,L2:Karia-Bab Chellah,Diour Al Maliya,Mohammed V theater,Salé & North,11.76,22,#1D3557
-14671164,3,bus,L3:Bab Chellah-Sidi Taibi,Bab Chellah,Sidi Taibi,Rabat Urban Core,24.71,38,#457B9D
-14671163,3,bus,L3:Sidi Taibi-Bab Chellah,Sidi Taibi,Bab Chellah,Rabat Urban Core,25.05,40,#457B9D
-14660190,4,bus,L4:Bab Chellah-Zerdal,Mohammed V Théâtre,Zerdal Terminus,Rabat Urban Core,21.75,40,#2A9D8F
-13010252,4,bus,L4 : Zerdal-Bab Chellah,Zerdal Terminus,Mohammed V theater,Rabat Urban Core,19.58,39,#2A9D8F
-14660304,5,bus,L5:Bab Chellah-Sidi Eddaoui,Mohammed V Théâtre,Sidi Abdellah,Rabat Urban Core,11.66,27,#E76F51
+14671164,3,bus,L3:Bab Chellah-Sidi Taibi,Bab Chellah,Sidi Taibi,Salé & North,24.51,38,#457B9D
+14671163,3,bus,L3:Sidi Taibi-Bab Chellah,Sidi Taibi,Bab Chellah,Salé & North,25.05,40,#457B9D
+14660190,4,bus,L4:Bab Chellah-Zerdal,Mohammed V Théâtre,Zerdal Terminus,Rabat Urban Core,20.34,40,#2A9D8F
+13010252,4,bus,L4 : Zerdal-Bab Chellah,Zerdal Terminus,Mohammed V theater,Rabat Urban Core,19.57,39,#2A9D8F
+14660304,5,bus,L5:Bab Chellah-Sidi Eddaoui,Mohammed V Théâtre,Sidi Abdellah,Rabat Urban Core,11.54,27,#E76F51
 13010910,5,bus,L5 : Sidi Eddaoui سيدي الضاوي - Bab Chellah,Sidi Abdellah,Mohammed V theater,Rabat Urban Core,11.0,29,#E76F51
-13011115,6,bus,L6:Hizb AL Istiklal-Marché de gros Témara,Hizb AL Istiklal,Marché de Gros Témara,"Témara, Harhoura & South",20.67,45,#F4A261
-14660883,6,bus,L6:Marché de gros temara-Hizb AL Istiklal,Marché de gros temara,Hizb AL Istiklal,"Témara, Harhoura & South",21.03,45,#F4A261
-14660977,7,bus,L7:Bab El Had-Marché de gros temara,Avenue Hassan II (Bab El Had)Terminus,Marché de gros temara,"Témara, Harhoura & South",17.81,37,#8338EC
-13020380,7,bus,L7:Marché de gros Témara-Bab El Had,Marché de gros Témara,Avenue Hassan II (Bab El Had)Terminus,"Témara, Harhoura & South",18.15,37,#8338EC
-14663820,8,bus,L8:Bab El Had-Ain Aouda,Hizb AL Istiklal,Ain Aouda,Rabat Urban Core,32.41,39,#3A86FF
-13020058,8,bus,L8 : Ain Aouda-Bab El Had,Ain Aouda,Hizb AL Istiklal,Rabat Urban Core,35.32,40,#3A86FF
-14671852,9,bus,L9:Gare Routiere Agdal-Karia,Gare Routiere Agdal,Hssayen,Salé & North,23.99,36,#FB5607
-13020197,10,bus,L10:Sala al Jadida-Hassan,Mosque Alhouda(Sale Al jadida),Quartier Administrative,Rabat Urban Core,15.66,30,#06D6A0
-14663645,10,bus,L10:Hassan-Sala Al Jadida,Quartier Administrative,Mosque Alhouda(Sale Al jadida),Rabat Urban Core,15.93,28,#06D6A0
-14656339,22,bus,L22:Bab Chellah-Bouknadel,L22:Bab Chellah,Bouknadel,Salé & North,12.04,25,#073B4C
+13011115,6,bus,L6:Hizb AL Istiklal-Marché de gros Témara,Hizb AL Istiklal,Marché de Gros Témara,"Témara, Harhoura & South",20.64,45,#F4A261
+14660883,6,bus,L6:Marché de gros temara-Hizb AL Istiklal,Marché de gros temara,Hizb AL Istiklal,"Témara, Harhoura & South",20.59,45,#F4A261
+14660977,7,bus,L7:Bab El Had-Marché de gros temara,Avenue Hassan II (Bab El Had)Terminus,Marché de gros temara,"Témara, Harhoura & South",17.93,37,#8338EC
+13020380,7,bus,L7:Marché de gros Témara-Bab El Had,Marché de gros Témara,Avenue Hassan II (Bab El Had)Terminus,"Témara, Harhoura & South",17.93,37,#8338EC
+14663820,8,bus,L8:Bab El Had-Ain Aouda,Hizb AL Istiklal,Ain Aouda,"Témara, Harhoura & South",32.08,39,#3A86FF
+13020058,8,bus,L8 : Ain Aouda-Bab El Had,Ain Aouda,Hizb AL Istiklal,"Témara, Harhoura & South",35.27,40,#3A86FF
+14671852,9,bus,L9:Gare Routiere Agdal-Karia,Gare Routiere Agdal,Hssayen,Salé & North,23.86,36,#FB5607
+13020197,10,bus,L10:Sala al Jadida-Hassan,Mosque Alhouda(Sale Al jadida),Quartier Administrative,Salé & North,15.66,30,#06D6A0
+14663645,10,bus,L10:Hassan-Sala Al Jadida,Quartier Administrative,Mosque Alhouda(Sale Al jadida),Salé & North,15.7,28,#06D6A0
+14656339,22,bus,L22:Bab Chellah-Bouknadel,Bab Chellah,Bouknadel,Salé & North,12.05,25,#073B4C
 12993079,22,bus,L22 : Bouknadel - Bab Chellah,Bouknadel,Bab Chellah,Salé & North,12.47,26,#073B4C
-14656401,23,bus,L23:Bab Chellah-Sidi Eddaoui,Théâtre Mohammed V,Sidi Abdellah,Rabat Urban Core,12.56,16,#D90429
+14656401,23,bus,L23:Bab Chellah-Sidi Eddaoui,Théâtre Mohammed V,Sidi Abdellah,Rabat Urban Core,12.57,16,#D90429
 12993246,23,bus,L23 : Sidi Eddaoui - Bab Chellah,Sidi Abdellah,Théâtre Mohammed V,Rabat Urban Core,11.8,19,#D90429
-14658395,24,bus,L24:Bab Chellah-Maamoura,Théâtre Mohammed V,Residence Bayt Al Mostaqbal,Rabat Urban Core,14.7,22,#7209B7
+14658395,24,bus,L24:Bab Chellah-Maamoura,Théâtre Mohammed V,Residence Bayt Al Mostaqbal,Rabat Urban Core,14.45,22,#7209B7
 12993328,24,bus,L24:Maamoura-Bab Chellah,Maamoura,Mohammed V theater,Rabat Urban Core,15.06,20,#7209B7
-14658873,25,bus,L25:Bab Chellah-Bayt Al Mostakbal,L25:Bab Chellah,Bayt Al Mostakbal,Rabat Urban Core,12.36,26,#3F37C9
+14658873,25,bus,L25:Bab Chellah-Bayt Al Mostakbal,Bab Chellah,Bayt Al Mostakbal,Rabat Urban Core,12.38,26,#3F37C9
 12993500,25,bus,L25:Bayt Al Mostakbal-Bab Chellah,Bayt Al Mostakbal,Mohammed V theater,Rabat Urban Core,11.74,28,#3F37C9
-14659088,26,bus,L26:Bab Chellah-Mazza,L26:Bab Chellah,Mazza,Rabat Urban Core,12.8,23,#4361EE
+14659088,26,bus,L26:Bab Chellah-Mazza,Bab Chellah,Mazza,Rabat Urban Core,11.71,23,#4361EE
 13010076,26,bus,L26:Mazza-Bab Chellah,Mazza,Bab Chellah,Rabat Urban Core,11.04,22,#4361EE
-7351721,29,bus,L29:Douar jdid-Shoul,Douar jdid,Sidi Azzouz,Intercommunal,45.68,19,#4895EF
+7351721,29,bus,L29:Douar jdid-Shoul,Douar jdid,Sidi Azzouz,Intercommunal,45.56,19,#4895EF
 14672094,29,bus,L29:Shoul-Douar jdid,Sidi Azzouz,Douar jdid,Intercommunal,45.43,20,#4895EF
-14672257,30,bus,L30:Gare Rabat agdal-Wifaq,Gare Rabat agda,Tribunal de prem. Instance(Al Wifak),"Témara, Harhoura & South",16.76,32,#4CC9F0
-14672258,30,bus,L30:Wifaq-Gare Rabat agdal,Tribunal de prem. Instance(Al Wifak),Gare Rabat agdal,"Témara, Harhoura & South",16.8,29,#4CC9F0
-6149081,31,bus,L31:Bab El Had-Mers El Kheir,Avenue Hassan II (Bab El Had)Terminus,Mers El Kheir,Rabat Urban Core,23.1,39,#588157
-7432228,31,bus,L31:Mers El Kheir-Bab El Had,Mers El Kheir,Avenue Hassan II (Bab El Had)Terminus,Rabat Urban Core,23.31,41,#588157
-14672369,33,bus,L33:Bab El Had-Plage de Skhirat,Avenue Hassan II (Bab El Had)Terminus,Plage de Skhirat,"Témara, Harhoura & South",28.85,48,#3A5A40
-14672370,33,bus,L33:Plage de Skhirat-Bab El Had,Plage de Skhirat,Avenue Hassan II (Bab El Had)Terminus,"Témara, Harhoura & South",28.87,47,#3A5A40
-14679618,34,bus,L34:Bab El Had-Ain Atik,Av. Hassan II (Bab El Had)Terminus,Q. Indu. Ain Attiq,"Témara, Harhoura & South",22.75,33,#606C38
-14679619,34,bus,L34:Ain Atik-Bab El Had,Q. Indu. Ain Attiq,Av. Hassan II (Bab El Had)Terminus,"Témara, Harhoura & South",22.64,32,#606C38
-14679621,35,bus,L35:Bab El Had-El Maghreb Arabi(Chiga),AAv. Hassan II (Bab El Had)Terminus,Av. Ibn Sina,Rabat Urban Core,14.98,31,#283618
-14679620,35,bus,L35:El Maghreb el Arabi(Chiga)-Bab El Had,Av. Ibn Sina,Av. Hassan II (Bab El Had)Terminus,Rabat Urban Core,15.79,34,#283618
-14679622,36,bus,L36:Bab El Had-El Maghreb Arabi(Chiga),Av. Hassan II (Bab El Had)Terminus,Av. Ibn Sina,Rabat Urban Core,15.24,23,#BC6C25
-14679623,36,bus,L36:El Maghreb Arabi(Chiga)-Bab El Had,L36:El Maghreb Arabi(Chiga),Bab El Had,Rabat Urban Core,16.95,25,#BC6C25
-14676180,37,bus,L37:Youssoufia-Ain Atik,Jardin Mini Parc (Youssoufia),Q. Indu. Ain Attiq,"Témara, Harhoura & South",23.2,38,#DDA15E
-14676181,37,bus,L37:Ain Atik-Youssoufia,Q. Indu. Ain Attiq,Jardin Mini Parc (Youssoufia),"Témara, Harhoura & South",23.5,40,#DDA15E
-14679625,38,bus,L38:Bab El Had-Tamesna,L38:Bab El Had,Tamesna,Rabat Urban Core,30.2,49,#9B5DE5
-14679624,38,bus,L38:Tamesna-Bab El Had,RESIDENCE TAWHID-V,AV HASSAN II BAB EL HED,Rabat Urban Core,29.84,47,#9B5DE5
-14683958,39,bus,L39:Clinique Ibn Sina-Annour,Clinique Ibn Sina,Annour,Intercommunal,27.15,43,#F15BB5
-14683959,39,bus,L39:Annour-Clinique Ibn Sina,Annour,Clinique Ibn Sina,Intercommunal,27.17,43,#F15BB5
-14677600,40,bus,L40:C.OumAzza-Ain Aouda,C.OumAzza,Ain Aouda,Intercommunal,11.94,5,#00BBF9
-14677599,40,bus,L40:Ain Aouda-C.OumAzza,Ain Aouda,C.OumAzza,Intercommunal,14.36,5,#00BBF9
-12949544,101,bus,L101:Hay Ennahda-Hay Fath,Hay Ennahda,Hay Fath,Rabat Urban Core,18.7,36,#6A040F
-14664282,101,bus,L101:Hay Fath-Hay Ennahda,Hay Fath,Hay Ennahda,Rabat Urban Core,18.99,36,#6A040F
-12980790,102,bus,L102:Z.Industrielle-Place D'Italie,Z.Industriele,Place d'Italie,Rabat Urban Core,12.04,22,#E63946
-14664698,102,bus,L102:Place D'Italie-Z.Industrielle,Place D'Italie,Z.Industrielle,Rabat Urban Core,12.7,23,#E63946
-14667676,104,bus,L104:Hay Fath-mini parc,L104:Hay Fath,mini parc,Rabat Urban Core,12.21,24,#1D3557
-12951805,104,bus,L104:mini parc-Hay Fath,mini parc,Hay Fath,Rabat Urban Core,12.02,26,#1D3557
-14670810,106,bus,L106:Hay Fath-Abdelmoumen,Hay Fath,Abdelmoumen,Rabat Urban Core,11.82,21,#457B9D
-14670811,106,bus,L106:Abdelmoumen-Hay Fath,Abdelmoumen,Hay Fath,Rabat Urban Core,11.02,22,#457B9D
-12951541,107,bus,L107:Bab El Had-Hay Fath,Bab Lhad,Hay Fath,Rabat Urban Core,9.68,26,#2A9D8F
-14667848,107,bus,L107:Hay Fath-Bab El Had,L107:Hay Fath,Bab El Had,Rabat Urban Core,9.96,23,#2A9D8F
+14672257,30,bus,L30:Gare Rabat agdal-Wifaq,Gare Rabat agda,Tribunal de prem. Instance(Al Wifak),"Témara, Harhoura & South",16.74,32,#4CC9F0
+14672258,30,bus,L30:Wifaq-Gare Rabat agdal,Tribunal de prem. Instance(Al Wifak),Gare Rabat agdal,"Témara, Harhoura & South",16.54,29,#4CC9F0
+6149081,31,bus,L31:Bab El Had-Mers El Kheir,Avenue Hassan II (Bab El Had)Terminus,Mers El Kheir,"Témara, Harhoura & South",23.06,39,#588157
+7432228,31,bus,L31:Mers El Kheir-Bab El Had,Mers El Kheir,Avenue Hassan II (Bab El Had)Terminus,"Témara, Harhoura & South",22.98,41,#588157
+14672369,33,bus,L33:Bab El Had-Plage de Skhirat,Avenue Hassan II (Bab El Had)Terminus,Plage de Skhirat,"Témara, Harhoura & South",28.8,48,#3A5A40
+14672370,33,bus,L33:Plage de Skhirat-Bab El Had,Plage de Skhirat,Avenue Hassan II (Bab El Had)Terminus,"Témara, Harhoura & South",28.82,47,#3A5A40
+14679618,34,bus,L34:Bab El Had-Ain Atik,Av. Hassan II (Bab El Had)Terminus,Q. Indu. Ain Attiq,"Témara, Harhoura & South",22.25,33,#606C38
+14679619,34,bus,L34:Ain Atik-Bab El Had,Q. Indu. Ain Attiq,Av. Hassan II (Bab El Had)Terminus,"Témara, Harhoura & South",22.02,32,#606C38
+14679621,35,bus,L35:Bab El Had-El Maghreb Arabi(Chiga),AAv. Hassan II (Bab El Had)Terminus,Av. Ibn Sina,Rabat Urban Core,14.97,31,#283618
+14679620,35,bus,L35:El Maghreb el Arabi(Chiga)-Bab El Had,Av. Ibn Sina,Av. Hassan II (Bab El Had)Terminus,Rabat Urban Core,15.34,34,#283618
+14679622,36,bus,L36:Bab El Had-El Maghreb Arabi(Chiga),Av. Hassan II (Bab El Had)Terminus,Av. Ibn Sina,Rabat Urban Core,15.14,23,#BC6C25
+14679623,36,bus,L36:El Maghreb Arabi(Chiga)-Bab El Had,El Maghreb Arabi(Chiga),Bab El Had,Rabat Urban Core,16.42,25,#BC6C25
+14676180,37,bus,L37:Youssoufia-Ain Atik,Jardin Mini Parc (Youssoufia),Q. Indu. Ain Attiq,"Témara, Harhoura & South",22.68,38,#DDA15E
+14676181,37,bus,L37:Ain Atik-Youssoufia,Q. Indu. Ain Attiq,Jardin Mini Parc (Youssoufia),"Témara, Harhoura & South",22.93,40,#DDA15E
+14679625,38,bus,L38:Bab El Had-Tamesna,Bab El Had,Tamesna,"Témara, Harhoura & South",30.14,49,#9B5DE5
+14679624,38,bus,L38:Tamesna-Bab El Had,RESIDENCE TAWHID-V,AV HASSAN II BAB EL HED,"Témara, Harhoura & South",29.82,47,#9B5DE5
+14683958,39,bus,L39:Clinique Ibn Sina-Annour,Clinique Ibn Sina,Annour,Intercommunal,26.94,43,#F15BB5
+14683959,39,bus,L39:Annour-Clinique Ibn Sina,Annour,Clinique Ibn Sina,Intercommunal,26.86,43,#F15BB5
+14677600,40,bus,L40:C.OumAzza-Ain Aouda,C.OumAzza,Ain Aouda,"Témara, Harhoura & South",11.88,5,#00BBF9
+14677599,40,bus,L40:Ain Aouda-C.OumAzza,Ain Aouda,C.OumAzza,"Témara, Harhoura & South",14.28,5,#00BBF9
+12949544,101,bus,L101:Hay Ennahda-Hay Fath,Hay Ennahda,Hay Fath,Rabat Urban Core,18.62,36,#6A040F
+14664282,101,bus,L101:Hay Fath-Hay Ennahda,Hay Fath,Hay Ennahda,Rabat Urban Core,18.32,36,#6A040F
+12980790,102,bus,L102:Z.Industrielle-Place D'Italie,Z.Industriele,Place d'Italie,Rabat Urban Core,12.03,22,#E63946
+14664698,102,bus,L102:Place D'Italie-Z.Industrielle,Place D'Italie,Z.Industrielle,Rabat Urban Core,12.36,23,#E63946
+14667676,104,bus,L104:Hay Fath-mini parc,Hay Fath,mini parc,Rabat Urban Core,11.9,24,#1D3557
+12951805,104,bus,L104:mini parc-Hay Fath,mini parc,Hay Fath,Rabat Urban Core,11.61,26,#1D3557
+14670810,106,bus,L106:Hay Fath-Abdelmoumen,Hay Fath,Abdelmoumen,Rabat Urban Core,11.26,21,#457B9D
+14670811,106,bus,L106:Abdelmoumen-Hay Fath,Abdelmoumen,Hay Fath,Rabat Urban Core,10.95,22,#457B9D
+12951541,107,bus,L107:Bab El Had-Hay Fath,Bab Lhad,Hay Fath,Rabat Urban Core,9.66,26,#2A9D8F
+14667848,107,bus,L107:Hay Fath-Bab El Had,Hay Fath,Bab El Had,Rabat Urban Core,9.56,23,#2A9D8F
 14670929,108,bus,L108:Hay Ennahda-Abdelmoumen,Hay Ennahda,Abdelmoumen,Rabat Urban Core,9.94,17,#E76F51
-14670930,108,bus,L108:Abdelmoumen-Hay Ennahda,Abdelmoumen,Hay Ennahda,Rabat Urban Core,10.98,19,#E76F51
-12992988,201,bus,L201 : Zerdal - Technopolis,Zerdal,Technopolis,Salé & North,27.9,44,#F4A261
-14667997,201,bus,L201:Technopolis-zerdal,L201:Technopolis,zerdal,Salé & North,28.24,43,#F4A261
-14668793,202,bus,L202:Univ. Mohamed V Sale-douar jdid,L202:Univ. Mohamed V Sale,douar jdid,Salé & North,8.69,16,#8338EC
+14670930,108,bus,L108:Abdelmoumen-Hay Ennahda,Abdelmoumen,Hay Ennahda,Rabat Urban Core,10.62,19,#E76F51
+12992988,201,bus,L201 : Zerdal - Technopolis,Zerdal,Technopolis,Salé & North,27.99,44,#F4A261
+14667997,201,bus,L201:Technopolis-zerdal,Technopolis,zerdal,Salé & North,27.94,43,#F4A261
+14668793,202,bus,L202:Univ. Mohamed V Sale-douar jdid,Univ. Mohamed V Sale,douar jdid,Salé & North,8.69,16,#8338EC
 12951894,202,bus,L202:douar jdid-Univ. Mohamed V Sale,Douar Jdid,Univ Mohamed V Salé,Salé & North,8.71,16,#8338EC
-12979142,204,bus,L 204:Bouknadel-Sala Al Jadida,Bouchouk,Terminus Av. Bouregreg,Salé & North,17.57,33,#3A86FF
-14668978,204,bus,L204:Sala Al Jadida-Bouknadel,Terminus Av. Bouregreg,Bouchouk,Salé & North,18.45,31,#3A86FF
-14669023,303,bus,L303:El Maghreb Arabi-Ain Aouda,L303:El Maghreb Arabi,Ain Aouda,"Témara, Harhoura & South",36.49,44,#FB5607
-13009984,303,bus,L303 : Ain Aouda - Tamesna - Maghreb al Arabi,Ain Aouda,Maghreb al Arabi,"Témara, Harhoura & South",36.08,43,#FB5607
-14669395,306,bus,L306:El Maghreb Arabi-Commune Essebbah,L306:El Maghreb Arabi,Commune Essebbah,"Témara, Harhoura & South",25.82,38,#06D6A0
-12980789,306,bus,L306:Commune Essebbah-Maghreb El Arabi,Commune Essebah,El Maghreb el arabi,"Témara, Harhoura & South",25.42,35,#06D6A0
-17996731,201B,bus,L201B:Chateau Hay Salam-Zone économique,Chateau Hay Salam,Zone économique,Salé & North,14.53,24,#D90429
+12979142,204,bus,L 204:Bouknadel-Sala Al Jadida,Bouchouk,Terminus Av. Bouregreg,Salé & North,17.7,33,#3A86FF
+14668978,204,bus,L204:Sala Al Jadida-Bouknadel,Terminus Av. Bouregreg,Bouchouk,Salé & North,18.27,31,#3A86FF
+14669023,303,bus,L303:El Maghreb Arabi-Ain Aouda,El Maghreb Arabi,Ain Aouda,"Témara, Harhoura & South",36.44,44,#FB5607
+13009984,303,bus,L303 : Ain Aouda - Tamesna - Maghreb al Arabi,Ain Aouda,Maghreb al Arabi,"Témara, Harhoura & South",35.85,43,#FB5607
+14669395,306,bus,L306:El Maghreb Arabi-Commune Essebbah,El Maghreb Arabi,Commune Essebbah,"Témara, Harhoura & South",25.55,38,#06D6A0
+12980789,306,bus,L306:Commune Essebbah-Maghreb El Arabi,Commune Essebah,El Maghreb el arabi,"Témara, Harhoura & South",24.9,35,#06D6A0
+17996731,201B,bus,L201B:Chateau Hay Salam-Zone économique,Chateau Hay Salam,Zone économique,Salé & North,14.31,24,#D90429
 17996730,201B,bus,L201B:Zone économique-Chateau Hay Salam,Zone économique,Chateau Hay Salam,Salé & North,14.39,24,#D90429
-14676497,210AE,bus,L210 AE:Aeroport-Gare Agdal,Aeroport,Gare Agdal,Airport Express,13.81,4,#3F37C9
-14676496,210AE,bus,L210 AE:Gare Agdal-Aeroport,Gare Agdal,Aeroport,Airport Express,13.55,4,#3F37C9
-5279026,32H,bus,L32H:Bab Lhad-Harhoura,Bab El Had,Harhoura,"Témara, Harhoura & South",21.76,35,#118AB2
-5278778,32H,bus,L32H:Harhoura-Bab El Had,Harhoura,Bab El Had,"Témara, Harhoura & South",22.02,35,#118AB2
-14669501,306B,bus,L306B:El Maghreb Arabi-Hay Fath(Skhirat),El Maghreb Arabi,Hay Fath(Skhirat),"Témara, Harhoura & South",24.09,35,#7209B7
-14669502,306B,bus,L306B:Hay Fath(Skhirat)-Maghreb Arabi,Hay El Fath,El Maghreb Arabi,"Témara, Harhoura & South",23.37,34,#7209B7
-14676182,37B,bus,L37B:Youssoufia-Massira,Jardin Mini Parc (Youssoufia),Moulay Ali Cherif,Intercommunal,11.49,22,#073B4C
+14676497,210AE,bus,L210 AE:Aeroport-Gare Agdal,Aeroport,Gare Agdal,Airport Express,13.4,4,#3F37C9
+14676496,210AE,bus,L210 AE:Gare Agdal-Aeroport,Gare Agdal,Aeroport,Airport Express,13.18,4,#3F37C9
+5279026,32H,bus,L32H:Bab Lhad-Harhoura,Bab El Had,Harhoura,"Témara, Harhoura & South",21.84,35,#118AB2
+5278778,32H,bus,L32H:Harhoura-Bab El Had,Harhoura,Bab El Had,"Témara, Harhoura & South",21.61,35,#118AB2
+14669501,306B,bus,L306B:El Maghreb Arabi-Hay Fath(Skhirat),El Maghreb Arabi,Hay Fath(Skhirat),"Témara, Harhoura & South",23.89,35,#7209B7
+14669502,306B,bus,L306B:Hay Fath(Skhirat)-Maghreb Arabi,Hay El Fath,El Maghreb Arabi,"Témara, Harhoura & South",22.98,34,#7209B7
+14676182,37B,bus,L37B:Youssoufia-Massira,Jardin Mini Parc (Youssoufia),Moulay Ali Cherif,Intercommunal,11.31,22,#073B4C
 14676183,37B,bus,L37B:Massira-Youssoufia,Moulay Ali Cherif,Jardin Mini Parc (Youssoufia),Intercommunal,11.4,23,#073B4C
 4486847,T1,tram,L1: Madinat Al Irfane → Hay Karima,Madinat Al Irfane,Hay Karima,Tramway,11.69,21,#1E40AF
-5293754,T1,tram,L1: Hay Karima → Madinat Al Irfane,Hay Karima,Madinat Al Irfane,Tramway,11.68,20,#1E40AF
+5293754,T1,tram,L1: Hay Karima → Madinat Al Irfane,Hay Karima,Madinat Al Irfane,Tramway,11.68,21,#1E40AF
 4486848,T2,tram,L2: Yacoub el Mansour → Hôpital Moulay Abdellah,Yacoub el Mansour,Hôpital Moulay Abdellah,Tramway,15.41,26,#BE185D
-5391136,T2,tram,L2: Hôpital Moulay Abdellah → Yacoub el Mansour,Hôpital Moulay Abdellah,Yacoub el Mansour,Tramway,15.48,14,#BE185D
+5391136,T2,tram,L2: Hôpital Moulay Abdellah → Yacoub el Mansour,Hôpital Moulay Abdellah,Yacoub el Mansour,Tramway,15.41,14,#BE185D

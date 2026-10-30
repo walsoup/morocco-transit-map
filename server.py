@@ -6,14 +6,15 @@ and machine-readable REST API endpoints for data science & AI agent development.
 """
 
 import os
-import sys
 import json
 import math
 import mimetypes
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs, unquote
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 PORT = int(os.environ.get("PORT", 8080))
+HOST = os.environ.get("HOST", "127.0.0.1")
+STOPS_PAGE_LIMIT = 200
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 WEB_DIR = os.path.join(BASE_DIR, "web")
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -26,6 +27,36 @@ SUMMARY_JSON_PATH = os.path.join(DATA_DIR, "network_summary.json")
 routes_cache = None
 stops_cache = None
 summary_cache = None
+
+def parse_nearest_query(query):
+    """Return (lat, lon, k) or raise ValueError for a 400 response.
+
+    lat and lon are required. They must be finite and inside geographic bounds.
+    k is clamped to 1..50 so a negative value cannot slice the full stop list.
+    """
+    if "lat" not in query or "lon" not in query:
+        raise ValueError("lat and lon are required")
+    lat_raw = query["lat"][0] if query["lat"] else ""
+    lon_raw = query["lon"][0] if query["lon"] else ""
+    if lat_raw == "" or lon_raw == "":
+        raise ValueError("lat and lon are required")
+    try:
+        lat = float(lat_raw)
+        lon = float(lon_raw)
+    except (TypeError, ValueError, OverflowError):
+        raise ValueError("lat and lon must be finite numbers")
+    if not math.isfinite(lat) or not math.isfinite(lon):
+        raise ValueError("lat and lon must be finite numbers")
+    if not (-90.0 <= lat <= 90.0 and -180.0 <= lon <= 180.0):
+        raise ValueError("lat must be between -90 and 90 and lon between -180 and 180")
+
+    k_raw = query.get("k", ["5"])[0] if query.get("k", ["5"]) else "5"
+    try:
+        k = int(k_raw)
+    except (TypeError, ValueError, OverflowError):
+        raise ValueError("k must be an integer")
+    return lat, lon, max(1, min(50, k))
+
 
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371000  # meters
@@ -54,19 +85,8 @@ class RabatBusHandler(BaseHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
 
-    def resolve_static_path(self, path):
-        if path == "/" or path == "/index.html":
-            return os.path.join(WEB_DIR, "index.html"), "text/html"
-        elif path in ("/style.css", "/app.js"):
-            filename = os.path.basename(path)
-            mime = "text/css" if filename.endswith(".css") else "application/javascript"
-            return os.path.join(WEB_DIR, filename), mime
-        elif path.startswith("/data/"):
-            filename = os.path.basename(path)
-            filepath = os.path.join(DATA_DIR, filename)
-            mime, _ = mimetypes.guess_type(filepath)
-            return filepath, mime or "application/octet-stream"
-        return None, None
+    def line_ref_from_path(self, path):
+        return unquote(path[len("/api/lines/"):]).strip()
 
     def send_error_headers(self, status):
         self.send_response(status)
@@ -96,7 +116,7 @@ class RabatBusHandler(BaseHTTPRequestHandler):
             else:
                 self.send_json_headers()
         elif path.startswith("/api/lines/"):
-            line_ref = path[len("/api/lines/"):].strip()
+            line_ref = self.line_ref_from_path(path)
             if not routes_cache:
                 self.send_error_headers(500)
             else:
@@ -111,11 +131,7 @@ class RabatBusHandler(BaseHTTPRequestHandler):
             else:
                 self.send_json_headers()
         else:
-            filepath, mime = self.resolve_static_path(path)
-            if filepath and os.path.exists(filepath):
-                self.serve_file(filepath, mime, head_only=True)
-            else:
-                self.send_error_headers(404)
+            self.serve_static(path, head_only=True)
 
     def do_OPTIONS(self):
         self.send_response(204)
@@ -163,7 +179,7 @@ class RabatBusHandler(BaseHTTPRequestHandler):
             return
 
         elif path.startswith("/api/lines/"):
-            line_ref = path[len("/api/lines/"):].strip()
+            line_ref = self.line_ref_from_path(path)
             if not routes_cache:
                 self.send_json({"error": "Dataset not loaded"}, status=500)
                 return
@@ -199,16 +215,23 @@ class RabatBusHandler(BaseHTTPRequestHandler):
                         continue
                 results.append(feat)
 
-            self.send_json({"count": len(results), "stops": results[:200]})
+            total = len(results)
+            page = results[:STOPS_PAGE_LIMIT]
+            self.send_json({
+                "count": total,
+                "total": total,
+                "returned": len(page),
+                "limit": STOPS_PAGE_LIMIT,
+                "truncated": total > STOPS_PAGE_LIMIT,
+                "stops": page,
+            })
             return
 
         elif path == "/api/nearest":
             try:
-                lat = float(query.get("lat", [0])[0])
-                lon = float(query.get("lon", [0])[0])
-                limit = int(query.get("k", [5])[0])
-            except ValueError:
-                self.send_json({"error": "Invalid lat/lon/k parameters"}, status=400)
+                lat, lon, limit = parse_nearest_query(query)
+            except (ValueError, OverflowError) as exc:
+                self.send_json({"error": str(exc)}, status=400)
                 return
 
             if not stops_cache:
@@ -239,41 +262,61 @@ class RabatBusHandler(BaseHTTPRequestHandler):
         # -------------------------------------------------------------
         # Static File Serving (Web UI & Data Files)
         # -------------------------------------------------------------
-        if path == "/" or path == "/index.html":
-            self.serve_file(os.path.join(WEB_DIR, "index.html"), "text/html")
+        self.serve_static(path, head_only=False)
+
+    def serve_static(self, path, head_only=False):
+        if path in ("/", "/index.html"):
+            self.serve_file(os.path.join(WEB_DIR, "index.html"), "text/html", head_only=head_only)
         elif path in ("/style.css", "/app.js"):
             filename = os.path.basename(path)
             mime = "text/css" if filename.endswith(".css") else "application/javascript"
-            self.serve_file(os.path.join(WEB_DIR, filename), mime)
+            self.serve_file(os.path.join(WEB_DIR, filename), mime, head_only=head_only)
         elif path.startswith("/data/"):
             filename = os.path.basename(path)
             filepath = os.path.join(DATA_DIR, filename)
             mime, _ = mimetypes.guess_type(filepath)
-            self.serve_file(filepath, mime or "application/octet-stream")
+            self.serve_file(filepath, mime or "application/octet-stream", head_only=head_only)
         else:
-            self.send_error(404, "Not Found")
+            if head_only:
+                self.send_error_headers(404)
+            else:
+                self.send_error(404, "Not Found")
 
     def serve_file(self, filepath, content_type, head_only=False):
-        if not os.path.exists(filepath):
-            self.send_error(404, "File not found")
+        # Reject missing files and directories before any status line.
+        # /data/raw is a directory; opening it used to follow a 200 OK header.
+        if not os.path.isfile(filepath):
+            if head_only:
+                self.send_error_headers(404)
+            else:
+                self.send_error(404, "File not found")
             return
         try:
             file_size = os.path.getsize(filepath)
+            fh = open(filepath, "rb")
+        except OSError as e:
+            if head_only:
+                self.send_error_headers(500)
+            else:
+                self.send_error(500, f"Error reading file: {e}")
+            return
+        with fh:
             self.send_response(200)
             self.send_header("Content-Type", content_type)
             self.send_header("Content-Length", str(file_size))
             self.send_cors_headers()
             self.end_headers()
-            if not head_only:
-                with open(filepath, "rb") as f:
-                    while chunk := f.read(65536):
-                        self.wfile.write(chunk)
-        except Exception as e:
-            if not head_only:
-                self.send_error(500, f"Error reading file: {e}")
+            if head_only:
+                return
+            while chunk := fh.read(65536):
+                self.wfile.write(chunk)
 
     def send_json(self, data, status=200):
-        body = json.dumps(data, ensure_ascii=False).encode("utf-8")
+        try:
+            body = json.dumps(data, ensure_ascii=False, allow_nan=False).encode("utf-8")
+        except ValueError:
+            body = json.dumps({"error": "Response contained non-finite numbers"}).encode("utf-8")
+            status = 500
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
@@ -286,15 +329,16 @@ class RabatBusHandler(BaseHTTPRequestHandler):
         return
 
 def run():
-    server_address = ("0.0.0.0", PORT)
+    server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, RabatBusHandler)
+    browse = "localhost" if HOST in ("127.0.0.1", "localhost", "0.0.0.0", "::") else HOST
     print(f"================================================================")
     print(f"  Rabat-Salé-Témara Bus Explorer Web Server & REST API")
-    print(f"  Listening on: http://localhost:{PORT}")
+    print(f"  Listening on: http://{browse}:{PORT}  (bound to {HOST})")
     print(f"  REST API Endpoints:")
-    print(f"    - Network Summary : http://localhost:{PORT}/api/network")
-    print(f"    - Bus Lines       : http://localhost:{PORT}/api/lines")
-    print(f"    - Nearest Radar   : http://localhost:{PORT}/api/nearest?lat=34.02&lon=-6.83")
+    print(f"    - Network Summary : http://{browse}:{PORT}/api/network")
+    print(f"    - Bus Lines       : http://{browse}:{PORT}/api/lines")
+    print(f"    - Nearest Radar   : http://{browse}:{PORT}/api/nearest?lat=34.02&lon=-6.83")
     print(f"================================================================")
     try:
         httpd.serve_forever()

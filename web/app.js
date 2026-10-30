@@ -135,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const routeLayersMap = new Map();  // relation_id -> L.geoJSON
   const lineRoutesMap = new Map();   // line_ref -> route features
+  const lineSearchIndex = new Map(); // line_ref -> lowercase names, termini, and stop names
   const stopMarkersMap = new Map();  // stop_id -> L.circleMarker
   const stopLinesMap = new Map();    // stop_id -> [line refs] (for interchanges)
   const stopArabicMap = new Map();   // stop_id -> Arabic name, where OSM has one
@@ -200,6 +201,57 @@ document.addEventListener('DOMContentLoaded', () => {
       const ar = (p.stop_name_ar || '').trim();
       if (ar) stopArabicMap.set(p.stop_id, ar);
     });
+
+    rebuildLineSearchIndex();
+  }
+
+  /** OSM names are untrusted. Tooltips must not go through innerHTML. */
+  function routeTooltipElement(p) {
+    const wrap = document.createElement('div');
+    const title = document.createElement('div');
+    const ref = document.createElement('b');
+    ref.textContent = String(p.line_ref ?? '');
+    title.appendChild(ref);
+    title.appendChild(document.createTextNode(` · ${p.name ?? ''}`));
+    const meta = document.createElement('div');
+    meta.style.opacity = '0.7';
+    meta.textContent = `${p.length_km} km · ${p.stops_count} arrêts`;
+    wrap.appendChild(title);
+    wrap.appendChild(meta);
+    return wrap;
+  }
+
+  function rebuildLineSearchIndex() {
+    const buckets = new Map();
+    const push = (ref, text) => {
+      if (!ref || text == null || text === '') return;
+      if (!buckets.has(ref)) buckets.set(ref, []);
+      buckets.get(ref).push(String(text));
+    };
+
+    lineRoutesMap.forEach((routes, ref) => {
+      push(ref, ref);
+      routes.forEach((route) => {
+        const rp = route.properties;
+        push(ref, rp.name);
+        push(ref, rp.origin);
+        push(ref, rp.destination);
+        (rp.stops || []).forEach((stop) => push(ref, stop.name));
+      });
+    });
+
+    state.stopsData.features.forEach((feat) => {
+      const p = feat.properties;
+      (p.lines || []).forEach((ref) => {
+        push(ref, p.stop_name);
+        push(ref, p.stop_name_ar);
+      });
+    });
+
+    lineSearchIndex.clear();
+    buckets.forEach((parts, ref) => {
+      lineSearchIndex.set(ref, parts.join('\n').toLowerCase());
+    });
   }
 
   // =========================================================================
@@ -225,10 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      poly.bindTooltip(
-        `<b>${p.line_ref}</b> · ${p.name}<br><span style="opacity:.7">${p.length_km} km · ${p.stops_count} arrêts</span>`,
-        { sticky: true, className: 'route-tooltip' }
-      );
+      poly.bindTooltip(() => routeTooltipElement(p), { sticky: true, className: 'route-tooltip' });
 
       poly.on('mouseover', () => {
         if (!state.selectedLineRef) poly.setStyle({ weight: tram ? 6 : 5, opacity: 1 });
@@ -361,16 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const tram = p0.mode === 'tram' || isTramRef(ref);
 
       const matchesZone = zone === 'all' || p0.zone === zone || (zone === 'Tramway' && tram);
-      const matchesSearch = !query ||
-        ref.toLowerCase().includes(query) ||
-        routes.some((r) => {
-          const rp = r.properties;
-          return (
-            (rp.name && rp.name.toLowerCase().includes(query)) ||
-            (rp.origin && rp.origin.toLowerCase().includes(query)) ||
-            (rp.destination && rp.destination.toLowerCase().includes(query))
-          );
-        });
+      const matchesSearch = !query || (lineSearchIndex.get(ref) || '').includes(query);
 
       if (!matchesZone || !matchesSearch) return;
       shown++;
@@ -591,7 +631,16 @@ document.addEventListener('DOMContentLoaded', () => {
     el.activeLinePanel.style.display = 'none';
     el.linesListContainer.style.display = 'flex';
 
-    routeLayersMap.forEach((poly) => poly.setStyle({ weight: 3, opacity: 0.88 }));
+    routeLayersMap.forEach((poly, id) => {
+      const feat = state.routesData.features.find((f) => f.properties.relation_id === id);
+      const ref = feat && feat.properties.line_ref;
+      const tram = feat && (feat.properties.mode === 'tram' || isTramRef(ref));
+      poly.setStyle({
+        color: colorFor(ref || ''),
+        weight: tram ? 4 : 3,
+        opacity: 0.88
+      });
+    });
     stopMarkersMap.forEach((marker, id) => {
       const feat = state.stopsData.features.find((f) => f.properties.stop_id === id);
       if (feat) marker.setStyle(stopBaseStyle(feat));
@@ -601,8 +650,26 @@ document.addEventListener('DOMContentLoaded', () => {
     map.flyTo([33.99, -6.84], 12);
   }
 
+  function showWholeNetwork() {
+    resetToAllRoutes();
+    state.activeZone = 'all';
+    state.searchQuery = '';
+    el.searchInput.value = '';
+    el.clearSearchBtn.style.display = 'none';
+    el.zoneChips.querySelectorAll('.plate').forEach((plate) => {
+      plate.classList.toggle('on', plate.getAttribute('data-zone') === 'all');
+    });
+    el.toggleRoutesCheckbox.checked = true;
+    el.toggleTramCheckbox.checked = true;
+    el.toggleStopsCheckbox.checked = true;
+    if (!map.hasLayer(busRoutesLayerGroup)) map.addLayer(busRoutesLayerGroup);
+    if (!map.hasLayer(tramRoutesLayerGroup)) map.addLayer(tramRoutesLayerGroup);
+    if (!map.hasLayer(stopsLayerGroup)) map.addLayer(stopsLayerGroup);
+    renderLinesList();
+  }
+
   el.closeActiveLineBtn.addEventListener('click', resetToAllRoutes);
-  el.toggleAllRoutesMapBtn.addEventListener('click', resetToAllRoutes);
+  el.toggleAllRoutesMapBtn.addEventListener('click', showWholeNetwork);
   el.fitRouteBoundsBtn.addEventListener('click', () => {
     if (state.selectedRouteFeature) {
       const poly = routeLayersMap.get(state.selectedRouteFeature.properties.relation_id);

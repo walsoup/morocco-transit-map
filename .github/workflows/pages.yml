@@ -27,9 +27,9 @@ jobs:
       - name: Prepare site directory
         run: |
           mkdir -p _site
-          cp -r web/* _site/
-          cp -r data _site/data
-          # Ensure index.html and assets are at root of _site
+          # web/_specimen.html and any other _* mockup must not be published.
+          find web -mindepth 1 -maxdepth 1 ! -name '_*' -exec cp -a {} _site/ \;
+          cp -a data _site/data
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

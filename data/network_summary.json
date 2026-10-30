@@ -1,12 +1,12 @@
 {
   "metadata": {
     "network_name": "Rabat-Salé-Témara Public Transit Network (ALSA Citybus & STRS Tramway)",
-    "extracted_at": "2026-10-29T14:01:02Z",
+    "extracted_at": "2026-10-30T01:14:54Z",
     "total_lines": 44,
     "catalog_total_lines": 45,
     "total_routes_directions": 87,
-    "total_unique_stops": 1189,
-    "total_network_km": 1621.5,
+    "total_unique_stops": 1190,
+    "total_network_km": 1605.3,
     "tram_lines": [
       "T1",
       "T2"
@@ -56,12 +56,36 @@
       "210AE"
     ],
     "zones": [
-      "Témara, Harhoura & South",
       "Airport Express",
       "Intercommunal",
+      "Rabat Urban Core",
       "Salé & North",
       "Tramway",
-      "Rabat Urban Core"
+      "Témara, Harhoura & South"
+    ],
+    "skipped_relation_count": 3,
+    "skipped_relations": [
+      {
+        "relation_id": 12968229,
+        "ref": "21",
+        "name": "Sala Al Jadida - Bab Chellah",
+        "reason": "HTTP 410 Gone",
+        "http_status": 410
+      },
+      {
+        "relation_id": 14656248,
+        "ref": "21",
+        "name": "Bab Chellah – Sala Al Jadida",
+        "reason": "HTTP 410 Gone",
+        "http_status": 410
+      },
+      {
+        "relation_id": 14671851,
+        "ref": "9",
+        "name": "Karia - Gare Routiere Agdal",
+        "reason": "HTTP 410 Gone",
+        "http_status": 410
+      }
     ],
     "top_hubs": [
       {

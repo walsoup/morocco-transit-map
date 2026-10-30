@@ -94,6 +94,7 @@ The Pages workflow publishes `web/` and `data/` on every push to `main`.
 
 ## Credits
 
+- Contributor: [tahaenasraoui-debug](https://github.com/tahaenasraoui-debug)
 - Transit data: © OpenStreetMap contributors (ODbL)
 - Basemaps: © OpenStreetMap contributors, © CARTO; satellite tiles © Esri
 - Map library: Leaflet
